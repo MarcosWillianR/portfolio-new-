@@ -1,0 +1,34 @@
+$theme-name: 't-light-blue';
+
+.#{$theme-name} {
+    .search__button:hover {
+        background: url('../img/theme-light-blue/header-icons/search.png') no-repeat;
+    }
+
+    .button1__button {
+        @extend %border-blue;
+        @extend %color-blue-1;
+        &:hover {
+            @extend %background-blue;
+        }
+    }
+
+    .smallIcon__img-grid:hover {
+        background: url('../img/theme-light-blue/header-icons/list.png') no-repeat;
+    }
+    .smallIcon__img-bell {
+        .smallIcon__bell-alert {
+            @extend %border-blue;
+            @extend %color-blue-1;
+        }
+        &:hover {
+            background: url('../img/theme-light-blue/header-icons/bell.png') no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .smallIcon__img-fullscreen:hover {
+        background: url('../img/theme-light-blue/header-icons/resize.png') no-repeat;
+        background-position: center center;
+    }
+}

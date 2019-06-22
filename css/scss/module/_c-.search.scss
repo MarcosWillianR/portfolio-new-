@@ -1,0 +1,32 @@
+$module-name: 'search';
+
+.#{$module-name} {
+    position: relative;
+    .search__field {
+        width: 200px;
+        height: 20px;
+        @extend %border-0;
+        @extend %default-border-radius;
+        @extend %default-padding;
+        @extend %default-outline;
+        @extend %background-light-input;
+        // Tipografia
+        @include type-1(12.8);
+        @extend %font-weight400;
+    }
+    .search__button {
+        width: 15%;
+        height: 90%;
+        background: url('../img/default-color/header-icons/search.png') no-repeat;
+        background-position: left top;
+        position: absolute;
+            top: 12px;
+            right: -5px;
+        @extend %border-0;
+        @extend %cursor-pointer;
+        @extend %default-padding;
+        &:hover {
+            background: url('../img/theme-light-purple/header-icons/search.png') no-repeat;
+        }
+    }
+}

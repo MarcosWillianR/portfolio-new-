@@ -1,0 +1,45 @@
+// Sizes
+$large-device: 1440px;
+$medium-device: 992px;
+$small-device: 767px;
+$xsmall-device: 575px;
+$xxsmall-device: 419px;
+
+// Mixins media queries
+@mixin device($size) {
+    @if $size == medium-to-large {
+        @media screen and(min-width: #{$medium-device + 1}) and(max-width: #{$large-device}) {
+            @content;
+        }
+    }
+    @else if $size == medium-to-small {
+        @media screen and(min-width: #{$small-device + 1}) and(max-width: #{$medium-device}) {
+            @content;
+        }
+    }
+    @else if $size == medium-to-xxsmall {
+        @media screen and(max-width: #{$medium-device}) {
+            @content;
+        }
+    }
+    @else if $size == small-to-xsmall {
+        @media screen and(min-width: #{$xxsmall-device + 1}) and (max-width: #{$small-device}) {
+            @content;
+        }
+    }
+    @else if $size == small-to-xxsmall {
+        @media screen and(max-width: #{$small-device}) {
+            @content;
+        }
+    }
+    @else if $size == xsmall-to-xxsmall {
+        @media screen and(max-width: #{$xsmall-device}) {
+            @content;
+        }
+    }
+    @else if $size == xxsmall {
+        @media screen and(max-width: #{$xxsmall-device}) {
+            @content;
+        }
+    }
+}

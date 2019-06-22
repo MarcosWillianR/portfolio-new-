@@ -1,0 +1,67 @@
+%font-weight400 { font-weight: 400; }
+%font-weight600 { font-weight: 600; }
+%font-weight700 { font-weight: 700; }
+
+%background-transparent { background: transparent; }
+
+%default-padding { padding: 10px 12px; }
+%default-margin { margin: 0px 12px; }
+%default-border-radius { border-radius: 18px; }
+%default-outline { outline: 0; }
+
+%cursor-pointer { cursor: pointer; }
+%border-0 { border: 0; }
+
+
+
+// Theme purple
+%background-purple { background: #922c88; }
+%color-purple-1 { color: #922c88; }
+%color-purple-2 { color: #4556ac; }
+%border-purple { border: 1px solid #922c88; }
+
+// Theme red
+%background-red { background: #880A1F; }
+%color-red-1 { color: #E7284A; }
+%color-red-2 { color: #880A1F; }
+%border-red { border: 1px solid #880A1F; }
+
+// Theme orange
+%background-orange { background: #E2863B; }
+%color-orange-1 { color: #E2863B; }
+%color-orange-2 { color: #E7523E; }
+%border-orange { border: 1px solid #E2863B; }
+
+// Theme green
+%background-green { background: #576A3D; }
+%color-green-1 { color: #576A3D; }
+%color-green-2 { color: #DD9C02; }
+%border-green { border: 1px solid #576A3D; }
+
+// Theme blue
+%background-blue { background: #145388; }
+%color-blue-1 { color: #145388; }
+%color-blue-2 { color: #2A93D5 }
+%border-blue { border: 1px solid #145388; }
+
+/////////////////////////////////////////////////////
+
+// Theme-Dark
+%background-dark-color-1 { background: #1B191B; }
+%background-dark-color-2 { background: #232223; }
+%background-dark-input { background: #1B191B; }
+%button1-dark-hover-color { color: #1B191B; }
+
+%langButton-dark-borderTop { border-top: 5px solid #757575; }
+
+%color-dark-default-1 { color: #969696; }
+%color-dark-default-2 { color: #757575; }
+
+// Theme-light
+%background-light-input { background: #F8F8F8; }
+%button1-light-hover-color { color: #FFF; }
+
+%langButton-light-borderTop { border-top: 5px solid #8F8F8F; }
+
+%color-light-default-1 { color: #303030; }
+%color-light-default-2 { color: #8F8F8F; }

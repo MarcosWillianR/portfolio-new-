@@ -1,0 +1,34 @@
+$theme-name: 't-light-green';
+
+.#{$theme-name} {
+    .search__button:hover {
+        background: url('../img/theme-light-green/header-icons/search.png') no-repeat;
+    }
+
+    .button1__button {
+        @extend %border-green;
+        @extend %color-green-1;
+        &:hover {
+           @extend %background-green;
+        }
+    }
+
+    .smallIcon__img-grid:hover {
+        background: url('../img/theme-light-green/header-icons/list.png') no-repeat;
+    }
+    .smallIcon__img-bell {
+        .smallIcon__bell-alert {
+            @extend %border-green;
+            @extend %color-green-1;
+        }
+        &:hover {
+            background: url('../img/theme-light-green/header-icons/bell.png') no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .smallIcon__img-fullscreen:hover {
+        background: url('../img/theme-light-green/header-icons/resize.png') no-repeat;
+        background-position: center center;
+    }
+}

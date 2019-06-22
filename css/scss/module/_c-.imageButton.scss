@@ -1,0 +1,18 @@
+$module-name: 'imageButton';
+
+.#{$module-name} {
+    @extend %border-0;
+    @extend %background-transparent;
+    @extend %cursor-pointer;
+    .imageButton__name {
+        @extend %default-margin;
+        // Tipografia
+        @include type-1(12.8);
+        @extend %color-light-default-1;
+    }
+    .imageButton__img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,25 @@
+// Tipografia do site: 
+@mixin type-1($size) {
+    font-family: 'Nunito', sans-serif;
+    @if $size == 28 {
+        font-size: 28px;
+    }
+    @else if $size == 16 {
+        font-size: 16px;
+    }
+    @else if $size == 13 {
+        font-size: 13px;
+    }
+    @else if $size == 12.8 {
+        font-size: 12.8px;
+    }
+    @else if $size == 12.16 {
+        font-size: 12.16px;
+    }
+    @else if $size == 9.472 {
+        font-size: 9.472px;
+    }
+    @else if $size == 9 {
+        font-size: 9px;
+    }
+}

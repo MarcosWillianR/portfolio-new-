@@ -1,0 +1,47 @@
+$module-name: 'smallIcon';
+
+.#{$module-name} {
+    width: 18px;
+    height: 18px;
+    @extend %default-margin;
+    .smallIcon__img-grid {
+        background: url('../img/default-color/header-icons/list.png') no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            background: url('../img/theme-light-purple/header-icons/list.png') no-repeat;
+        }
+    }
+    .smallIcon__img-bell {
+        background: url('../../../img/default-color/header-icons/bell.png') no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            background: url('../img/theme-light-purple/header-icons/bell.png') no-repeat;
+            background-size: contain;
+        }
+        .smallIcon__bell-alert {
+            position: absolute;
+                top: -5px;
+                left: 140px;
+            padding: 2px 4px;
+            @extend %border-purple;
+            @extend %color-purple-1;
+            @extend %default-border-radius;
+            // Tipografia
+            @include type-1(9);
+        }
+    }
+    .smallIcon__img-fullscreen {
+        background: url('../../../img/default-color/header-icons/resize.png') no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            background: url('../img/theme-light-purple/header-icons/resize.png') no-repeat;
+            background-position: center center;
+        }
+    }
+}

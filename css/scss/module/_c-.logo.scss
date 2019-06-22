@@ -1,0 +1,14 @@
+$module-name: 'logo';
+
+.#{$module-name} {
+    width: 110px;
+    height: 35px;
+    background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-black.svg') no-repeat;
+    background-position: center center;
+    .logo__link {
+        text-decoration: none;
+        color: transparent;
+        padding: 17.5px 35px;
+        background: transparent;
+    }
+}

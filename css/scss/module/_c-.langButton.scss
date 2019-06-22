@@ -1,0 +1,26 @@
+$module-name: 'langButton';
+
+.#{$module-name} {
+    .langButton__button {
+        @extend %color-light-default-2;
+        @extend %border-0;
+        @extend %cursor-pointer;
+        @extend %default-border-radius;
+        @extend %default-margin;
+        @extend %default-padding;
+        @extend %background-light-input;
+        // Tipografia 
+        @include type-1(12.8);
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            margin-left: 2px;
+            margin-bottom: 2px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            @extend %langButton-light-borderTop;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$module-name: 'button1';
+
+.#{$module-name} {
+    .button1__button {
+        @extend %cursor-pointer;
+        @extend %border-purple;
+        @extend %default-border-radius;
+        @extend %default-padding;
+        @extend %default-margin;
+        @extend %color-purple-1;
+        @extend %background-transparent;
+        // Tipografia
+        @include type-1(12.16);
+        text-transform: uppercase;
+        &:hover {
+            @extend %background-purple;
+            @extend %button1-light-hover-color;
+        }
+    }
+}

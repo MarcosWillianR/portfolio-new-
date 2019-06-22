@@ -1,0 +1,27 @@
+$module-name: 'menuButton';
+
+.#{$module-name} {
+    .menuButton__button {
+        width: 120px;
+        padding: 4px;
+        margin-bottom: 10px;
+        background: transparent;
+    }
+    .menuButton__button::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 1px;
+        box-shadow: 0 6px 0 #8F8F8F, 0 -6px 0 #8F8F8F;
+        background: #8F8F8F;
+    }
+    .menuButton__button::after {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 1px;
+        margin-left: 3px;
+        box-shadow: 0 6px 0 #8F8F8F, 0 -6px 0 #8F8F8F;
+        background: #8F8F8F;
+    }
+}

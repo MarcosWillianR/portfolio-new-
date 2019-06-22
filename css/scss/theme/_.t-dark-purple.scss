@@ -1,0 +1,59 @@
+$theme-name: 't-dark-purple';
+
+.#{$theme-name} {
+    @extend %background-dark-color-1;
+    .header {
+        @extend %background-dark-color-2;
+        .search__field {
+            @extend %background-dark-input;
+        }
+        .langButton__button {
+            @extend %background-dark-input;
+            @extend %color-dark-default-2;
+            &::after {
+                @extend %langButton-dark-borderTop;
+            }
+        }
+        .button1__button {
+            @extend %border-purple;
+            @extend %color-purple-1;
+            &:hover {
+                @extend %background-purple;
+                @extend %button1-dark-hover-color;
+            }
+        }
+        .logo {
+            background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-white.svg') no-repeat;
+            background-position: center center;
+        }
+
+        .imageButton__name {
+            // Tipografia
+            @extend %color-dark-default-1;
+        }
+    }
+
+    .search__button:hover {
+        background: url('../img/theme-dark-purple/header-icons/search.png') no-repeat;
+    }
+
+    .smallIcon__img-grid:hover {
+        background: url('../img/theme-dark-purple/header-icons/list.png') no-repeat;
+    }
+    
+    .smallIcon__img-bell {
+        .smallIcon__bell-alert {
+            @extend %border-purple;
+            @extend %color-purple-1;
+        }
+        &:hover {
+            background: url('../img/theme-dark-purple/header-icons/bell.png') no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .smallIcon__img-fullscreen:hover {
+        background: url('../img/theme-dark-purple/header-icons/resize.png') no-repeat;
+        background-position: center center;
+    }
+}

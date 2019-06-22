@@ -1,0 +1,54 @@
+// Reset default styles
+@import './base/base';
+
+// Utilities
+@import './u-.utilities'; 
+
+// Tipografia
+@import './tipografia';
+
+// Media queries
+@import './media-queries';
+
+// Layouts
+@import './layout/.l-flex';
+@import './layout/.l-fixed';
+
+// Modules
+@import './module/c-.header';              // Header style
+@import './module/c-.menuButton';          // Header style
+@import './module/c-.search';              // Header style
+@import './module/c-.langButton';          // Header style
+@import './module/c-.logo';                // Header style
+@import './module/c-.button1';             // Header style
+@import './module/c-.iconButton';          // Header / Main style
+@import './module/c-.smallIcon';           // Header / Sidebar style
+@import './module/c-.imageButton';         // Header style
+@import './module/c-.largeIcons';          // Sidebar style
+@import './module/c-.mediumIcon';          // Main style
+@import './module/c-.button2';             // Main style
+@import './module/c-.smallSearch';         // Main style
+@import './module/c-.button3';             // Main style
+@import './module/c-.button4';             // Main style
+@import './module/c-.button5';             // Main style
+@import './module/c-.button6';             // Main style
+@import './module/c-.foodImage';           // Main style
+
+// States 
+@import './state/.is-active';
+@import './state/.is-transform';
+@import './state/.is-visible';
+@import './state/.is-show';
+
+// Themes
+@import './theme/.t-light-purple';        // Light theme
+@import './theme/.t-light-blue';          // Light theme
+@import './theme/.t-light-green';         // Light theme
+@import './theme/.t-light-orange';        // Light theme
+@import './theme/.t-light-red';           // Light theme
+
+@import './theme/.t-dark-purple';         // Dark theme 
+@import './theme/.t-dark-blue';           // Dark theme
+@import './theme/.t-dark-green';          // Dark theme          
+@import './theme/.t-dark-orange';         // Dark theme
+@import './theme/.t-dark-red';            // Dark theme
