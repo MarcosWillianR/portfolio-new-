@@ -30,7 +30,7 @@ Meus pontos fortes estão no HTML5, CSS e Javasript.
 # me capacitando para que o mercado requere.  
 
 
-#Contato
+# Contato
 
 - gmail: markusuuuu@gmail.com
 - whatsapp: (51) 9 8518-6112
