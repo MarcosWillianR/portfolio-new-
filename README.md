@@ -2,11 +2,11 @@
 
 > Criei esse projeto usando a base do frontend (HTML5,CSS3,JavaScript)
 
-# o template que usei se encontra nesse link: 
-> https://gogo-react.coloredstrategies.com/app/pages/thumb-list#/
+> o template que usei se encontra nesse link: 
+- https://gogo-react.coloredstrategies.com/app/pages/thumb-list#/
 
-# O que eu fiz está aqui nesse link: 
- https://marcoswillianr.github.io/portfolio-new-/
+> O que eu fiz está aqui nesse link: 
+- https://marcoswillianr.github.io/portfolio-new-/
 
 # aqui vai uma breve história sobre mim:
 #
