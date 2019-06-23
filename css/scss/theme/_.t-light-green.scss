@@ -3,6 +3,7 @@ $theme-name: 't-light-green';
 .#{$theme-name} {
     .search__button:hover {
         background: url('../img/theme-light-green/header-icons/search.png') no-repeat;
+        background-position: center center;
     }
 
     .button1__button {

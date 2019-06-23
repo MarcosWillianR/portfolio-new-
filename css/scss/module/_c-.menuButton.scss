@@ -6,6 +6,10 @@ $module-name: 'menuButton';
         padding: 4px;
         margin-bottom: 10px;
         background: transparent;
+        @include device(small-to-xxsmall) {
+            text-align: left;
+            width: 60px;
+        }
     }
     .menuButton__button::before {
         content: '';

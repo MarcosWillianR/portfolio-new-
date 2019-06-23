@@ -12,7 +12,8 @@
 %cursor-pointer { cursor: pointer; }
 %border-0 { border: 0; }
 
-
+// Transitions animations
+%transition-height { transition: height .3s ease-in; }
 
 // Theme purple
 %background-purple { background: #922c88; }

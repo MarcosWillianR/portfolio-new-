@@ -11,6 +11,9 @@ $module-name: 'button1';
         @extend %background-transparent;
         // Tipografia
         @include type-1(12.16);
+        @include device(medium-to-xxsmall) {
+            display: none;
+        }
         text-transform: uppercase;
         &:hover {
             @extend %background-purple;

@@ -32,6 +32,15 @@ $module-name: 'smallIcon';
             @extend %default-border-radius;
             // Tipografia
             @include type-1(9);
+            @include device(medium-to-small) {
+                left: 65px;
+            }
+            @include device(small-to-xsmall) {
+                left: 65px;
+            }
+            @include device(xsmall-to-xxsmall) {
+                left: 20px;
+            }
         }
     }
     .smallIcon__img-fullscreen {

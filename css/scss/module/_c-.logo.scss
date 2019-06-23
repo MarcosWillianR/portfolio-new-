@@ -5,10 +5,23 @@ $module-name: 'logo';
     height: 35px;
     background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-black.svg') no-repeat;
     background-position: center center;
+    @include device(small-to-xxsmall) {
+        width: 80px;
+        height: 35px;
+    }
+    @include device(xxsmall) {
+        width: 20px;
+        height: 35px;
+        background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-mobile.svg') no-repeat;
+    }
     .logo__link {
         text-decoration: none;
         color: transparent;
         padding: 17.5px 35px;
         background: transparent;
+        word-break: break-all;
+        @include device(xxsmall) {
+            padding: 10px 0px;
+        }
     }
 }

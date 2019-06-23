@@ -13,18 +13,30 @@ $module-name: 'search';
         // Tipografia
         @include type-1(12.8);
         @extend %font-weight400;
+        @include device(medium-to-small) {
+            width: 100px;
+        }
+        @include device(small-to-xxsmall) {
+            display: none;
+        }
     }
     .search__button {
-        width: 15%;
-        height: 90%;
+        width: 32px;
+        height: 32px;
         background: url('../img/default-color/header-icons/search.png') no-repeat;
-        background-position: left top;
+        background-position: center center;
         position: absolute;
-            top: 12px;
-            right: -5px;
+            top: 3px;
+            right: 5px;
         @extend %border-0;
         @extend %cursor-pointer;
         @extend %default-padding;
+        @include device(medium-to-xxsmall) {
+            right: 0px;
+        }
+        @include device(small-to-xxsmall) {
+            top: -16px;
+        }
         &:hover {
             background: url('../img/theme-light-purple/header-icons/search.png') no-repeat;
         }

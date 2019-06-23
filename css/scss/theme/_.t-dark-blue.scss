@@ -25,6 +25,9 @@ $theme-name: 't-dark-blue';
         .logo {
             background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-white.svg') no-repeat;
             background-position: center center;
+            @include device(xxsmall) {
+                background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-mobile.svg') no-repeat;
+            }
         }
 
         .imageButton__name {
@@ -35,6 +38,7 @@ $theme-name: 't-dark-blue';
 
     .search__button:hover {
         background: url('../img/theme-dark-blue/header-icons/search.png') no-repeat;
+        background-position: center center;
     }
 
     .smallIcon__img-grid:hover {

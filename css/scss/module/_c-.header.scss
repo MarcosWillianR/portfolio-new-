@@ -8,10 +8,25 @@ $module-name: 'header';
     box-sizing: border-box;
     background: #FFF;
     box-shadow: 0px .5px 16px rgba(0,0,0,.1);
+    @extend %transition-height;
+    @include device(medium-to-large) {
+        height: 90px;
+    }
+    @include device(medium-to-small) {
+        height: 80px;
+        padding: 24px 30px 24px 0px;
+    }
+    @include device(small-to-xxsmall) {
+        height: 70px;
+        padding: 15px;
+    }
     // .navbar-button-search-lang {
         
     // }
     .navbar-icons-imageButton {
         position: relative;
+        @include device(small-to-xxsmall) {
+            width: auto;
+        }
     }
 }

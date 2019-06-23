@@ -9,10 +9,17 @@ $module-name: 'imageButton';
         // Tipografia
         @include type-1(12.8);
         @extend %color-light-default-1;
+        @include device(medium-to-xxsmall) {
+            display: none;
+        }
     }
     .imageButton__img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
+        @include device(small-to-xxsmall) {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
