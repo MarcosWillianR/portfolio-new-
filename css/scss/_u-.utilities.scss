@@ -3,6 +3,7 @@
 %font-weight700 { font-weight: 700; }
 
 %background-transparent { background: transparent; }
+// %color-transparent { color: transparent; }
 
 %default-padding { padding: 10px 12px; }
 %default-margin { margin: 0px 12px; }
@@ -11,39 +12,53 @@
 
 %cursor-pointer { cursor: pointer; }
 %border-0 { border: 0; }
+%border-radius-50-percent { border-radius: 50%; }
+
+%box-shadow-default { box-shadow: 0px .5px 16px rgba(0,0,0,.1); }
 
 // Transitions animations
 %transition-height { transition: height .3s ease-in; }
+%transition-background-color { transition: background-color .6s; }
+
+// ChangeTheme.scss Utility's
+%padding-changeTheme__list { padding: 0px 12px 8px 12px; }
+%border-transparent-changeTheme__list { border: 3px solid transparent; }
+
 
 // Theme purple
 %background-purple { background: #922c88; }
 %color-purple-1 { color: #922c88; }
 %color-purple-2 { color: #4556ac; }
 %border-purple { border: 1px solid #922c88; }
+%border-purple-color { border-color: #922c88; }
 
 // Theme red
 %background-red { background: #880A1F; }
 %color-red-1 { color: #E7284A; }
 %color-red-2 { color: #880A1F; }
 %border-red { border: 1px solid #880A1F; }
+%border-red-color { border-color: #880A1F; }
 
 // Theme orange
 %background-orange { background: #E2863B; }
 %color-orange-1 { color: #E2863B; }
 %color-orange-2 { color: #E7523E; }
 %border-orange { border: 1px solid #E2863B; }
+%border-orange-color { border-color: #E2863B; }
 
 // Theme green
 %background-green { background: #576A3D; }
 %color-green-1 { color: #576A3D; }
 %color-green-2 { color: #DD9C02; }
 %border-green { border: 1px solid #576A3D; }
+%border-green-color { border-color: #576A3D; }
 
 // Theme blue
 %background-blue { background: #145388; }
 %color-blue-1 { color: #145388; }
 %color-blue-2 { color: #2A93D5 }
 %border-blue { border: 1px solid #145388; }
+%border-blue-color { border-color: #145388; }
 
 /////////////////////////////////////////////////////
 
@@ -66,3 +81,4 @@
 
 %color-light-default-1 { color: #303030; }
 %color-light-default-2 { color: #8F8F8F; }
+%color-light-default-3 { color: #909090; }

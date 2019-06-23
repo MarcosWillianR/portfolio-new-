@@ -31,6 +31,7 @@ $module-name: 'search';
         @extend %border-0;
         @extend %cursor-pointer;
         @extend %default-padding;
+        @extend %default-outline;
         @include device(medium-to-xxsmall) {
             right: 0px;
         }

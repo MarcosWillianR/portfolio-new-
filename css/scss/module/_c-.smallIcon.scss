@@ -9,6 +9,7 @@ $module-name: 'smallIcon';
         background-position: center center;
         width: 100%;
         height: 100%;
+        @extend %default-outline;
         &:hover {
             background: url('../img/theme-light-purple/header-icons/list.png') no-repeat;
         }
@@ -18,6 +19,7 @@ $module-name: 'smallIcon';
         background-size: contain;
         width: 100%;
         height: 100%;
+        @extend %default-outline;
         &:hover {
             background: url('../img/theme-light-purple/header-icons/bell.png') no-repeat;
             background-size: contain;
@@ -30,6 +32,7 @@ $module-name: 'smallIcon';
             @extend %border-purple;
             @extend %color-purple-1;
             @extend %default-border-radius;
+            @extend %default-outline;
             // Tipografia
             @include type-1(9);
             @include device(medium-to-small) {
@@ -48,6 +51,7 @@ $module-name: 'smallIcon';
         background-position: center center;
         width: 100%;
         height: 100%;
+        @extend %default-outline;
         &:hover {
             background: url('../img/theme-light-purple/header-icons/resize.png') no-repeat;
             background-position: center center;

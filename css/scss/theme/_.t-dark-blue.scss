@@ -60,4 +60,15 @@ $theme-name: 't-dark-blue';
         background: url('../img/theme-dark-blue/header-icons/resize.png') no-repeat;
         background-position: center center;
     }
+
+
+
+    .changeTheme {
+        .changeTheme__button {
+            background-color: #232223;
+        }
+        .changeTheme__list {
+            @extend %background-dark-color-2;
+        }
+    }
 }

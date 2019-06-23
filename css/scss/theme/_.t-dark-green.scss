@@ -60,4 +60,16 @@ $theme-name: 't-dark-green';
         background: url('../img/theme-dark-green/header-icons/resize.png') no-repeat;
         background-position: center center;
     }
+
+
+
+    
+    .changeTheme {
+        .changeTheme__button {
+            background-color: #232223;
+        }
+        .changeTheme__list {
+            @extend %background-dark-color-2;
+        }
+    }
 }

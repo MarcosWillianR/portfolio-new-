@@ -1,0 +1,1 @@
+"use strict";function outsideEvent(e,n,o){var i=document.documentElement,u="data-outside";function r(t){e.contains(t.target)||(e.removeAttribute(u,""),n.forEach(function(t){i.removeEventListener(t,r)}),o())}e.hasAttribute(u)||(n.forEach(function(t){setTimeout(function(){return i.addEventListener(t,r)})}),e.setAttribute(u,""))}console.log("theme changed");

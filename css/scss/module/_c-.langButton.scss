@@ -9,6 +9,7 @@ $module-name: 'langButton';
         @extend %default-margin;
         @extend %default-padding;
         @extend %background-light-input;
+        @extend %default-outline;
         // Tipografia 
         @include type-1(12.8);
         &::after {

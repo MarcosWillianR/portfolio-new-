@@ -4,6 +4,7 @@ $module-name: 'imageButton';
     @extend %border-0;
     @extend %background-transparent;
     @extend %cursor-pointer;
+    @extend %default-outline;
     .imageButton__name {
         @extend %default-margin;
         // Tipografia
