@@ -22,6 +22,8 @@
 %transition-height { transition: height .3s ease-in; }
 %transition-background-color { transition: background-color .6s; }
 %transition-width { transition: width .3s ease-in; }
+%transition-color { transition: color .3s; }
+%transition-transform { transition: transform .6s ease-in-out; }
 
 // ChangeTheme.scss Utility's
 %padding-changeTheme__list { padding: 0px 12px 8px 12px; }

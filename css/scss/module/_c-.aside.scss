@@ -2,13 +2,14 @@ $module-name: 'aside';
 $element1-name: 'aside__left-Sidebar';
 $element2-name: 'aside__right-Sidebar';
 
-
 .#{$module-name} {
     position: relative;
         z-index: 500;
-        max-width: 120px + 229;
+    width: 120px + 230;
     height: 100vh;
     background: #FFF;
+    justify-content: space-between;
+    align-content: flex-start;
     @extend %box-shadow-default;
     .#{$element1-name} {
         width: 120px;
@@ -59,6 +60,30 @@ $element2-name: 'aside__right-Sidebar';
                     background: url('../img/theme-light-purple/sidebar-left-icons/docs.png') no-repeat;
                 }
             }
+        }
+    }
+    .#{$element2-name} {
+        width: 229px;
+        height: 80vh;
+        .right-Sidebar__list {
+            padding: 25px 0px;
+        }
+        .right-Sidebar__containerLink {
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+    }
+    .right-Sidebar__link {
+        display: flex;
+        align-items: center;
+        padding: 8px 0px;
+        // Tipografia
+        @include type-1(13);
+        @extend %color-light-default-1;
+        @extend %text-decoration-none;
+        @extend %transition-color;
+        &:hover {
+            @extend %color-purple-1;
         }
     }
 }

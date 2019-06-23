@@ -100,6 +100,7 @@ $theme-name: 't-dark-blue';
                 }
             }
             .left-Sidebar__link:hover {
+                @extend %color-blue-1;
                 @extend %background-dark-color-1;
                 .dashboard-icon {
                     background: url('../img/theme-light-blue/sidebar-left-icons/dashboard.png') no-repeat;
@@ -122,6 +123,14 @@ $theme-name: 't-dark-blue';
                 .docs-icon {
                     background: url('../img/theme-light-blue/sidebar-left-icons/docs.png') no-repeat;
                 }
+            }
+        }
+
+        // Right Styles >>>>>
+        .right-Sidebar__link {
+            @extend %color-dark-default-1;
+            &:hover {
+                @extend %color-blue-1;
             }
         }
     }

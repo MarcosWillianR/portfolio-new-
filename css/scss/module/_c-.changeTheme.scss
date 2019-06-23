@@ -19,10 +19,7 @@ $module-name: 'changeTheme';
         @extend %border-0;
         @extend %cursor-pointer;
         @extend %default-outline;
-        transition: transform .6s ease-in-out;
-        &.is-show {
-            transform: translate3d(-280px,0,0);
-        }
+        @extend %transition-transform;
     }
     .changeTheme__list {
         position: absolute;
@@ -33,11 +30,8 @@ $module-name: 'changeTheme';
         box-sizing: border-box;
         background-color: #FFF;
         transform: translate3d(300px,0,0);
-        box-shadow: 0px .5px 16px rgba(0,0,0,.1);
-        transition: transform .6s ease-in-out;
-        &.is-show {
-            transform: translate3d(0px,0,0);
-        }
+        @extend %box-shadow-default;
+        @extend %transition-transform;
         .changeTheme__list__name {
             // Tipografia
             @include type-1(13);

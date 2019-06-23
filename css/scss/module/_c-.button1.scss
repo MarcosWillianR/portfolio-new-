@@ -10,6 +10,7 @@ $module-name: 'button1';
         @extend %color-purple-1;
         @extend %background-transparent;
         @extend %default-outline;
+        @extend %transition-background-color;
         // Tipografia
         @include type-1(12.16);
         @include device(medium-to-xxsmall) {

@@ -101,6 +101,7 @@ $theme-name: 't-dark-purple';
                 }
             }
             .left-Sidebar__link:hover {
+                @extend %color-purple-1;
                 @extend %background-dark-color-1;
                 .dashboard-icon {
                     background: url('../img/theme-light-purple/sidebar-left-icons/dashboard.png') no-repeat;
@@ -123,6 +124,15 @@ $theme-name: 't-dark-purple';
                 .docs-icon {
                     background: url('../img/theme-light-purple/sidebar-left-icons/docs.png') no-repeat;
                 }
+            }
+        }
+
+
+        // Right Styles >>>>>
+        .right-Sidebar__link {
+            @extend %color-dark-default-1;
+            &:hover {
+                @extend %color-purple-1;
             }
         }
     }

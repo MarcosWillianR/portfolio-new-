@@ -43,6 +43,7 @@ $theme-name: 't-light-green';
     // Aside
     .aside {
         .left-Sidebar__link:hover {
+            @extend %color-green-1;
             .dashboard-icon {
                 background: url('../img/theme-light-green/sidebar-left-icons/dashboard.png') no-repeat;
             }
@@ -64,6 +65,12 @@ $theme-name: 't-light-green';
             .docs-icon {
                 background: url('../img/theme-light-green/sidebar-left-icons/docs.png') no-repeat;
             }
+        }
+
+
+        // Right Styles >>>>>
+        .right-Sidebar__link:hover {
+            @extend %color-green-1;
         }
     }
 
