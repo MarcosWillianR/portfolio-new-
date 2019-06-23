@@ -32,4 +32,12 @@ $theme-name: 't-light-blue';
         background: url('../img/theme-light-blue/header-icons/resize.png') no-repeat;
         background-position: center center;
     }
+
+
+    .changeTheme {
+        .changeTheme__button {
+            background: url('../img/theme-light-blue/change-theme.png') no-repeat;
+            background-position: center center;
+        }
+    }
 }

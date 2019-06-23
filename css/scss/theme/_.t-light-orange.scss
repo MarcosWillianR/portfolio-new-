@@ -32,4 +32,12 @@ $theme-name: 't-light-orange';
         background: url('../img/theme-light-orange/header-icons/resize.png') no-repeat;
         background-position: center center;
     }
+
+
+    .changeTheme {
+        .changeTheme__button {
+            background: url('../img/theme-light-orange/change-theme.png') no-repeat;
+            background-position: center center;
+        }
+    }
 }
