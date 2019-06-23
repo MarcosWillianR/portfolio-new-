@@ -1,11 +1,14 @@
 $theme-name: 't-light-orange';
 
 .#{$theme-name} {
+
+    // Header
     .search__button:hover {
         background: url('../img/theme-light-orange/header-icons/search.png') no-repeat;
         background-position: center center;
     }
 
+    // Header
     .button1__button {
         @extend %border-orange;
         @extend %color-orange-1;
@@ -14,9 +17,12 @@ $theme-name: 't-light-orange';
         }
     }
 
+    // Header
     .smallIcon__img-grid:hover {
         background: url('../img/theme-light-orange/header-icons/list.png') no-repeat;
     }
+
+    // Header
     .smallIcon__img-bell {
         .smallIcon__bell-alert {
             @extend %border-orange;
@@ -28,12 +34,41 @@ $theme-name: 't-light-orange';
         }
     }
 
+    // Header
     .smallIcon__img-fullscreen:hover {
         background: url('../img/theme-light-orange/header-icons/resize.png') no-repeat;
         background-position: center center;
     }
 
+    // Aside
+    .aside {
+        .left-Sidebar__link:hover {
+            .dashboard-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/dashboard.png') no-repeat;
+            }
+            .pages-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/pages.png') no-repeat;
+            }
+            .application-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/applications.png') no-repeat;
+            }
+            .ui-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/ui.png') no-repeat;
+            }
+            .menu-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/menu.png') no-repeat;
+            }
+            .blankpage-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/blank-page.png') no-repeat;
+            }
+            .docs-icon {
+                background: url('../img/theme-light-orange/sidebar-left-icons/docs.png') no-repeat;
+            }
+        }
+    }
 
+
+    // Change Theme
     .changeTheme {
         .changeTheme__button {
             background: url('../img/theme-light-orange/change-theme.png') no-repeat;

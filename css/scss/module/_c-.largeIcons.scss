@@ -1,0 +1,44 @@
+$module-name: 'largeIcons';
+
+.#{$module-name} {
+    width: 32px;
+    height: 32px;
+    @extend %default-outline;
+    @extend %cursor-pointer;
+    @extend %border-0;
+}
+
+.dashboard-icon {
+    background: url('../img/default-color/sidebar-left-icons/dashboard.png') no-repeat;
+    background-position: center center;
+}
+
+.pages-icon {
+    background: url('../img/default-color/sidebar-left-icons/pages.png') no-repeat;
+    background-position: center center;
+}
+
+.application-icon {
+    background: url('../img/default-color/sidebar-left-icons/applications.png') no-repeat;
+    background-position: center center;
+}
+
+.ui-icon {
+    background: url('../img/default-color/sidebar-left-icons/ui.png') no-repeat;
+    background-position: center center;
+}
+
+.menu-icon {
+    background: url('../img/default-color/sidebar-left-icons/menu.png') no-repeat;
+    background-position: center center;
+}
+
+.blankpage-icon {
+    background: url('../img/default-color/sidebar-left-icons/blank-page.png') no-repeat;
+    background-position: center center;
+}
+
+.docs-icon {
+    background: url('../img/default-color/sidebar-left-icons/docs.png') no-repeat;
+    background-position: center center;
+}

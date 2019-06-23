@@ -1,0 +1,64 @@
+$module-name: 'aside';
+$element1-name: 'aside__left-Sidebar';
+$element2-name: 'aside__right-Sidebar';
+
+
+.#{$module-name} {
+    position: relative;
+        z-index: 500;
+        max-width: 120px + 229;
+    height: 100vh;
+    background: #FFF;
+    @extend %box-shadow-default;
+    .#{$element1-name} {
+        width: 120px;
+        max-height: 80vh;
+        @extend %border1-right-light-1px;
+        @extend %transition-width;
+        @include device(medium-to-large) {
+            width: 110px;
+        }
+        @include device(medium-to-small) {
+            width: 100px;
+        }
+        .left-Sidebar__containerLink {
+            @extend %border2-bottom-light-1px;
+        }
+        .left-Sidebar__link {
+            flex-direction: column;
+            justify-content: center;
+            padding: 28px 0px;
+            // Tipografia
+            @include type-1(13);
+            @extend %text-decoration-none;
+            @extend %color-light-default-1;
+            .largeIcons__span {
+                margin-top: 8.7px;
+            }
+            &:hover {
+                @extend %background-light-color1;
+                .dashboard-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/dashboard.png') no-repeat;
+                }
+                .pages-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/pages.png') no-repeat;
+                }
+                .application-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/applications.png') no-repeat;
+                }
+                .ui-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/ui.png') no-repeat;
+                }
+                .menu-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/menu.png') no-repeat;
+                }
+                .blankpage-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/blank-page.png') no-repeat;
+                }
+                .docs-icon {
+                    background: url('../img/theme-light-purple/sidebar-left-icons/docs.png') no-repeat;
+                }
+            }
+        }
+    }
+}

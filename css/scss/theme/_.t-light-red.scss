@@ -1,11 +1,13 @@
 $theme-name: 't-light-red';
 
 .#{$theme-name} {
+    // Header
     .search__button:hover {
         background: url('../img/theme-light-red/header-icons/search.png') no-repeat;
         background-position: center center;
     }
 
+    // Header
     .button1__button {
         @extend %border-red;
         @extend %color-red-2;
@@ -14,9 +16,12 @@ $theme-name: 't-light-red';
         }
     }
 
+    // Header
     .smallIcon__img-grid:hover {
         background: url('../img/theme-light-red/header-icons/list.png') no-repeat;
     }
+
+    // Header
     .smallIcon__img-bell {
         .smallIcon__bell-alert {
             @extend %border-red;
@@ -28,14 +33,44 @@ $theme-name: 't-light-red';
         }
     }
 
+    // Header
     .smallIcon__img-fullscreen:hover {
         background: url('../img/theme-light-red/header-icons/resize.png') no-repeat;
         background-position: center center;
     }
 
+    // Aside
+    .aside {
+        .left-Sidebar__link:hover {
+            .dashboard-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/dashboard.png') no-repeat;
+            }
+            .pages-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/pages.png') no-repeat;
+            }
+            .application-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/applications.png') no-repeat;
+            }
+            .ui-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/ui.png') no-repeat;
+            }
+            .menu-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/menu.png') no-repeat;
+            }
+            .blankpage-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/blank-page.png') no-repeat;
+            }
+            .docs-icon {
+                background: url('../img/theme-light-red/sidebar-left-icons/docs.png') no-repeat;
+            }
+        }
+    }
 
 
 
+
+
+    // Change Theme
     .changeTheme {
         .changeTheme__button {
             background: url('../img/theme-light-red/change-theme.png') no-repeat;

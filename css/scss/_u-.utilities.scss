@@ -10,6 +10,8 @@
 %default-border-radius { border-radius: 18px; }
 %default-outline { outline: 0; }
 
+%text-decoration-none { text-decoration: none; }
+
 %cursor-pointer { cursor: pointer; }
 %border-0 { border: 0; }
 %border-radius-50-percent { border-radius: 50%; }
@@ -19,6 +21,7 @@
 // Transitions animations
 %transition-height { transition: height .3s ease-in; }
 %transition-background-color { transition: background-color .6s; }
+%transition-width { transition: width .3s ease-in; }
 
 // ChangeTheme.scss Utility's
 %padding-changeTheme__list { padding: 0px 12px 8px 12px; }
@@ -68,6 +71,9 @@
 %background-dark-input { background: #1B191B; }
 %button1-dark-hover-color { color: #1B191B; }
 
+%border1-right-dark-1px { border-right: 1px solid #313131; }
+%border2-bottom-dark-1px { border-bottom: 1px solid #313131; }
+
 %langButton-dark-borderTop { border-top: 5px solid #757575; }
 
 %color-dark-default-1 { color: #969696; }
@@ -75,7 +81,11 @@
 
 // Theme-light
 %background-light-input { background: #F8F8F8; }
+%background-light-color1 { background: #F8F8F8; }
 %button1-light-hover-color { color: #FFF; }
+
+%border1-right-light-1px { border-right: 1px solid #F3F3F3; }
+%border2-bottom-light-1px { border-bottom: 1px solid #F3F3F3; }
 
 %langButton-light-borderTop { border-top: 5px solid #8F8F8F; }
 

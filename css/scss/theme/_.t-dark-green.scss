@@ -36,15 +36,18 @@ $theme-name: 't-dark-green';
         }
     }
 
+    // Header
     .search__button:hover {
         background: url('../img/theme-dark-green/header-icons/search.png') no-repeat;
         background-position: center center;
     }
 
+    // Header
     .smallIcon__img-grid:hover {
         background: url('../img/theme-dark-green/header-icons/list.png') no-repeat;
     }
     
+    // Header
     .smallIcon__img-bell {
         .smallIcon__bell-alert {
             @extend %border-green;
@@ -56,6 +59,7 @@ $theme-name: 't-dark-green';
         }
     }
 
+    // Header
     .smallIcon__img-fullscreen:hover {
         background: url('../img/theme-dark-green/header-icons/resize.png') no-repeat;
         background-position: center center;
@@ -63,7 +67,69 @@ $theme-name: 't-dark-green';
 
 
 
-    
+    // Aside
+    .aside {
+        @extend %background-dark-color-2;
+        .aside__left-Sidebar {
+            @extend %border1-right-dark-1px;
+            .left-Sidebar__containerLink {
+                @extend %border2-bottom-dark-1px;
+            }
+            .left-Sidebar__link {
+                @extend %color-dark-default-1;
+                .dashboard-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/dashboard.png') no-repeat;
+                }
+                .pages-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/pages.png') no-repeat;
+                }
+                .application-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/applications.png') no-repeat;
+                }
+                .ui-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/ui.png') no-repeat;
+                }
+                .menu-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/menu.png') no-repeat;
+                }
+                .blankpage-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/blank-page.png') no-repeat;
+                }
+                .docs-icon {
+                    background: url('../img/theme-dark-green/default-left-sidebar/docs.png') no-repeat;
+                }
+            }
+            .left-Sidebar__link:hover {
+                @extend %background-dark-color-1;
+                .dashboard-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/dashboard.png') no-repeat;
+                }
+                .pages-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/pages.png') no-repeat;
+                }
+                .application-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/applications.png') no-repeat;
+                }
+                .ui-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/ui.png') no-repeat;
+                }
+                .menu-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/menu.png') no-repeat;
+                }
+                .blankpage-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/blank-page.png') no-repeat;
+                }
+                .docs-icon {
+                    background: url('../img/theme-light-green/sidebar-left-icons/docs.png') no-repeat;
+                }
+            }
+        }
+    }
+
+
+
+
+    // Change Theme
     .changeTheme {
         .changeTheme__button {
             background-color: #232223;
