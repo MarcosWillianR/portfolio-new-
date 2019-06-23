@@ -26,13 +26,13 @@ Meus pontos fortes estão no HTML5, CSS e Javasript.
  - Não tenho experiência com Frameworks JavaScript por que decidi ficar intermediário em JavaScript antes.
  - Estou disposto á aprender qualquer framework JavaScript - De preferência React.js ou Vue.js.
 
-# > Estou sempre a procura de novos aprendizados, pesquisando e praticando conteúdos desta área,
-# > me capacitando para que o mercado requere.  
+# Estou sempre a procura de novos aprendizados, pesquisando e praticando conteúdos desta área,
+# me capacitando para que o mercado requere.  
 
 
-# !!!# Contato #!!!
+#Contato
 
-# gmail: markusuuuu@gmail.com |
-# whatsapp: (51) 9 8518-6112 |
-# linkedin: https://linkedin.com/in/marcos-willian-977311188/ |
-# facebook: https://www.facebook.com/profile.php?id=100022599545942&ref=bookmarks | 
+- gmail: markusuuuu@gmail.com
+- whatsapp: (51) 9 8518-6112
+- linkedin: https://linkedin.com/in/marcos-willian-977311188/
+- facebook: https://www.facebook.com/profile.php?id=100022599545942&ref=bookmarks
