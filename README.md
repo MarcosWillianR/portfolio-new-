@@ -1,4 +1,4 @@
-# Olá, sou o Marcos e acredito que eu seja um Desenvolvedor Frontend Junior!
+# Olá, sou o Marcos e acredito que eu seja um Desenvolvedor Front-End Junior!
 
 > Criei esse projeto usando a base do frontend (HTML5,CSS3,JavaScript)
 
