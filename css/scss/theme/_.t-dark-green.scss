@@ -69,8 +69,8 @@ $theme-name: 't-dark-green';
 
     // Aside
     .aside {
-        @extend %background-dark-color-2;
         .aside__left-Sidebar {
+            @extend %background-dark-color-2;
             @extend %border1-right-dark-1px;
             .left-Sidebar__containerLink {
                 @extend %border2-bottom-dark-1px;
@@ -128,10 +128,14 @@ $theme-name: 't-dark-green';
 
 
         // Right Styles >>>>>
-        .right-Sidebar__link {
+        .aside__right-Sidebar {
+            @extend %background-dark-color-2;
             @extend %color-dark-default-1;
-            &:hover {
-                @extend %color-green-1;
+            .right-Sidebar__link {
+                @extend %color-dark-default-1;
+                &:hover {
+                    @extend %color-green-1;
+                }
             }
         }
     }

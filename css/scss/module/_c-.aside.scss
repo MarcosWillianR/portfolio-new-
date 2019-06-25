@@ -5,22 +5,24 @@ $element2-name: 'aside__right-Sidebar';
 .#{$module-name} {
     position: relative;
         z-index: 500;
-    width: 120px + 230;
-    height: 100vh;
-    background: #FFF;
-    justify-content: space-between;
-    align-content: flex-start;
-    @extend %box-shadow-default;
+    // align-content: flex-start;
     .#{$element1-name} {
         width: 120px;
-        max-height: 80vh;
+        height: 100vh;
+        @extend %background-light-color3;
         @extend %border1-right-light-1px;
         @extend %transition-width;
+        @extend %transition-transform;
+        @extend %box-shadow-default;
         @include device(medium-to-large) {
             width: 110px;
         }
         @include device(medium-to-small) {
             width: 100px;
+        }
+        .left-Sidebar__list {
+            overflow: auto;
+            max-height: 85%;
         }
         .left-Sidebar__containerLink {
             @extend %border2-bottom-light-1px;
@@ -63,9 +65,17 @@ $element2-name: 'aside__right-Sidebar';
         }
     }
     .#{$element2-name} {
+        position: relative;
+            z-index: -1;
         width: 229px;
-        height: 80vh;
+        height: 100vh;
+        @extend %box-shadow-default;
+        @extend %background-light-color3;
+        @extend %transition-transform;
+        @extend %transition-width;
         .right-Sidebar__list {
+            overflow: auto;
+            max-height: 70%;
             padding: 25px 0px;
         }
         .right-Sidebar__containerLink {
