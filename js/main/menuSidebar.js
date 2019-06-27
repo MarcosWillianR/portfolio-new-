@@ -35,6 +35,8 @@
       leftSidebarClassList.replace(classActive, classInactive);
     }
 
+    calcMainWidth(leftSidebarDiv, rightSidebarDiv, classActive, classInactive);
+
     return rightSidebarClassList.value && leftSidebarClassList.value;
   };
 
@@ -56,6 +58,8 @@
     } else if (leftSidebarClassList.contains(classActive) && !rightSidebarDiv.hasAttribute(atribute)) {
       rightSidebarClassList.replace(classInactive, classActive);
     }
+
+    calcMainWidth(leftSidebarDiv, rightSidebarDiv, classActive, classInactive);
   };
 
   events.forEach((userEvent) => {
@@ -78,5 +82,7 @@
     } else if (window.innerWidth > 768) {
       leftSidebarClassList.add(classActive);
     }
+
+    calcMainWidth(leftSidebarDiv, rightSidebarDiv, classActive, classInactive);
   });
 }
