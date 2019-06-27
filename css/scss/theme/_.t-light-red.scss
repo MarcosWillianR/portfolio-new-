@@ -123,13 +123,29 @@ $theme-name: 't-light-red';
     }
 
     
-
+    // >>>>>> DINAMIC STYLES >>>>>>>>>>
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-red2;
+            }
+            .badge2 {
+                @extend %background-red;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-red;
+            }
+        }
+    }
 
     // Change Theme
     .changeTheme {
         .changeTheme__button {
             background: url('../img/theme-light-red/change-theme.png') no-repeat;
             background-position: center center;
+            background-color: #FFF;
         }
     }
 }

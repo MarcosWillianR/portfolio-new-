@@ -7,7 +7,12 @@ $xxsmall-device: 419px;
 
 // Mixins media queries
 @mixin device($size) {
-    @if $size == medium-to-large {
+    @if $size == large {
+        @media screen and(min-width: #{$large-device}) {
+            @content;
+        }
+    }
+    @else if $size == medium-to-large {
         @media screen and(min-width: #{$medium-device + 1}) and(max-width: #{$large-device}) {
             @content;
         }

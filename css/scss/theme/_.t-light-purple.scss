@@ -126,7 +126,22 @@ $theme-name: 't-light-purple';
         @extend %background-purple;
     }
 
-    
+    // >>>>>> DINAMIC STYLES >>>>>>>>>>
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-purple2;
+            }
+            .badge2 {
+                @extend %background-purple;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-purple;
+            }
+        }
+    }
 
 
     // Change Theme
@@ -134,6 +149,7 @@ $theme-name: 't-light-purple';
         .changeTheme__button {
             background: url('../img/theme-light-purple/change-theme.png') no-repeat;
             background-position: center center;
+            background-color: #FFF;
         }
     }
 }

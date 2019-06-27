@@ -213,15 +213,45 @@ $theme-name: 't-dark-purple';
 
     
 
+    // >>>>>> DINAMIC STYLES >>>>>>>>>>
+    .dinamicContent {
+        .dinamicContent__section {
+            @extend %background-dark-color-2;
+            .dinamicContent__title {
+                @extend %color-dark-default-1;
+            }
+            .dinamicContent__category {
+                @extend %color-dark-default-2;
+            }
+            .dinamicContent__date {
+                @extend %color-dark-default-2;
+            }
+        }
+    }
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-purple2;
+            }
+            .badge2 {
+                @extend %background-purple;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-purple;
+            }
+        }
+    }
 
 
 
     // Change Theme
     .changeTheme {
         .changeTheme__button {
-            background-color: #232223;
             background: url('../img/theme-dark-purple/change-theme.png') no-repeat;
             background-position: center center;
+            background-color: #232223;
         }
         .changeTheme__list {
             @extend %background-dark-color-2;

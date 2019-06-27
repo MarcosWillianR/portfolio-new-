@@ -127,7 +127,22 @@ $theme-name: 't-light-orange';
     }
 
     
-
+    // >>>>>> DINAMIC STYLES >>>>>>>>>>
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-orange2;
+            }
+            .badge2 {
+                @extend %background-orange;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-orange;
+            }
+        }
+    }
 
 
 
@@ -136,6 +151,7 @@ $theme-name: 't-light-orange';
         .changeTheme__button {
             background: url('../img/theme-light-orange/change-theme.png') no-repeat;
             background-position: center center;
+            background-color: #FFF;
         }
     }
 }

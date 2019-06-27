@@ -127,6 +127,22 @@ $theme-name: 't-light-blue';
     }
 
     
+    // >>>>>> DINAMIC STYLES >>>>>>>>>>
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-blue2;
+            }
+            .badge2 {
+                @extend %background-blue;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-blue;
+            }
+        }
+    }
 
 
 
@@ -135,6 +151,7 @@ $theme-name: 't-light-blue';
         .changeTheme__button {
             background: url('../img/theme-light-blue/change-theme.png') no-repeat;
             background-position: center center;
+            background-color: #FFF;
         }
     }
 }

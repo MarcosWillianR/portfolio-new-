@@ -128,7 +128,22 @@ $theme-name: 't-light-green';
     }
 
     
-
+    // >>>>>> DINAMIC STYLES >>>>>>>>>>
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-green2;
+            }
+            .badge2 {
+                @extend %background-green;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-green;
+            }
+        }
+    }
 
 
     // Change Theme
@@ -136,6 +151,7 @@ $theme-name: 't-light-green';
         .changeTheme__button {
             background: url('../img/theme-light-green/change-theme.png') no-repeat;
             background-position: center center;
+            background-color: #FFF;
         }
     }
 }

@@ -30,26 +30,51 @@ $module-name: 'dinamicContent';
         width: calc(100% - 114px - 42px);
         margin-left: 42px;
         justify-content: space-between;
-        @include device(medium-to-xxsmall) {
+        @include device(medium-to-xsmall) {
             width: calc(100% - 180px - 42px);
+        }
+        @include device(xsmall-to-xxsmall) {
+            width: calc(100% - 110px - 22px);
+            margin-left: 22px;
+        }
+        .dinamicContent__boxDesc__text {
+            width: calc(100% - 60px);
+            justify-content: space-between;
+            @include device(medium-to-xxsmall) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        .dinamicContent__boxDesc__btn {
+            @include device(xsmall-to-xxsmall) {
+            }
         }
         .dinamicContent__title {
             flex: 2;
             // Tipografia
             @include type-1(16);
             @extend %color-light-default-1;
+            @include device(medium-to-xxsmall) {
+                margin-top: 4px;
+            }
         }
         .dinamicContent__category {
             flex: 1;
             // Tipografia
             @include type-1(12.16);
             @extend %color-light-default-3;
+            @include device(medium-to-xxsmall) {
+                margin-top: 4px;
+            }
         }
         .dinamicContent__date {
             flex: 1;
             // Tipografia
             @include type-1(12.16);
             @extend %color-light-default-3;
+            @include device(medium-to-xxsmall) {
+                margin-top: 4px;
+            }
         }
         .dinamicContent__badge {
             flex: 1;
@@ -57,13 +82,16 @@ $module-name: 'dinamicContent';
             @include type-1(9.472);
             @extend %color-light-default-4;
             text-transform: uppercase;
+            @include device(medium-to-xxsmall) {
+                margin-top: 12px;
+            }
             .badge1 {
-                padding: 5px 24px 5px 20px;
+                padding: 4px 22px 4px 22px;
                 @extend %default-border-radius;
                 @extend %background-purple2;
             }
             .badge2 {
-                padding: 5px 24px 5px 20px;
+                padding: 4px 18px 4px 18px;
                 @extend %default-border-radius;
                 @extend %background-purple;
             }

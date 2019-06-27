@@ -10,6 +10,9 @@ $module-name: 'changeTheme';
     justify-content: flex-end;
     transform: translateY(-50%);
     box-sizing: border-box;
+    @include device(large) {
+        top: 55%;
+    }
     .changeTheme__button {
         background: url('../img/theme-light-purple/change-theme.png') no-repeat;
         background-position: center center;
