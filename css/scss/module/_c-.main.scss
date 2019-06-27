@@ -5,33 +5,36 @@ $module-name: 'main';
         z-index: 200;
     padding: 60px;
     box-sizing: border-box;
+    margin-top: 120px;
     @extend %transition-transform;
     // Dinamic width >>>
     &[data-leftSidebar="active"] {
         width: calc(100% - 120px);
-        transform: translate3d(120px, 120px, 0);
+        transform: translate3d(120px, 0, 0);
     }
 
     &[data-leftSidebar="inactive"] {
-        transform: translate3d(0, 120px, 0);
+        z-index: 600;
+        transform: translate3d(0, 0, 0);
     }
 
     &[data-rightSidebar="active"] {
         width: calc(100% - 230px);
-        transform: translate3d(230px, 120px, 0);
+        transform: translate3d(230px, 0, 0);
     }
 
     &[data-rightSidebar="inactive"] {
-        transform: translate3d(120px, 120px, 0);
+        z-index: 600;
+        transform: translate3d(120px, 0, 0);
     }
 
     &[data-leftSidebar="active"][data-rightSidebar="active"] {
         width: calc(100% - 350px);
-        transform: translate3d(350px, 120px, 0);
+        transform: translate3d(350px, 0, 0);
     }
     &[data-leftSidebar="inactive"][data-rightSidebar="inactive"] {
         width: 100%;
-        transform: translate3d(0, 120px, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     /***************************************/
