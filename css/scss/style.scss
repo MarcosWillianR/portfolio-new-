@@ -17,6 +17,7 @@
 @import './layout/.l-flex-a-baseline';
 
 // Modules
+@import './module/c-.dinamicContent';       // Main dynamic content
 @import './module/c-.header';              // Header style
 @import './module/c-.menuButton';          // Header style
 @import './module/c-.search';              // Header style
@@ -36,9 +37,9 @@
 @import './module/c-.btn-dropdown';        // Main style
 @import './module/c-.btn-orderList';       // Main style
 @import './module/c-.btn-maxItems';        // Main style
-@import './module/c-.foodImage';           // Main style
 @import './module/c-.main';                // Main style
 @import './module/c-.currentPage';         // Main style
+@import './module/c-.btn-select';          // Main style
 @import './module/c-.title';               // Title / Main style
 @import './module/c-.xs-d-none';           // xsmall-to-xxsmall
 @import './module/c-.changeTheme';         // change-theme 

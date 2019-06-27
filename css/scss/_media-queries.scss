@@ -22,6 +22,11 @@ $xxsmall-device: 419px;
             @content;
         }
     }
+    @else if $size == medium-to-xsmall {
+        @media screen and(min-width: #{$xsmall-device + 1}) and(max-width: #{$medium-device}) {
+            @content;
+        }
+    }
     @else if $size == small-to-xsmall {
         @media screen and(min-width: #{$xxsmall-device + 1}) and (max-width: #{$small-device}) {
             @content;

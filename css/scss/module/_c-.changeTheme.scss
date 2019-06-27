@@ -3,6 +3,7 @@ $module-name: 'changeTheme';
 
 
 .#{$module-name} {
+    z-index: 1000;
     max-width: 280px + 40;
     top: 50%;
     right: 0;

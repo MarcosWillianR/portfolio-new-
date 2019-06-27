@@ -3,9 +3,20 @@ $module-name: 'main';
 .#{$module-name} {
     position: relative;
         z-index: 200;
-    padding: 60px;
+    padding: 40px 60px;
     box-sizing: border-box;
     margin-top: 120px;
+    @include device(medium-to-large) {
+        margin-top: 90px;
+    }
+    @include device(medium-to-small) {
+        margin-top: 80px;
+        padding: 40px 16px;
+    }
+    @include device(small-to-xxsmall) {
+        margin-top: 70px;
+        padding: 20px 16px;
+    }
     @extend %transition-transform;
     // Dinamic width >>>
     &[data-leftSidebar="active"] {
@@ -40,8 +51,35 @@ $module-name: 'main';
     /***************************************/
     .main__header {
         justify-content: space-between;
+        @include device(medium-to-xsmall) {
+            .main__title {
+                flex-direction: column;
+            }
+            .currentPage {
+                margin: 22px 22px 0px 0px;
+            }
+        }
+        @include device(xsmall-to-xxsmall) {
+            .currentPage {
+                display: none;
+            }
+        }
     }
     .main__addNew-and-selectAll {
+        @include device(medium-to-xsmall) {
+            & {
+                margin-top: -22px;
+            }
+        }
+        @include device(xsmall-to-xxsmall) {
+            & {
+                width: 100%;
+                margin-top: 12px;
+            }
+            .btn-add-new {
+                flex: 1;
+            }
+        }
         .btn-group {
             position: relative;
         }
@@ -52,6 +90,11 @@ $module-name: 'main';
         width: 100%;
         padding: 20px 0px;
         border-bottom: 1px solid #8F8F8F;
+        @include device(small-to-xxsmall) {
+            & {
+                display: none;
+            }
+        }
         .main__filters__container {
             justify-content: space-between;
         }
@@ -66,4 +109,6 @@ $module-name: 'main';
             }
         }
     }
+
+    
 }
