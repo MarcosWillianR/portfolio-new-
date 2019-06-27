@@ -1,0 +1,7 @@
+$layout-name: 'l-flex-a-baseline';
+
+.#{$layout-name} {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}

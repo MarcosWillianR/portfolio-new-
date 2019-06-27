@@ -7,6 +7,7 @@
 
 %default-padding { padding: 10px 12px; }
 %default-margin { margin: 0px 12px; }
+%default-small-margin { margin: 0 6px; }
 %default-border-radius { border-radius: 18px; }
 %default-outline { outline: 0; }
 
@@ -14,13 +15,15 @@
 
 %cursor-pointer { cursor: pointer; }
 %border-0 { border: 0; }
+%border-transparent { border-color: transparent; }
 %border-radius-50-percent { border-radius: 50%; }
 
 %box-shadow-default { box-shadow: 0px .5px 16px rgba(0,0,0,.1); }
+%box-shadow-default-2 { box-shadow: 8px 0px 16px rgba(0,0,0,.1); }
 
 // Transitions animations
 %transition-height { transition: height .3s ease-in; }
-%transition-background-color { transition: background-color .6s; }
+%transition-background-color { transition: background-color .3s; }
 %transition-width { transition: width .3s ease-in; }
 %transition-color { transition: color .3s; }
 %transition-transform { transition: transform .6s ease-in-out; }
@@ -71,7 +74,7 @@
 %background-dark-color-1 { background: #1B191B; }
 %background-dark-color-2 { background: #232223; }
 %background-dark-input { background: #1B191B; }
-%button1-dark-hover-color { color: #1B191B; }
+%btn-buy-dark-hover-color { color: #1B191B; }
 
 %border1-right-dark-1px { border-right: 1px solid #313131; }
 %border2-bottom-dark-1px { border-bottom: 1px solid #313131; }
@@ -85,7 +88,11 @@
 %background-light-input { background: #F8F8F8; }
 %background-light-color1 { background: #F8F8F8; }
 %background-light-color3 { background: #FFF; }
-%button1-light-hover-color { color: #FFF; }
+%background-light-color4 { background: #303030; }
+
+%btn-buy-light-hover-color { color: #FFF; }
+%btn-add-new-light-color { color: #FFF; }
+%btn-orderList-hover-color { color: #FFF; }
 
 %border1-right-light-1px { border-right: 1px solid #F3F3F3; }
 %border2-bottom-light-1px { border-bottom: 1px solid #F3F3F3; }

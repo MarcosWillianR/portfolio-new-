@@ -1,0 +1,24 @@
+$module-name: 'currentPage';
+
+.#{$module-name} {
+    @extend %default-margin;
+    // Tipografia
+    @include type-1(12.8);
+    .currentPage__page {
+        @extend %text-decoration-none;
+        @extend %color-light-default-1;
+        @extend %transition-color;
+        &:hover {
+            @extend %color-purple-1;
+        }
+        &:nth-child(2)::before,
+        &:nth-child(3)::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 15px;
+            @extend %background-light-color4;
+            margin: 0px 10px;
+        }
+    }
+}

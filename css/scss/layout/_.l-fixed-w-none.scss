@@ -1,0 +1,6 @@
+$layout-name: 'l-fixed-w-none';
+
+.#{$layout-name} {
+    position: fixed;
+        top: 0;
+}

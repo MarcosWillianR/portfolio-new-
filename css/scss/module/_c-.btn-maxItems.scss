@@ -1,0 +1,37 @@
+$module-name: 'btn-maxItems';
+
+.#{$module-name} {
+    position: relative;
+    border: 1px solid #8f8f8f;
+    padding: 4px 20px 4px 15px;
+    @extend %default-border-radius;
+    @extend %cursor-pointer;
+    @extend %default-outline;
+    @extend %background-light-color1;
+    @extend %transition-background-color;
+    // Tipografia
+    @include type-1(12.16);
+    @extend %color-light-default-2;
+    @extend %font-weight400;
+    &:hover {
+        @extend %border-transparent;
+        @extend %background-purple;
+        @extend %btn-orderList-hover-color;
+        &:after {
+            border-top-color: #FFF;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+            top: 9px;
+            right: 8px;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        border-top: 4px solid #8f8f8f;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+    }
+}

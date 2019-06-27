@@ -14,12 +14,12 @@ $theme-name: 't-dark-purple';
                 @extend %langButton-dark-borderTop;
             }
         }
-        .button1__button {
+        .btn-buy__button {
             @extend %border-purple;
             @extend %color-purple-1;
             &:hover {
                 @extend %background-purple;
-                @extend %button1-dark-hover-color;
+                @extend %btn-buy-dark-hover-color;
             }
         }
         .logo {
@@ -37,10 +37,13 @@ $theme-name: 't-dark-purple';
     }
 
     // Header
-    .search__button:hover {
-        background: url('../img/theme-dark-purple/header-icons/search.png') no-repeat;
-        background-position: center center;
+    .search {
+        .search__button:hover {
+            background: url('../img/theme-dark-purple/header-icons/search.png') no-repeat;
+            background-position: center center;
+        }
     }
+    
 
     // Header
     .smallIcon__img-grid:hover {
@@ -142,6 +145,73 @@ $theme-name: 't-dark-purple';
     }
 
 
+
+// Main content styles >>>>
+
+    // Title / CurrentPage main
+    .title {
+        @extend %color-dark-default-1;
+    }
+    .currentPage {
+        .currentPage__page {
+            @extend %color-dark-default-1;
+            &:hover {
+                @extend %color-purple-1;
+            }
+        }
+    }
+
+    // View Icons hover: 
+    .view-icon-1:hover {
+        background: url('../img/theme-dark-purple/view-icons/view1.png');
+    }
+    .view-icon-2:hover {
+        background: url('../img/theme-dark-purple/view-icons/view2.png');
+    }
+    .view-icon-3:hover {
+        background: url('../img/theme-dark-purple/view-icons/view3.png');
+    }
+
+    // Btn's do main content
+    .btn-add-new {
+        @extend %background-purple;
+        &:hover {
+            background: darken(#922c88, 10%);
+        }
+    }
+
+    .btn-checkbox {
+        @extend %background-purple;
+    }
+
+    .btn-dropdown {
+        @extend %background-purple;
+        &:hover {
+            background: darken(#922c88, 10%);
+        }
+    }
+    
+    .btn-orderList {
+        @extend %background-dark-color-1;
+        &:hover {
+            @extend %background-purple;
+        }
+    }
+
+    .smallSearch {
+        .search__field {
+            @extend %background-dark-color-1;
+        }
+    }
+    
+    .btn-maxItems {
+        @extend %background-dark-color-1;
+        &:hover {
+            @extend %background-purple;
+        }
+    }
+
+    
 
 
 

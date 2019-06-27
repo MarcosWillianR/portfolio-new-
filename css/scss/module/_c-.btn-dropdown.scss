@@ -1,0 +1,30 @@
+$module-name: 'btn-dropdown';
+
+.#{$module-name} {
+    @extend %cursor-pointer;
+    @extend %default-outline;
+    @extend %background-purple;
+    @extend %border-0;
+    @extend %transition-background-color;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+        left: 50px;
+        padding: 9.5px 0px;
+        padding-right: 8px;
+    &:hover {
+        background: darken(#922c88, 10%);
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 4px;
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid #FFF;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+}

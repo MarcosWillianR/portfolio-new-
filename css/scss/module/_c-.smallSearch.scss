@@ -1,0 +1,30 @@
+$module-name: 'smallSearch';
+
+.#{$module-name} {
+    position: relative;
+    .search__field {
+        width: 150px;
+        height: 5px;
+        border: 1px solid #8f8f8f;
+        @extend %default-border-radius;
+        @extend %default-padding;
+        @extend %default-outline;
+        @extend %background-light-input;
+        // Tipografia
+        @include type-1(12.16);
+        @extend %font-weight400;
+    }
+    .search__button {
+        width: 22px;
+        height: 22px;
+        background: url('../img/default-color/header-icons/search.png') no-repeat;
+        background-position: center center;
+        position: absolute;
+            top: 2px;
+            right: 5px;
+        @extend %border-0;
+        @extend %cursor-pointer;
+        @extend %default-padding;
+        @extend %default-outline;
+    }
+}

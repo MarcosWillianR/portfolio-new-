@@ -1,0 +1,35 @@
+$module-name: 'btn-checkbox';
+
+.#{$module-name} {
+    @extend %default-outline;
+    @extend %background-purple;
+    @extend %default-border-radius;
+    @extend %border-0;
+    @extend %default-small-margin;
+    padding: 12px 24px 12px 16px;
+    input[type="checkbox"] {
+        display: none;
+    }
+    label {
+        @extend %cursor-pointer;
+    }
+    input[type="checkbox"] + label::before {
+        border: 1px solid #FFF;
+        content: '\00a0';
+        // Alinhar ao centro
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // Definir altura e largura
+        height: 14px;
+        width: 14px;
+        // Definir tipografia
+        @include type-1(9);
+        margin-right: 5px;
+        border-radius:4px;
+    }
+    input[type="checkbox"]:checked + label::before {
+        color: #FFF;
+        content: "\2713";
+    }
+}

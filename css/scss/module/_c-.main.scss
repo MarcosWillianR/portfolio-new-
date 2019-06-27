@@ -1,0 +1,40 @@
+$module-name: 'main';
+
+.#{$module-name} {
+    position: relative;
+        z-index: 200;
+    width: calc(100% - 350px);
+    transform: translate3d(350px, 120px, 0);
+    padding: 60px;
+    box-sizing: border-box;
+
+
+    .main__header {
+        justify-content: space-between;
+    }
+    .main__addNew-and-selectAll {
+        .btn-group {
+            position: relative;
+        }
+    }
+
+    // Filtros styles
+    .main__filters {
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid #8F8F8F;
+        .main__filters__container {
+            justify-content: space-between;
+        }
+
+        .main__filters__pages {
+            .spanItems {
+                @extend %default-margin;
+                // Tipografia
+                @include type-1(12.16);
+                @extend %color-light-default-2;
+                @extend %font-weight400;
+            }
+        }
+    }
+}

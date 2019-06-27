@@ -3,9 +3,17 @@ $element1-name: 'aside__left-Sidebar';
 $element2-name: 'aside__right-Sidebar';
 
 .#{$module-name} {
-    position: relative;
         z-index: 500;
-    // align-content: flex-start;
+        margin-top: 120px;
+        @include device(medium-to-large) {
+            margin-top: 90px;
+        }
+        @include device(medium-to-small) {
+            margin-top: 80px;
+        }
+        @include device(small-to-xxsmall) {
+            margin-top: 70px;
+        }
     .#{$element1-name} {
         width: 120px;
         height: 100vh;
@@ -69,7 +77,7 @@ $element2-name: 'aside__right-Sidebar';
             z-index: -1;
         width: 229px;
         height: 100vh;
-        @extend %box-shadow-default;
+        @extend %box-shadow-default-2;
         @extend %background-light-color3;
         @extend %transition-transform;
         @extend %transition-width;

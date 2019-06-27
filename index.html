@@ -12,143 +12,194 @@
 </head>
 
 <body class="t-light-purple">
-  <div class="l-fixed">
-    <header class="header l-flex">
-      <nav class="navbar-button-search-lang l-flex">
-        <div class="menuButton">
-          <button class="menuButton__button iconButton" data-sidebar="button"></button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-        <div class="search">
-          <input type="text" class="search__field" placeholder="Search">
-          <button class="search__button"></button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-        <div class="langButton">
-          <button class="langButton__button">EN</button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-      </nav>
-      <!-- ************************************************************* -->
-      <div class="logo">
-        <a href="./index.html" class="logo__link">Home</a>
+  <!-- Navegação principal da página -->
+  <header class="header l-flex l-fixed">
+    <nav class="navbar-button-search-lang l-flex">
+      <div class="menuButton">
+        <button class="menuButton__button iconButton" data-sidebar="button"></button>
       </div>
-      <!-- ************************************************************* -->
-      <nav class="navbar-icons-imageButton l-flex">
-        <div class="button1">
-          <button class="button1__button">buy</button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-        <div class="smallIcon xs-d-none">
-          <button class="smallIcon__img-grid iconButton"></button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-        <div class="smallIcon">
-          <button class="smallIcon__img-bell iconButton">
-            <span class="smallIcon__bell-alert">3</span>
-          </button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-        <div class="smallIcon xs-d-none">
-          <button class="smallIcon__img-fullscreen iconButton"></button>
-        </div>
-        <!-- //////////////////////////////////////// -->
-        <button class="imageButton l-flex">
-          <span class="imageButton__name">Sarah Kortney</span>
-          <img class="imageButton__img" src="https://gogo-react.coloredstrategies.com/assets/img/profile-pic-l.jpg"
-            alt="">
+      <!-- //////////////////////////////////////// -->
+      <div class="search">
+        <input type="text" class="search__field" placeholder="Search">
+        <button class="search__button"></button>
+      </div>
+      <!-- //////////////////////////////////////// -->
+      <div class="langButton">
+        <button class="langButton__button">EN</button>
+      </div>
+      <!-- //////////////////////////////////////// -->
+    </nav>
+    <!-- ************************************************************* -->
+    <div class="logo">
+      <a href="./index.html" class="logo__link">Home</a>
+    </div>
+    <!-- ************************************************************* -->
+    <nav class="navbar-icons-imageButton l-flex">
+      <div class="btn-buy">
+        <button class="btn-buy__button">buy</button>
+      </div>
+      <!-- //////////////////////////////////////// -->
+      <div class="smallIcon xs-d-none">
+        <button class="smallIcon__img-grid iconButton"></button>
+      </div>
+      <!-- //////////////////////////////////////// -->
+      <div class="smallIcon">
+        <button class="smallIcon__img-bell iconButton">
+          <span class="smallIcon__bell-alert">3</span>
         </button>
-      </nav>
-    </header>
+      </div>
+      <!-- //////////////////////////////////////// -->
+      <div class="smallIcon xs-d-none">
+        <button class="smallIcon__img-fullscreen iconButton"></button>
+      </div>
+      <!-- //////////////////////////////////////// -->
+      <button class="imageButton l-flex">
+        <span class="imageButton__name">Sarah Kortney</span>
+        <img class="imageButton__img" src="https://gogo-react.coloredstrategies.com/assets/img/profile-pic-l.jpg"
+          alt="">
+      </button>
+    </nav>
+  </header>
 
-    <aside class="aside l-flex">
-      <div class="aside__left-Sidebar" data-sidebar="sidebarLeft">
-        <ul class="left-Sidebar__list">
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons dashboard-icon"></button>
-              <span class="largeIcons__span">Dashboards</span>
-            </a>
-          </li>
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons pages-icon"></button>
-              <span class="largeIcons__span">Pages</span>
-            </a>
-          </li>
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons application-icon"></button>
-              <span class="largeIcons__span">Applications</span>
-            </a>
-          </li>
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons ui-icon"></button>
-              <span class="largeIcons__span">UI</span>
-            </a>
-          </li>
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons menu-icon"></button>
-              <span class="largeIcons__span">Menu</span>
-            </a>
-          </li>
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons blankpage-icon"></button>
-              <span class="largeIcons__span">Blank Page</span>
-            </a>
-          </li>
-          <li class="left-Sidebar__containerLink">
-            <a href="#" class="left-Sidebar__link l-flex">
-              <button class="largeIcons docs-icon"></button>
-              <span class="largeIcons__span">Docs</span>
-            </a>
-          </li>
-        </ul>
+  <!-- Sidebar da página -->
+  <aside class="aside l-flex l-fixed-w-none">
+    <div class="aside__left-Sidebar" data-sidebar="sidebarLeft">
+      <ul class="left-Sidebar__list">
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons dashboard-icon"></button>
+            <span class="largeIcons__span">Dashboards</span>
+          </a>
+        </li>
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons pages-icon"></button>
+            <span class="largeIcons__span">Pages</span>
+          </a>
+        </li>
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons application-icon"></button>
+            <span class="largeIcons__span">Applications</span>
+          </a>
+        </li>
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons ui-icon"></button>
+            <span class="largeIcons__span">UI</span>
+          </a>
+        </li>
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons menu-icon"></button>
+            <span class="largeIcons__span">Menu</span>
+          </a>
+        </li>
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons blankpage-icon"></button>
+            <span class="largeIcons__span">Blank Page</span>
+          </a>
+        </li>
+        <li class="left-Sidebar__containerLink">
+          <a href="#" class="left-Sidebar__link l-flex">
+            <button class="largeIcons docs-icon"></button>
+            <span class="largeIcons__span">Docs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="aside__right-Sidebar" data-sidebar="sidebarRight">
+      <ul class="right-Sidebar__list">
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link datalist-icon smallIcon-sidebar">Data List</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link thumblist-icon smallIcon-sidebar">Thumb List</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link imagelist-icon smallIcon-sidebar">Image List</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link details-icon smallIcon-sidebar">Details</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link search-icon smallIcon-sidebar">Search</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link mailing-icon smallIcon-sidebar">Mailing</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link invoice-icon smallIcon-sidebar">Invoice</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link login-icon smallIcon-sidebar">Login</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link register-icon smallIcon-sidebar">Register</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link forgotpass-icon smallIcon-sidebar">Forgot Password</a>
+        </li>
+        <li class="right-Sidebar__containerLink">
+          <a href="#" class="right-Sidebar__link error-icon smallIcon-sidebar">Error</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- Sessão principal (main) -->
+  <main class="main">
+    <div class="main__header l-flex">
+      <div class="main__title l-flex-a-baseline">
+        <h1 class="title">Thumb List</h1>
+        <div class="currentPage l-flex">
+          <a href="#" class="currentPage__page l-flex">Home</a>
+          <a href="#" class="currentPage__page l-flex">Pages</a>
+          <a href="#" class="currentPage__page l-flex">Thumb List</a>
+        </div>
       </div>
 
-      <div class="aside__right-Sidebar" data-sidebar="sidebarRight">
-        <ul class="right-Sidebar__list">
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link datalist-icon smallIcon-sidebar">Data List</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link thumblist-icon smallIcon-sidebar">Thumb List</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link imagelist-icon smallIcon-sidebar">Image List</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link details-icon smallIcon-sidebar">Details</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link search-icon smallIcon-sidebar">Search</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link mailing-icon smallIcon-sidebar">Mailing</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link invoice-icon smallIcon-sidebar">Invoice</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link login-icon smallIcon-sidebar">Login</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link register-icon smallIcon-sidebar">Register</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link forgotpass-icon smallIcon-sidebar">Forgot Password</a>
-          </li>
-          <li class="right-Sidebar__containerLink">
-            <a href="#" class="right-Sidebar__link error-icon smallIcon-sidebar">Error</a>
-          </li>
-        </ul>
+      <div class="main__addNew-and-selectAll l-flex">
+        <button class="btn-add-new">add new</button>
+        <div class="btn-group">
+          <button class="btn-checkbox">
+            <input type="checkbox" id="checkAll">
+            <label for="checkAll"></label>
+          </button>
+          <button class="btn-dropdown"></button>
+        </div>
       </div>
-    </aside>
-  </div>
 
+      <div class="main__filters">
+        <div class="main__filters__container l-flex">
+          <div class="main__filters__icons&search l-flex">
+            <div class="main__filters__icons l-flex">
+              <button class="mediumIcon view-icon-1"></button>
+              <button class="mediumIcon view-icon-2"></button>
+              <button class="mediumIcon view-icon-3"></button>
+            </div>
+
+            <div class="main__filters__searchBox l-flex">
+              <button class="btn-orderList">Order By: Product Name</button>
+              <div class="smallSearch">
+                <input type="text" class="search__field" placeholder="Search">
+                <button class="search__button"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__filters__pages l-flex">
+            <span class="spanItems">0-8 of 20</span>
+            <button class="btn-maxItems">8</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Caixa para a seleção de temas -->
   <div class="changeTheme l-flex l-fixed">
     <button class="changeTheme__button" data-change="showBtn"></button>
     <ul class="changeTheme__list" data-change="list-btn">

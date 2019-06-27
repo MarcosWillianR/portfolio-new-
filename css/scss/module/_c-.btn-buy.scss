@@ -1,7 +1,7 @@
-$module-name: 'button1';
+$module-name: 'btn-buy';
 
 .#{$module-name} {
-    .button1__button {
+    .btn-buy__button {
         @extend %cursor-pointer;
         @extend %border-purple;
         @extend %default-border-radius;
@@ -19,7 +19,7 @@ $module-name: 'button1';
         text-transform: uppercase;
         &:hover {
             @extend %background-purple;
-            @extend %button1-light-hover-color;
+            @extend %btn-buy-light-hover-color;
         }
     }
 }
