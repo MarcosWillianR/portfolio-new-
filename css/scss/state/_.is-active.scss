@@ -13,8 +13,110 @@
 
 
 
+.t-light-red .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-red-color;
+            @extend %color-red-2;
+        }
+    }
+}
 
+.t-light-purple .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-purple-color;
+            @extend %color-purple-1;
+        }
+    }
+}
 
+.t-light-orange .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-orange-color;
+            @extend %color-orange-1;
+        }
+    }
+}
+
+.t-light-green .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-green-color;
+            @extend %color-green-1;
+        }
+    }
+}
+
+.t-light-blue .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-blue-color;
+            @extend %color-blue-1;
+        }
+    }
+}
+
+.t-dark-red .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-red-color;
+            @extend %color-red-2;
+            &:hover {
+                @extend %color-dark-default-2;
+            }
+        }
+    }
+}
+
+.t-dark-purple .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-purple-color;
+            @extend %color-purple-1;
+            &:hover {
+                @extend %color-dark-default-2;
+            }
+        }
+    }
+}
+
+.t-dark-orange .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-orange-color;
+            @extend %color-orange-1;
+            &:hover {
+                @extend %color-dark-default-2;
+            }
+        }
+    }
+}
+
+.t-dark-green .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-green-color;
+            @extend %color-green-1;
+            &:hover {
+                @extend %color-dark-default-2;
+            }
+        }
+    }
+}
+
+.t-dark-blue .main__footer {
+    .main__link.is-active {
+        .main__numPage {
+            @extend %border-blue-color;
+            @extend %color-blue-1;
+            &:hover {
+                @extend %color-dark-default-2;
+            }
+        }
+    }
+}
 
 
 

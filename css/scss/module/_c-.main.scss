@@ -118,4 +118,83 @@ $module-name: 'main';
             }
         }
     }
+
+    // Footer main
+    .main__footer {
+        .main__list {
+            justify-content: center;
+            .main__link {
+                @extend %default-margin;
+                @include device(small-to-xsmall) {
+                    margin: 0 6px;
+                }
+                @include device(xsmall-to-xxsmall) {
+                    margin: 0px 3px;
+                }
+            }
+        }
+        .btn-disabled-1, .btn-disabled-2,
+        .btn-activated-1, .btn-activated-2,
+        .main__numPage {
+            padding: 18px;
+            @include device(xsmall-to-xxsmall) {
+                padding: 14px;
+            }
+        }
+        .btn-disabled-1, .btn-disabled-2 {
+            @extend %border-purple;
+            @extend %border-radius-50-percent;
+            opacity: .2;
+        }
+
+        .btn-disabled-1 {
+            background: url('../img/theme-light-purple/icons-page-navigation/first.png') no-repeat;
+            background-position: center center;
+        }
+
+        .btn-disabled-2 {
+            background: url('../img/theme-light-purple/icons-page-navigation/prev.png') no-repeat;
+            background-position: center center;
+        }
+
+        .btn-activated-1, .btn-activated-2 {
+            @extend %cursor-pointer;
+            @extend %border-purple;
+            @extend %border-radius-50-percent;
+            @extend %transition-background-color;
+        }
+        .btn-activated-1 {
+            background: url('../img/default-color/icons-page-navigation/next.png') no-repeat;
+            background-position: center center;
+            background-color: #922c88;
+            &:hover {
+                background: url('../img/default-color/icons-page-navigation/next-hover.png') no-repeat;
+                background-position: center center;
+                background-color: #FFF;
+            }
+        }
+        .btn-activated-2 {
+            background: url('../img/theme-light-purple/icons-page-navigation/last.png') no-repeat;
+            background-position: center center;
+            background-color: #FFF;
+            &:hover {
+                background: url('../img/default-color/icons-page-navigation/last.png') no-repeat;
+                background-position: center center;
+                background-color: #922c88;
+            }
+        }
+
+        
+        .main__numPage {
+            padding: 10px 14px;
+            border: 1px solid transparent;
+            @extend %border-radius-50-percent;
+            // Tipografia
+            @include type-1(12.8);
+            @extend %text-decoration-none;
+            @include device(xsmall-to-xxsmall) {
+                padding: 6px 10px;
+            }
+        }
+    }
 }

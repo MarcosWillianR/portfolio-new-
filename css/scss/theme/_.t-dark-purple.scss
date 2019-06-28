@@ -245,6 +245,54 @@ $theme-name: 't-dark-purple';
     }
 
 
+    // Footer Main content >>>>>>>>>>>>>>>>
+    .main__footer {
+        .btn-disabled-1, .btn-disabled-2 {
+            @extend %border-purple;
+            opacity: .4;
+        }
+
+        .btn-disabled-1 {
+            background: url('../img/theme-dark-purple/icons-page-navigation/first.png') no-repeat;
+            background-position: center center;
+        }
+    
+        .btn-disabled-2 {
+            background: url('../img/theme-dark-purple/icons-page-navigation/prev.png') no-repeat;
+            background-position: center center;
+        }
+    
+        .btn-activated-1, .btn-activated-2 {
+            @extend %border-purple;
+        }
+    
+        .btn-activated-1 {
+            background-color: #922c88;
+            &:hover {
+                background: url('../img/theme-dark-purple/icons-page-navigation/next-hover.png') no-repeat;
+                background-position: center center;
+                background-color: #1B191B;
+            }
+        }
+    
+        .btn-activated-2 {
+            background: url('../img/theme-dark-purple/icons-page-navigation/last.png') no-repeat;
+            background-position: center center;
+            background-color: #1B191B;
+            &:hover {
+                background-color: #922c88;
+            }
+        }
+    
+        .main__numPage {
+            @extend %color-dark-default-2;
+            &:hover {
+            @extend %border-purple-color;
+            }
+        }
+    }
+
+
 
     // Change Theme
     .changeTheme {

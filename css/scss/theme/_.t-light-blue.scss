@@ -145,6 +145,46 @@ $theme-name: 't-light-blue';
     }
 
 
+    // Footer Main content >>>>>>>>>>>>>>>>
+    .main__footer {
+        .btn-disabled-1, .btn-disabled-2 {
+            @extend %border-blue;
+        }
+
+        .btn-disabled-1 {
+            background: url('../img/theme-light-blue/icons-page-navigation/first.png') no-repeat;
+            background-position: center center;
+        }
+    
+        .btn-disabled-2 {
+            background: url('../img/theme-light-blue/icons-page-navigation/prev.png') no-repeat;
+            background-position: center center;
+        }
+    
+        .btn-activated-1, .btn-activated-2 {
+            @extend %border-blue;
+        }
+    
+        .btn-activated-1 {
+            background-color:#145388;
+        }
+    
+        .btn-activated-2 {
+            background: url('../img/theme-light-blue/icons-page-navigation/last.png') no-repeat;
+            background-position: center center;
+            &:hover {
+                background-color:#145388;
+            }
+        }
+    
+        .main__numPage {
+            @extend %color-light-default-1;
+            &:hover {
+                @extend %border-blue-color;
+            }
+        }
+    }
+
 
     // Change Theme
     .changeTheme {
