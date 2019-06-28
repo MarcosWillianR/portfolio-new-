@@ -21,8 +21,7 @@ $element2-name: 'aside__right-Sidebar';
         height: 100vh;
         @extend %background-light-color3;
         @extend %border1-right-light-1px;
-        @extend %transition-width;
-        @extend %transition-transform;
+        @extend %transition-transform-and-width;
         @extend %box-shadow-default;
         @include device(medium-to-large) {
             width: 110px;
@@ -81,8 +80,7 @@ $element2-name: 'aside__right-Sidebar';
         height: 100vh;
         @extend %box-shadow-default-2;
         @extend %background-light-color3;
-        @extend %transition-transform;
-        @extend %transition-width;
+        @extend %transition-transform-and-width;
         .right-Sidebar__list {
             overflow: auto;
             max-height: 70%;

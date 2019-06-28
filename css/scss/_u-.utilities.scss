@@ -22,11 +22,12 @@
 %box-shadow-default-2 { box-shadow: 8px 0px 16px rgba(0,0,0,.1); }
 
 // Transitions animations
-%transition-height { transition: height .3s ease-in; }
+%transition-height { transition: height .3s; }
 %transition-background-color { transition: background-color .3s; }
-%transition-width { transition: width .3s ease-in; }
+%transition-width { transition: width .3s; }
 %transition-color { transition: color .3s; }
-%transition-transform { transition: transform .6s ease-in-out; }
+%transition-transform { transition: transform .3s; }
+%transition-transform-and-width { transition: transform .3s, width .3s; }
 
 // ChangeTheme.scss Utility's
 %padding-changeTheme__list { padding: 0px 12px 8px 12px; }
