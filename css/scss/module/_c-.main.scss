@@ -60,6 +60,7 @@ $module-name: 'main';
     /***************************************/
     .main__header {
         justify-content: space-between;
+        margin-bottom: 40px;
         @include device(medium-to-xsmall) {
             .main__title {
                 flex-direction: column;

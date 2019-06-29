@@ -4,9 +4,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
-const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
-
+const terser = require('gulp-terser');
 // Função para compilar o SASS e adicionar os prefixos
 function compilaSass() {
   return gulp.src('css/scss/**/*.scss')
@@ -24,12 +22,9 @@ gulp.task('sass', compilaSass);
 
 // Função para juntar o JS
 function gulpJS() {
-  return gulp.src(['js/main/helper/*.js','js/main/*.js'])
+  return gulp.src(['js/main/asyncMainContent.js', 'js/main/helper/*.js', 'js/main/*.js'])
     .pipe(concat('main.js'))
-    .pipe(babel({
-      presets: ['@babel/env'],
-    }))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream());
 }
@@ -41,7 +36,7 @@ function browser() {
   browserSync.init({
     server: {
       baseDir: "./"
-    }
+    },
   });
 }
 
@@ -49,7 +44,7 @@ function browser() {
 gulp.task('browser-sync', browser);
 
 
-// Função de watch do gulp 
+// Função de watch do gulp
 function watch() {
   gulp.watch(['css/scss/**/*.scss'], compilaSass);
   gulp.watch(['js/main/**/*.js'], gulpJS);
