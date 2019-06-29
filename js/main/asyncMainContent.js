@@ -41,5 +41,5 @@
       mainContent.appendChild(divDados);
     });
   }
-  conteudoDinamico('../dinamicContent.json');
+  conteudoDinamico('./dinamicContent.json');
 }
