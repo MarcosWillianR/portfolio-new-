@@ -1,5 +1,4 @@
 {
-
   const criarHTML = (dados) => {
     const div = document.createElement('div');
 

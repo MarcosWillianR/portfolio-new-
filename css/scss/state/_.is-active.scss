@@ -12,7 +12,7 @@
 
 
 
-
+// Main content themes
 .t-light-red .main__footer {
     .main__link.is-active {
         .main__numPage {
@@ -117,14 +117,7 @@
         }
     }
 }
-
-
-
-
-
-
-
-
+//
 
 // Change Theme
 .changeTheme {
@@ -178,4 +171,19 @@
             }
         }
     }
+}
+
+
+// Dropdowns >>>
+
+// ChooseLang dropdown active >
+.langButton__button.is-active {
+    background-color: #dae0e5;
+    color: #212529;
+    &::after {
+        border-top-color: #212529;
+    }
+}
+.langContent.is-active {
+    display: flex;
 }

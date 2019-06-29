@@ -1,6 +1,7 @@
 $module-name: 'langButton';
 
 .#{$module-name} {
+    position: relative;
     .langButton__button {
         @extend %color-light-default-2;
         @extend %border-0;
