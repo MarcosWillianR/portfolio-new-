@@ -3,7 +3,6 @@ $module-name: 'btn-add-new';
 .#{$module-name} {
     @extend %default-outline;
     @extend %cursor-pointer;
-    @extend %background-purple;
     @extend %border-0;
     @extend %default-border-radius;
     @extend %transition-background-color;
@@ -12,9 +11,6 @@ $module-name: 'btn-add-new';
     // Tipografia
     @include type-1(12.8);
     @extend %font-weight700;
-    @extend %btn-add-new-light-color;
+    @extend %color-light-default-4;
     text-transform: uppercase;
-    &:hover {
-        background: darken(#922c88, 10%);
-    }
 }

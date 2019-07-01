@@ -3,7 +3,6 @@ $module-name: 'btn-dropdown';
 .#{$module-name} {
     @extend %cursor-pointer;
     @extend %default-outline;
-    @extend %background-purple;
     @extend %border-0;
     @extend %transition-background-color;
     border-top-right-radius: 20px;
@@ -12,9 +11,6 @@ $module-name: 'btn-dropdown';
         left: 50px;
         padding: 9.5px 0px;
         padding-right: 8px;
-    &:hover {
-        background: darken(#922c88, 10%);
-    }
     &::before {
         content: '';
         display: inline-block;

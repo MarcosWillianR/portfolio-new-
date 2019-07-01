@@ -143,46 +143,25 @@ $module-name: 'main';
             }
         }
         .btn-disabled-1, .btn-disabled-2 {
-            @extend %border-purple;
             @extend %border-radius-50-percent;
-            opacity: .2;
-        }
-
-        .btn-disabled-1 {
-            background: url('../img/theme-light-purple/icons-page-navigation/first.png') no-repeat;
-            background-position: center center;
-        }
-
-        .btn-disabled-2 {
-            background: url('../img/theme-light-purple/icons-page-navigation/prev.png') no-repeat;
-            background-position: center center;
         }
 
         .btn-activated-1, .btn-activated-2 {
             @extend %cursor-pointer;
-            @extend %border-purple;
             @extend %border-radius-50-percent;
             @extend %transition-background-color;
         }
         .btn-activated-1 {
-            background: url('../img/default-color/icons-page-navigation/next.png') no-repeat;
+            background: url('../img/theme-light/icons-page-navigation/next.png') no-repeat;
             background-position: center center;
-            background-color: #922c88;
             &:hover {
-                background: url('../img/default-color/icons-page-navigation/next-hover.png') no-repeat;
+                background: url('../img/theme-light/icons-page-navigation/next-hover.png') no-repeat;
                 background-position: center center;
-                background-color: #FFF;
             }
         }
-        .btn-activated-2 {
-            background: url('../img/theme-light-purple/icons-page-navigation/last.png') no-repeat;
+        .btn-activated-2:hover {
+            background: url('../img/theme-light/icons-page-navigation/last.png') no-repeat;
             background-position: center center;
-            background-color: #FFF;
-            &:hover {
-                background: url('../img/default-color/icons-page-navigation/last.png') no-repeat;
-                background-position: center center;
-                background-color: #922c88;
-            }
         }
 
         

@@ -2,5 +2,4 @@ $module-name: 'title';
 
 .#{$module-name} {
     @include type-1(28);
-    @extend %color-light-default-1;
 }

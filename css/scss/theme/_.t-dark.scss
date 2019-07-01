@@ -1,0 +1,163 @@
+$theme-name: 't-dark';
+
+.#{$theme-name} {
+    // body background change
+    @extend %background-dark-default-1;
+    // header background change
+    .header {
+        @extend %background-dark-default-1;
+        // search field background change
+        .search {
+            .search__field {
+                @extend %background-dark-default-1;
+            }
+        }
+        // lang-button style
+        .langButton__button {
+            @extend %background-dark-default-1;
+            @extend %color-dark-default-2;
+            &::after {
+                border-top: 5px solid #757575;
+            }
+        }
+        // logo background image change
+        .logo {
+            background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-white.svg') no-repeat;
+            background-position: center center;
+            @include device(xxsmall) {
+                width: 20px;
+                height: 35px;
+                background: url('https://gogo-react.coloredstrategies.com/assets/img/logo-mobile.svg') 
+                no-repeat;
+            }
+        }
+        // btn-buy color change
+        .btn-buy__button:hover {
+            @extend %color-dark-default-3;
+        }
+        // image-button color change
+        .imageButton__name {
+            @extend %color-dark-default-1;
+        }
+    }
+
+    // ASIDE CONTENT STYLES
+    //
+    // aside left-sidebar style
+    .aside__left-Sidebar {
+        @extend %background-dark-default-2;
+        @extend %border-dark-right-default-1;
+        .left-Sidebar__containerLink {
+            @extend %border-dark-bottom-default-1;
+        }
+        .left-Sidebar__link {
+            @extend %color-dark-default-1;
+            &:hover {
+                @extend %background-dark-default-1;
+            }
+        }
+    }
+    // aside right-sidebar style
+    .aside__right-Sidebar {
+        @extend %background-dark-default-2;
+        @extend %color-dark-default-1;
+        .right-Sidebar__link {
+            @extend %color-dark-default-1;
+        }
+    }
+    // aside icones
+    .dashboard-icon {
+        background: url('../img/theme-dark/default-left-sidebar/dashboard.png') no-repeat;
+    }
+    .pages-icon {
+        background: url('../img/theme-dark/default-left-sidebar/pages.png') no-repeat;
+    }
+    .application-icon {
+        background: url('../img/theme-dark/default-left-sidebar/applications.png') no-repeat;
+    }
+    .ui-icon {
+        background: url('../img/theme-dark/default-left-sidebar/ui.png') no-repeat;
+    }
+    .menu-icon {
+        background: url('../img/theme-dark/default-left-sidebar/menu.png') no-repeat;
+    }
+    .blankpage-icon {
+        background: url('../img/theme-dark/default-left-sidebar/blank-page.png') no-repeat;
+    }
+    .docs-icon {
+        background: url('../img/theme-dark/default-left-sidebar/docs.png') no-repeat;
+    }
+
+
+
+    // MAIN CONTENT STYLES
+    //
+    // main content title color
+    .title {
+        @extend %color-dark-default-1;
+    }
+    // main content current page color
+    .currentPage__page {
+        @extend %color-dark-default-1;
+    }
+    // main content btn-orderlist background color
+    .btn-orderList {
+        @extend %background-dark-default-1;
+    }
+    // main content small search background color
+    .smallSearch {
+        .search__field {
+            @extend %background-dark-default-1;
+        }
+    }
+    // main content btn max items background color
+    .btn-maxItems {
+        @extend %background-dark-default-1;
+    }
+
+
+    // DINAMIC CONTENT STYLES
+    //
+    .dinamicContent__section {
+        @extend %background-dark-default-2;
+        .dinamicContent__title {
+            @extend %color-dark-default-1;
+        }
+        .dinamicContent__category {
+            @extend %color-dark-default-2;
+        }
+        .dinamicContent__date {
+            @extend %color-dark-default-2;
+        }
+    }
+
+
+    // MAIN CONTENT FOOTER
+    //
+    .btn-disabled-1, .btn-disabled-2 {
+        opacity: .4;
+    }
+    // btn activated-1 hover
+    .btn-activated-1:hover {
+        background-color: #1B191B;
+    }
+    // btn activated-2 background color
+    .btn-activated-2 {
+        background-color: #1B191B;
+    }
+    // main numPage color
+    .main__numPage {
+        @extend %color-dark-default-2;
+    }
+
+    // CHANGE THEME CONTENT 
+    //
+    .changeTheme {
+        .changeTheme__button {
+            background-color: #232223;
+        }
+        .changeTheme__list {
+            @extend %background-dark-default-2;
+        }
+    }
+}

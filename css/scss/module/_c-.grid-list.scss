@@ -1,0 +1,89 @@
+$module-name: 'grid-list';
+
+.#{$module-name} {
+    position: relative;
+
+
+    .grid-list__content {
+        // width e height
+        min-width: 240px; 
+        min-height: 280px;
+        // position
+        position: absolute;
+            right: 0px;
+        // espaçamentos
+        margin-top: 16px;
+        padding: 12px 24px;
+        box-sizing: border-box;
+        // extends
+        @extend %background-light-default-2;
+        @extend %border-light-default-1;
+        // alinhamento
+        display: none;
+        flex-wrap: wrap;
+        align-items: center;
+        .grid-list__item {
+            width: 50%;
+            text-align: center;
+            // alinhamento
+        }
+        .grid-list__link {
+            // tipografia
+            @include type-1(12.8);
+            color: rgba(48, 48, 48, 0.8);
+            // extends
+            @extend %text-decoration-none;
+        }
+        .grid-list__name {
+            padding: 0px 10px;
+        }
+        .grid-list__img-dashboards {
+            margin: 5px auto;
+            background: url('../img/purple/icons-grid/dashboard.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+        }
+        .grid-list__img-ui {
+            margin: 5px auto;
+            background: url('../img/purple/icons-grid/dashboard.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+        }
+        .grid-list__img-charts {
+            margin: 5px auto;
+            background: url('../img/purple/icons-grid/dashboard.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+        }
+        .grid-list__img-chat {
+            margin: 5px auto;
+            background: url('../img/purple/icons-grid/dashboard.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+        }
+        .grid-list__img-survey {
+            margin: 5px auto;
+            background: url('../img/purple/icons-grid/dashboard.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+        }
+        .grid-list__img-to-do-List {
+            margin: 5px auto;
+            background: url('../img/purple/icons-grid/dashboard.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+        }
+    }
+}

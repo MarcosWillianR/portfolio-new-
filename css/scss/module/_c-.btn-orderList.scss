@@ -8,7 +8,6 @@ $module-name: 'btn-orderList';
     @extend %cursor-pointer;
     @extend %default-margin;
     @extend %default-outline;
-    @extend %background-light-color1;
     @extend %transition-background-color;
     // Tipografia
     @include type-1(12.16);
@@ -16,8 +15,7 @@ $module-name: 'btn-orderList';
     @extend %font-weight400;
     &:hover {
         @extend %border-transparent;
-        @extend %background-purple;
-        @extend %btn-orderList-hover-color;
+        @extend %color-light-default-4;
         &:after {
             border-top-color: #FFF;
         }

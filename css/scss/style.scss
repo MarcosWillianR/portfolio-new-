@@ -25,6 +25,7 @@
 @import './module/c-.langContent';         // Header style [lang button Content]
 @import './module/c-.logo';                // Header style
 @import './module/c-.btn-buy';             // Header style
+@import './module/c-.grid-list';           // Header style [grid-list content]
 @import './module/c-.iconButton';          // Header / Main style
 @import './module/c-.smallIcon';           // Header style
 @import './module/c-.imageButton';         // Header style
@@ -52,14 +53,11 @@
 @import './state/.is-show';
 
 // Themes
-@import './theme/.t-light-purple';        // Light theme
-@import './theme/.t-light-blue';          // Light theme
-@import './theme/.t-light-green';         // Light theme
-@import './theme/.t-light-orange';        // Light theme
-@import './theme/.t-light-red';           // Light theme
+@import './theme/.blue';                   // blue colors
+@import './theme/.green';                  // green colors
+@import './theme/.orange';                 // orange colors
+@import './theme/.purple';                 // purple colors
+@import './theme/.red';                    // red colors
 
-@import './theme/.t-dark-purple';         // Dark theme 
-@import './theme/.t-dark-blue';           // Dark theme
-@import './theme/.t-dark-green';          // Dark theme          
-@import './theme/.t-dark-orange';         // Dark theme
-@import './theme/.t-dark-red';            // Dark theme
+@import './theme/.t-dark';                 // dark theme
+@import './theme/.t-light';                // light theme

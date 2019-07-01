@@ -1,0 +1,180 @@
+$theme-name: 'orange';
+
+.#{$theme-name} {
+    // HEADER CONTENT STYLES
+    //
+    // Header btn-buy
+    .btn-buy__button {
+        @extend %border-orange;
+        @extend %color-orange-1;
+        &:hover {
+            @extend %background-orange;
+        }
+    }
+    // Header search
+    .search {
+        .search__button:hover {
+            background: url('../img/orange/header-icons/search.png') no-repeat;
+            background-position: center center;
+        }
+    }
+    // Header small icons
+    .grid-list__icon:hover {
+        background: url('../img/orange/header-icons/list.png') no-repeat;
+    }
+    // icon bell
+    .smallIcon__img-bell {
+        .smallIcon__bell-alert {
+            @extend %border-orange;
+            @extend %color-orange-1;
+        }
+        &:hover {
+            background: url('../img/orange/header-icons/bell.png') no-repeat;
+            background-size: contain;
+        }
+    }
+    // icon full screen
+    .smallIcon__img-fullscreen:hover {
+        background: url('../img/orange/header-icons/resize.png') no-repeat;
+        background-position: center center;
+    }
+
+
+    // ASIDE CONTENT STYLES
+    //
+    .aside {
+        .left-Sidebar__link:hover {
+            @extend %color-orange-1;
+            .dashboard-icon {
+                background: url('../img/orange/sidebar-left-icons/dashboard.png') no-repeat;
+            }
+            .pages-icon {
+                background: url('../img/orange/sidebar-left-icons/pages.png') no-repeat;
+            }
+            .application-icon {
+                background: url('../img/orange/sidebar-left-icons/applications.png')no-repeat;
+            }
+            .ui-icon {
+                background: url('../img/orange/sidebar-left-icons/ui.png') no-repeat;
+            }
+            .menu-icon {
+                background: url('../img/orange/sidebar-left-icons/menu.png') no-repeat;
+            }
+            .blankpage-icon {
+                background: url('../img/orange/sidebar-left-icons/blank-page.png') no-repeat;
+            }
+            .docs-icon {
+                background: url('../img/orange/sidebar-left-icons/docs.png') no-repeat;
+            }
+        }
+        .right-Sidebar__link:hover {
+            @extend %color-orange-1;
+        }
+    }
+    
+
+    // MAIN CONTENT STYLES
+    //
+    .currentPage__page:hover {
+        @extend %color-orange-1;
+    }
+    // View Icons hover
+    .view-icon-1:hover {
+        background: url('../img/orange/view-icons/view1.png');
+    }
+    .view-icon-2:hover {
+        background: url('../img/orange/view-icons/view2.png');
+    }
+    .view-icon-3:hover {
+        background: url('../img/orange/view-icons/view3.png');
+    }
+    // btn add new
+    .btn-add-new {
+        @extend %background-orange;
+        &:hover {
+            background: darken(#E2863B, 10%);
+        }
+    }
+    // btn checkbox
+    .btn-checkbox {
+        @extend %background-orange;
+    }
+    // btn dropdown
+    .btn-dropdown {
+        @extend %background-orange;
+        &:hover {
+            background: darken(#E2863B, 10%);
+        }
+    }
+    // btn orderlist
+    .btn-orderList:hover {
+        @extend %background-orange;
+    }
+    // btn maxItems
+    .btn-maxItems:hover {
+        @extend %background-orange;
+    }
+    // MAIN CONTENT DINAMIC STYLES
+    //
+    .dinamicContent__boxDesc {
+        .dinamicContent__badge {
+            .badge1 {
+                @extend %background-orange2;
+            }
+            .badge2 {
+                @extend %background-orange;
+            }
+        }
+        .btn-select {
+            input[type="checkbox"]:checked + label::before {
+                @extend %background-orange;
+            }
+        }
+    }
+    // MAIN CONTENT FOOTER STYLES
+    //
+    .main__footer {
+        .btn-disabled-1, .btn-disabled-2 {
+            @extend %border-orange;
+        }
+
+        .btn-disabled-1 {
+            background: url('../img/orange/icons-page-navigation/first.png') no-repeat;
+            background-position: center center;
+        }
+    
+        .btn-disabled-2 {
+            background: url('../img/orange/icons-page-navigation/prev.png') no-repeat;
+            background-position: center center;
+        }
+    
+        .btn-activated-1, .btn-activated-2 {
+            @extend %border-orange;
+        }
+    
+        .btn-activated-1 {
+            background-color: #E2863B;
+        }
+    
+        .btn-activated-2 {
+            background: url('../img/orange/icons-page-navigation/last.png') no-repeat;
+            background-position: center center;
+            &:hover {
+                background-color: #E2863B;
+            }
+        }
+    
+        .main__numPage:hover {
+            @extend %border-orange-color;
+        }
+    }
+
+
+    // CHANGE THEME CONTENT STYLES
+    .changeTheme {
+        .changeTheme__button {
+            background: url('../img/orange/change-theme.png') no-repeat;
+            background-position: center center;
+        }
+    }
+}

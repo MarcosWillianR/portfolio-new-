@@ -6,7 +6,6 @@ $module-name: 'header';
     justify-content: space-between;
     padding: 24px 60px 24px 0px;
     box-sizing: border-box;
-    background: #FFF;
     @extend %box-shadow-default;
     @extend %transition-height;
     @include device(medium-to-large) {

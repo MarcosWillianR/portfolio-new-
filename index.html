@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="t-light-purple">
-  <!-- Navegação principal da página -->
+<body class="t-light purple">
   <header class="header l-flex l-fixed">
     <nav class="navbar-button-search-lang l-flex">
       <div class="menuButton">
@@ -38,21 +37,56 @@
       <div class="btn-buy">
         <button class="btn-buy__button">buy</button>
       </div>
-      <!-- //////////////////////////////////////// -->
-      <div class="smallIcon xs-d-none">
-        <button class="smallIcon__img-grid iconButton"></button>
+      <div class="grid-list smallIcon xs-d-none">
+        <button class="grid-list__icon iconButton"></button>
+
+        <ul class="grid-list__content">
+          <li class="grid-list__item">
+            <a href="#" class="grid-list__link">
+              <div class="grid-list__img-dashboards"></div>
+              <span class="grid-list__name">Dashboards</span>
+            </a>
+          </li>
+          <li class="grid-list__item">
+            <a href="#" class="grid-list__link">
+              <div class="grid-list__img-ui"></div>
+              <span class="grid-list__name">UI</span>
+            </a>
+          </li>
+          <li class="grid-list__item">
+            <a href="#" class="grid-list__link">
+              <div class="grid-list__img-charts"></div>
+              <span class="grid-list__name">Charts</span>
+            </a>
+          </li>
+          <li class="grid-list__item">
+            <a href="#" class="grid-list__link">
+              <div class="grid-list__img-chat"></div>
+              <span class="grid-list__name">Chat</span>
+            </a>
+          </li>
+          <li class="grid-list__item">
+            <a href="#" class="grid-list__link">
+              <div class="grid-list__img-survey"></div>
+              <span class="grid-list__name">Survey</span>
+            </a>
+          </li>
+          <li class="grid-list__item">
+            <a href="#" class="grid-list__link">
+              <div class="grid-list__img-to-do-List"></div>
+              <span class="grid-list__name">To-do List</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <!-- //////////////////////////////////////// -->
       <div class="smallIcon">
         <button class="smallIcon__img-bell iconButton">
           <span class="smallIcon__bell-alert">3</span>
         </button>
       </div>
-      <!-- //////////////////////////////////////// -->
       <div class="smallIcon xs-d-none">
         <button class="smallIcon__img-fullscreen iconButton"></button>
       </div>
-      <!-- //////////////////////////////////////// -->
       <button class="imageButton l-flex">
         <span class="imageButton__name">Sarah Kortney</span>
         <img class="imageButton__img" src="https://gogo-react.coloredstrategies.com/assets/img/profile-pic-l.jpg"
@@ -61,7 +95,6 @@
     </nav>
   </header>
 
-  <!-- Sidebar da página -->
   <aside class="aside l-flex l-fixed-w-none">
     <div class="aside__left-Sidebar" data-sidebar="sidebarLeft">
       <ul class="left-Sidebar__list">
@@ -149,7 +182,6 @@
     </div>
   </aside>
 
-  <!-- Sessão principal (main) -->
   <main class="main" data-content="main">
     <div class="main__header l-flex">
       <div class="main__title l-flex-a-baseline">
@@ -229,25 +261,24 @@
     </div>
   </main>
 
-  <!-- Caixa para a seleção de temas -->
   <div class="changeTheme l-flex l-fixed">
     <button class="changeTheme__button" data-change="showBtn"></button>
     <ul class="changeTheme__list" data-change="list-btn">
       <span class="changeTheme__list__name">Light Theme</span>
       <div class="changeTheme__list__light l-flex">
-        <li><a href="#" class="light-purple" data-change="btn"></a></li>
-        <li><a href="#" class="light-blue" data-change="btn"></a></li>
-        <li><a href="#" class="light-green" data-change="btn"></a></li>
-        <li><a href="#" class="light-orange" data-change="btn"></a></li>
-        <li><a href="#" class="light-red" data-change="btn"></a></li>
+        <li><a href="#" class="t-light purple" data-change="btn"></a></li>
+        <li><a href="#" class="t-light blue" data-change="btn"></a></li>
+        <li><a href="#" class="t-light green" data-change="btn"></a></li>
+        <li><a href="#" class="t-light orange" data-change="btn"></a></li>
+        <li><a href="#" class="t-light red" data-change="btn"></a></li>
       </div>
       <span class="changeTheme__list__name">Dark Theme</span>
       <div class="changeTheme__list__dark l-flex">
-        <li><a href="#" class="dark-purple" data-change="btn"></a></li>
-        <li><a href="#" class="dark-blue" data-change="btn"></a></li>
-        <li><a href="#" class="dark-green" data-change="btn"></a></li>
-        <li><a href="#" class="dark-orange" data-change="btn"></a></li>
-        <li><a href="#" class="dark-red" data-change="btn"></a></li>
+        <li><a href="#" class="t-dark purple" data-change="btn"></a></li>
+        <li><a href="#" class="t-dark blue" data-change="btn"></a></li>
+        <li><a href="#" class="t-dark green" data-change="btn"></a></li>
+        <li><a href="#" class="t-dark orange" data-change="btn"></a></li>
+        <li><a href="#" class="t-dark red" data-change="btn"></a></li>
       </div>
     </ul>
   </div>

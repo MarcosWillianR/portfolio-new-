@@ -10,7 +10,6 @@ $module-name: 'dinamicContent';
     @include device(xsmall-to-xxsmall) {
         height: 120px;
     }
-    @extend %background-light-color3;
     @extend %box-shadow-default;
     .dinamicContent__img {
         width: 114px;
@@ -49,7 +48,6 @@ $module-name: 'dinamicContent';
             flex: 2;
             // Tipografia
             @include type-1(16);
-            @extend %color-light-default-1;
             @include device(medium-to-xxsmall) {
                 margin-top: 4px;
             }
@@ -58,7 +56,6 @@ $module-name: 'dinamicContent';
             flex: 1;
             // Tipografia
             @include type-1(12.16);
-            @extend %color-light-default-3;
             @include device(medium-to-xxsmall) {
                 margin-top: 4px;
             }
@@ -67,7 +64,6 @@ $module-name: 'dinamicContent';
             flex: 1;
             // Tipografia
             @include type-1(12.16);
-            @extend %color-light-default-3;
             @include device(medium-to-xxsmall) {
                 margin-top: 4px;
             }

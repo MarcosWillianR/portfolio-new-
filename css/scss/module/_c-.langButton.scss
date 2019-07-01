@@ -3,13 +3,11 @@ $module-name: 'langButton';
 .#{$module-name} {
     position: relative;
     .langButton__button {
-        @extend %color-light-default-2;
+        padding: 9px 16px;
+        border-radius: 16px;
         @extend %border-0;
         @extend %cursor-pointer;
-        @extend %default-border-radius;
         @extend %default-margin;
-        @extend %default-padding;
-        @extend %background-light-input;
         @extend %default-outline;
         // Tipografia 
         @include type-1(12.8);
@@ -22,7 +20,6 @@ $module-name: 'langButton';
             margin-bottom: 2px;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
-            @extend %langButton-light-borderTop;
         }
     }
 }

@@ -1,27 +1,27 @@
-%font-weight400 { font-weight: 400; }
-%font-weight600 { font-weight: 600; }
-%font-weight700 { font-weight: 700; }
-
-%background-transparent { background: transparent; }
-// %color-transparent { color: transparent; }
-
-%default-padding { padding: 10px 12px; }
-%default-margin { margin: 0px 12px; }
-%default-small-margin { margin: 0 6px; }
-%default-border-radius { border-radius: 18px; }
-%default-outline { outline: 0; }
-
+// Link's utilities >
 %text-decoration-none { text-decoration: none; }
 
+// Button's utilities > 
+%background-transparent { background: transparent; }
+%default-border-radius { border-radius: 18px; }
+%default-outline { outline: 0; }
+%outline-0 { outline: 0; }
 %cursor-pointer { cursor: pointer; }
 %border-0 { border: 0; }
 %border-transparent { border-color: transparent; }
 %border-radius-50-percent { border-radius: 50%; }
 
+// Espaçamentos utilities > 
+%default-padding { padding: 10px 12px; }
+%default-margin { margin: 0px 12px; }
+%margin-right-left-12px { margin: 0px 12px; }
+%default-small-margin { margin: 0 6px; }
+
+// Box-shadow's utilities >
 %box-shadow-default { box-shadow: 0px .5px 16px rgba(0,0,0,.1); }
 %box-shadow-default-2 { box-shadow: 8px 0px 16px rgba(0,0,0,.1); }
 
-// Transitions animations
+// Transition's utilities >
 %transition-height { transition: height .3s; }
 %transition-background-color { transition: background-color .3s; }
 %transition-width { transition: width .3s; }
@@ -29,12 +29,14 @@
 %transition-transform { transition: transform .3s; }
 %transition-transform-and-width { transition: transform .3s, width .3s; }
 
-// ChangeTheme.scss Utility's
-%padding-changeTheme__list { padding: 0px 12px 8px 12px; }
-%border-transparent-changeTheme__list { border: 3px solid transparent; }
 
+// Tipografia utilities > 
+%text-uppercase { text-transform: uppercase; }
+%font-weight400 { font-weight: 400; }
+%font-weight600 { font-weight: 600; }
+%font-weight700 { font-weight: 700; }
 
-// Theme purple
+// Theme purple colors
 %background-purple { background: #922c88; }
 %background-purple2 { background:  #4556ac; }
 %color-purple-1 { color: #922c88; }
@@ -42,7 +44,7 @@
 %border-purple { border: 1px solid #922c88; }
 %border-purple-color { border-color: #922c88; }
 
-// Theme red
+// Theme red colors
 %background-red { background: #880A1F; }
 %background-red2 { background: #E7284A; }
 %background-red3 { background: #AA5E6C; }
@@ -51,7 +53,7 @@
 %border-red { border: 1px solid #880A1F; }
 %border-red-color { border-color: #880A1F; }
 
-// Theme orange
+// Theme orange colors
 %background-orange { background: #E2863B; }
 %background-orange2 { background: #E7523E; }
 %color-orange-1 { color: #E2863B; }
@@ -59,7 +61,7 @@
 %border-orange { border: 1px solid #E2863B; }
 %border-orange-color { border-color: #E2863B; }
 
-// Theme green
+// Theme green colors
 %background-green { background: #576A3D; }
 %background-green2 { background: #DD9C02; }
 %color-green-1 { color: #576A3D; }
@@ -67,7 +69,7 @@
 %border-green { border: 1px solid #576A3D; }
 %border-green-color { border-color: #576A3D; }
 
-// Theme blue
+// Theme blue colors
 %background-blue { background: #145388; }
 %background-blue2 { background: #2A93D5; }
 %color-blue-1 { color: #145388; }
@@ -78,35 +80,24 @@
 /////////////////////////////////////////////////////
 
 // Theme-Dark
-%background-dark-color-1 { background: #1B191B; }
-%background-dark-color-2 { background: #232223; }
-%background-dark-input { background: #1B191B; }
-%btn-buy-dark-hover-color { color: #1B191B; }
+%background-dark-default-1 { background: #1B191B; }
+%background-dark-default-2 { background: #232223; }
 
-%border1-right-dark-1px { border-right: 1px solid #313131; }
-%border2-bottom-dark-1px { border-bottom: 1px solid #313131; }
-
-%langButton-dark-borderTop { border-top: 5px solid #757575; }
+%border-dark-right-default-1 { border-right: 1px solid #313131; }
+%border-dark-bottom-default-1 { border-bottom: 1px solid #313131; }
 
 %color-dark-default-1 { color: #969696; }
 %color-dark-default-2 { color: #757575; }
+%color-dark-default-3 { color: #1B191B; }
 
 // Theme-light
-%background-light-input { background: #F8F8F8; }
-%background-light-color1 { background: #F8F8F8; }
-%background-light-color3 { background: #FFF; }
-%background-light-color4 { background: #303030; }
+%background-light-default-1 { background: #F8F8F8; }
+%background-light-default-2 { background: #FFF; }
+%background-light-default-3 { background: #303030; }
 
-%btn-buy-light-hover-color { color: #FFF; }
-%btn-add-new-light-color { color: #FFF; }
-%btn-orderList-hover-color { color: #FFF; }
-
-
-%border1-right-light-1px { border-right: 1px solid #F3F3F3; }
-%border2-bottom-light-1px { border-bottom: 1px solid #F3F3F3; }
+%border-light-right-default-1 { border-right: 1px solid #F3F3F3; }
+%border-light-bottom-default-1 { border-bottom: 1px solid #F3F3F3; }
 %border-light-default-1 { border: 1px solid #E0E0E0; }
-
-%langButton-light-borderTop { border-top: 5px solid #8F8F8F; }
 
 %color-light-default-1 { color: #303030; }
 %color-light-default-2 { color: #8F8F8F; }

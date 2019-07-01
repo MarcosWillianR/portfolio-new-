@@ -3,38 +3,35 @@ $module-name: 'smallIcon';
 .#{$module-name} {
     width: 18px;
     height: 18px;
-    @extend %default-margin;
-    .smallIcon__img-grid {
-        background: url('../img/default-color/header-icons/list.png') no-repeat;
+    @extend %margin-right-left-12px;
+    .grid-list__icon {
+        background: url('../img/theme-light/header-icons/list.png') no-repeat;
         background-position: center center;
         width: 100%;
         height: 100%;
-        @extend %default-outline;
-        &:hover {
-            background: url('../img/theme-light-purple/header-icons/list.png') no-repeat;
-        }
+        // extend
+        @extend %outline-0;
     }
     .smallIcon__img-bell {
-        background: url('../img/default-color/header-icons/bell.png') no-repeat;
+        background: url('../img/theme-light/header-icons/bell.png') no-repeat;
         background-size: contain;
         width: 100%;
         height: 100%;
-        @extend %default-outline;
-        &:hover {
-            background: url('../img/theme-light-purple/header-icons/bell.png') no-repeat;
-            background-size: contain;
-        }
+        // extend
+        @extend %outline-0;
         .smallIcon__bell-alert {
+            // position
             position: absolute;
-                top: -5px;
-                left: 140px;
+                top: -10px;
+                left: 145px;
+            // espaçamento
             padding: 2px 4px;
-            @extend %border-purple;
-            @extend %color-purple-1;
-            @extend %default-border-radius;
-            @extend %default-outline;
-            // Tipografia
+            // extend
+            @extend %border-radius-50-percent;
+            @extend %outline-0;
+            // tipografia
             @include type-1(9);
+            // responsivo
             @include device(medium-to-small) {
                 left: 65px;
             }
@@ -47,14 +44,11 @@ $module-name: 'smallIcon';
         }
     }
     .smallIcon__img-fullscreen {
-        background: url('../img/default-color/header-icons/resize.png') no-repeat;
+        background: url('../img/theme-light/header-icons/resize.png') no-repeat;
         background-position: center center;
         width: 100%;
         height: 100%;
-        @extend %default-outline;
-        &:hover {
-            background: url('../img/theme-light-purple/header-icons/resize.png') no-repeat;
-            background-position: center center;
-        }
+        // extend
+        @extend %outline-0;
     }
 }

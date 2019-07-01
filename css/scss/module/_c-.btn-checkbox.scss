@@ -2,7 +2,6 @@ $module-name: 'btn-checkbox';
 
 .#{$module-name} {
     @extend %default-outline;
-    @extend %background-purple;
     @extend %default-border-radius;
     @extend %border-0;
     @extend %default-small-margin;

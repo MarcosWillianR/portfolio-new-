@@ -28,7 +28,6 @@ $module-name: 'btn-select';
     }
     input[type="checkbox"]:checked + label::before {
         color: #FFF;
-        @extend %background-purple;
         @extend %border-transparent;
         content: "\2713";
     }

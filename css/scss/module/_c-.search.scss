@@ -9,7 +9,6 @@ $module-name: 'search';
         @extend %default-border-radius;
         @extend %default-padding;
         @extend %default-outline;
-        @extend %background-light-input;
         // Tipografia
         @include type-1(12.8);
         @extend %font-weight400;
@@ -23,7 +22,7 @@ $module-name: 'search';
     .search__button {
         width: 32px;
         height: 32px;
-        background: url('../img/default-color/header-icons/search.png') no-repeat;
+        background: url('../img/theme-light/header-icons/search.png') no-repeat;
         background-position: center center;
         position: absolute;
             top: 3px;
@@ -37,9 +36,6 @@ $module-name: 'search';
         }
         @include device(small-to-xxsmall) {
             top: -16px;
-        }
-        &:hover {
-            background: url('../img/theme-light-purple/header-icons/search.png') no-repeat;
         }
     }
 }

@@ -19,8 +19,6 @@ $element2-name: 'aside__right-Sidebar';
             z-index: 800;
         width: 120px;
         height: 100vh;
-        @extend %background-light-color3;
-        @extend %border1-right-light-1px;
         @extend %transition-transform-and-width;
         @extend %box-shadow-default;
         @include device(medium-to-large) {
@@ -33,9 +31,6 @@ $element2-name: 'aside__right-Sidebar';
             overflow: auto;
             max-height: 85%;
         }
-        .left-Sidebar__containerLink {
-            @extend %border2-bottom-light-1px;
-        }
         .left-Sidebar__link {
             flex-direction: column;
             justify-content: center;
@@ -43,33 +38,8 @@ $element2-name: 'aside__right-Sidebar';
             // Tipografia
             @include type-1(13);
             @extend %text-decoration-none;
-            @extend %color-light-default-1;
             .largeIcons__span {
                 margin-top: 8.7px;
-            }
-            &:hover {
-                @extend %background-light-color1;
-                .dashboard-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/dashboard.png') no-repeat;
-                }
-                .pages-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/pages.png') no-repeat;
-                }
-                .application-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/applications.png') no-repeat;
-                }
-                .ui-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/ui.png') no-repeat;
-                }
-                .menu-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/menu.png') no-repeat;
-                }
-                .blankpage-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/blank-page.png') no-repeat;
-                }
-                .docs-icon {
-                    background: url('../img/theme-light-purple/sidebar-left-icons/docs.png') no-repeat;
-                }
             }
         }
     }
@@ -79,7 +49,6 @@ $element2-name: 'aside__right-Sidebar';
         width: 229px;
         height: 100vh;
         @extend %box-shadow-default-2;
-        @extend %background-light-color3;
         @extend %transition-transform-and-width;
         .right-Sidebar__list {
             overflow: auto;
@@ -97,11 +66,7 @@ $element2-name: 'aside__right-Sidebar';
         padding: 8px 0px;
         // Tipografia
         @include type-1(13);
-        @extend %color-light-default-1;
         @extend %text-decoration-none;
         @extend %transition-color;
-        &:hover {
-            @extend %color-purple-1;
-        }
     }
 }

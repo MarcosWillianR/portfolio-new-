@@ -1,6 +1,20 @@
 $module-name: 'changeTheme';
 
-
+// Mixin default values
+@mixin defaultValues($bg, $border) {
+    padding: 0px 12px 8px 12px;
+    @extend %border-radius-50-percent;
+    border: 3px solid transparent;
+    @extend %border-radius-50-percent;
+    //
+    @extend %background-#{$bg};
+    &:hover {
+        @extend %border-#{$border}-color;
+        //
+        @extend %background-transparent;
+        @extend %transition-background-color;
+    }
+}
 
 .#{$module-name} {
     z-index: 1500;
@@ -14,11 +28,8 @@ $module-name: 'changeTheme';
         top: 45%;
     }
     .changeTheme__button {
-        background: url('../img/theme-light-purple/change-theme.png') no-repeat;
-        background-position: center center;
         width: 40px;
         height: 60px;
-        background-color: #FFF;
         @extend %box-shadow-default;
         @extend %border-0;
         @extend %cursor-pointer;
@@ -32,14 +43,14 @@ $module-name: 'changeTheme';
         height: 200px;
         padding: 24px;
         box-sizing: border-box;
-        background-color: #FFF;
         transform: translate3d(300px,0,0);
         @extend %box-shadow-default;
         @extend %transition-transform;
         .changeTheme__list__name {
+            margin-bottom: 4px;
             // Tipografia
             @include type-1(13);
-            margin-bottom: 4px;
+            // extend
             @extend %color-light-default-3;
         }
         .changeTheme__list__light {
@@ -49,62 +60,23 @@ $module-name: 'changeTheme';
             li {
                 width: 24px;
                 height: 24px;
+                border: 3px solid transparent;
+                // extend
                 @extend %border-radius-50-percent;
-                @extend %border-transparent-changeTheme__list;
-                .light-purple {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-purple;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-purple-color;
-                        @extend %transition-background-color;
-                    }
+                .t-light.purple {
+                    @include defaultValues(purple, purple);
                 }
-                .light-blue {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-blue;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-blue-color;
-                        @extend %transition-background-color;
-                    }
+                .t-light.blue {
+                    @include defaultValues(blue, blue);
                 }
-                .light-green {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-green;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-green-color;
-                        @extend %transition-background-color;
-                    }
+                .t-light.green {
+                    @include defaultValues(green, green);
                 }
-                .light-orange {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-orange;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-orange-color;
-                        @extend %transition-background-color;
-                    }
+                .t-light.orange {
+                    @include defaultValues(orange, orange);
                 }
-                .light-red {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-red;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-red-color;
-                        @extend %transition-background-color;
-                    }
+                .t-light.red {
+                    @include defaultValues(red, red);
                 }
             }
         }
@@ -116,62 +88,23 @@ $module-name: 'changeTheme';
             li {
                 width: 24px;
                 height: 24px;
+                border: 3px solid transparent;
+                // extend
                 @extend %border-radius-50-percent;
-                @extend %border-transparent-changeTheme__list;
-                .dark-purple {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-purple;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-purple-color;
-                        @extend %transition-background-color;
-                    }
+                .t-dark.purple {
+                    @include defaultValues(purple, purple);
                 }
-                .dark-blue {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-blue;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-blue-color;
-                        @extend %transition-background-color;
-                    }
+                .t-dark.blue {
+                    @include defaultValues(blue, blue);
                 }
-                .dark-green {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-green;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-green-color;
-                        @extend %transition-background-color;
-                    }
+                .t-dark.green {
+                    @include defaultValues(green, green);
                 }
-                .dark-orange {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-orange;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-orange-color;
-                        @extend %transition-background-color;
-                    }
+                .t-dark.orange {
+                    @include defaultValues(orange, orange);
                 }
-                .dark-red {
-                    @extend %padding-changeTheme__list;
-                    @extend %border-transparent-changeTheme__list;
-                    @extend %border-radius-50-percent;
-                    @extend %background-red;
-                    &:hover {
-                        @extend %background-transparent;
-                        @extend %border-red-color;
-                        @extend %transition-background-color;
-                    }
+                .t-dark.red {
+                    @include defaultValues(red, red);
                 }
             }
         }

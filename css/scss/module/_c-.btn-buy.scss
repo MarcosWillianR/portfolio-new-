@@ -2,24 +2,20 @@ $module-name: 'btn-buy';
 
 .#{$module-name} {
     .btn-buy__button {
+        padding: 8px 16px;
+        border-radius: 16px;
+        // extend
         @extend %cursor-pointer;
-        @extend %border-purple;
-        @extend %default-border-radius;
-        @extend %default-padding;
         @extend %default-margin;
-        @extend %color-purple-1;
         @extend %background-transparent;
-        @extend %default-outline;
+        @extend %outline-0;
         @extend %transition-background-color;
-        // Tipografia
+        // tipografia
         @include type-1(12.16);
+        @extend %text-uppercase;
+        // Responsivo
         @include device(medium-to-xxsmall) {
             display: none;
-        }
-        text-transform: uppercase;
-        &:hover {
-            @extend %background-purple;
-            @extend %btn-buy-light-hover-color;
         }
     }
 }

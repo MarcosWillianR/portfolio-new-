@@ -11,7 +11,7 @@ $module-name: 'langContent';
     flex-direction: column;
     // Extends
     @extend %border-light-default-1;
-    @extend %background-light-color3;
+    @extend %background-light-default-2;
     .langContent__btn {
         padding: 12px 24px;
         // Tipografia
@@ -23,7 +23,7 @@ $module-name: 'langContent';
         @extend %background-transparent;
         &:hover {
             // Extends
-            @extend %background-light-color1;
+            @extend %background-light-default-1;
         }
     }
 }
