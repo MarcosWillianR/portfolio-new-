@@ -4,9 +4,9 @@ $module-name: 'btn-orderList';
     position: relative;
     border: 1px solid #8f8f8f;
     @extend %default-border-radius;
-    padding: 5px 20px 5px 15px;
+    padding: 4px 20px 4px 15px;
     @extend %cursor-pointer;
-    @extend %default-margin;
+    @extend %default-small-margin;
     @extend %default-outline;
     @extend %transition-background-color;
     // Tipografia

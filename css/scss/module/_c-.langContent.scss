@@ -9,9 +9,6 @@ $module-name: 'langContent';
     min-width: 160px;
     // Alinhamento
     flex-direction: column;
-    // Extends
-    @extend %border-light-default-1;
-    @extend %background-light-default-2;
     .langContent__btn {
         padding: 12px 24px;
         // Tipografia
@@ -21,9 +18,5 @@ $module-name: 'langContent';
         @extend %cursor-pointer;
         @extend %border-0;
         @extend %background-transparent;
-        &:hover {
-            // Extends
-            @extend %background-light-default-1;
-        }
     }
 }

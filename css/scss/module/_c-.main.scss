@@ -107,6 +107,9 @@ $module-name: 'main';
         }
         .main__filters__container {
             justify-content: space-between;
+            .main__filters__icons {
+                margin-right: 22px;
+            }
         }
 
         .main__filters__pages {

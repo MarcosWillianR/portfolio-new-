@@ -8,19 +8,19 @@ $module-name: 'btn-dropdown';
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     position: absolute;
-        left: 50px;
-        padding: 9.5px 0px;
-        padding-right: 8px;
+        left: 60px;
+        padding: 12px 0px;
+        padding-right: 9px;
     &::before {
         content: '';
         display: inline-block;
         margin-top: 8px;
-        margin-left: 4px;
+        margin-left: 8px;
         width: 0px;
         height: 0px;
-        border-top: 5px solid #FFF;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid transparent;
+        border-top: 4px solid #FFF;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid transparent;
     }
 }

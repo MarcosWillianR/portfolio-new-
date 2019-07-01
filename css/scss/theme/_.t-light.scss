@@ -19,6 +19,24 @@ $theme-name: 't-light';
             &::after {
                 border-top: 5px solid #8F8F8F;
             }
+            &.is-active {
+                background-color: #dae0e5;
+                color: #212529;
+                &::after {
+                    border-top-color: #212529;
+                }
+            }
+        }
+        // lang content style
+        .langContent {
+            @extend %border-light-default-1;
+            @extend %background-light-default-2;
+            .langContent__btn {
+                @extend %color-light-default-2;
+                &:hover {
+                    @extend %background-light-default-1;
+                }
+            }
         }
         // logo background image change
         .logo {

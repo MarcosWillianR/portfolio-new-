@@ -2,10 +2,9 @@ $module-name: 'btn-checkbox';
 
 .#{$module-name} {
     @extend %default-outline;
-    @extend %default-border-radius;
     @extend %border-0;
-    @extend %default-small-margin;
-    padding: 12px 24px 12px 16px;
+    border-radius: 22px;
+    padding: 14px 28px 14px 28px;
     input[type="checkbox"] {
         display: none;
     }
@@ -24,7 +23,7 @@ $module-name: 'btn-checkbox';
         width: 14px;
         // Definir tipografia
         @include type-1(9);
-        margin-right: 5px;
+        margin-right: 10px;
         border-radius:4px;
     }
     input[type="checkbox"]:checked + label::before {

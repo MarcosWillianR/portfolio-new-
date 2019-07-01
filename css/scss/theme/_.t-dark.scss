@@ -5,7 +5,7 @@ $theme-name: 't-dark';
     @extend %background-dark-default-1;
     // header background change
     .header {
-        @extend %background-dark-default-1;
+        @extend %background-dark-default-2;
         // search field background change
         .search {
             .search__field {
@@ -18,6 +18,24 @@ $theme-name: 't-dark';
             @extend %color-dark-default-2;
             &::after {
                 border-top: 5px solid #757575;
+            }
+            &.is-active {
+                background-color: #DAE0E5;
+                color: #212529;
+                &::after {
+                    border-top-color: #212529;
+                }
+            }
+        }
+        // lang content style
+        .langContent {
+            @extend %border-dark-default-1;
+            @extend %background-dark-default-2;
+            .langContent__btn{
+                @extend %color-dark-default-1;
+                &:hover {
+                    @extend %background-dark-default-1;
+                }
             }
         }
         // logo background image change
