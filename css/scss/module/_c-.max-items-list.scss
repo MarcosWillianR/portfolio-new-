@@ -1,0 +1,21 @@
+$module-name: 'max-items-list';
+
+.#{$module-name} {
+    position: relative;
+
+    .max-items-list__content {
+        min-width: 160px;
+        position: absolute;
+            top: 25px;
+            right: 0px;
+        margin-top: 5px;
+        padding: 8px 0px;
+        .max-items-list__items {
+            cursor: default;
+            padding: 12px 24px;
+            // tipografia
+            @include type-1(12.8);
+            line-height: 1.8;
+        }
+    }
+}

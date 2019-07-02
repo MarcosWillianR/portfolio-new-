@@ -259,7 +259,15 @@
             </div>
 
             <div class="main__filters__searchBox l-flex">
-              <button class="btn-orderList">Order By: Product Name</button>
+              <div class="order-list">
+                <button class="order-list__button" data-order="button">Order By: Product Name</button>
+
+                <ul class="order-list__content" data-order="content">
+                  <li class="order-list__item">Product Name</li>
+                  <li class="order-list__item">Category</li>
+                  <li class="order-list__item">Status</li>
+                </ul>
+              </div>
               <div class="smallSearch">
                 <input type="text" class="search__field" placeholder="Search">
                 <button class="search__button"></button>
@@ -269,7 +277,15 @@
 
           <div class="main__filters__pages l-flex">
             <span class="spanItems">0-8 of 20</span>
-            <button class="btn-maxItems">8</button>
+            <div class="max-items-list">
+              <button class="max-items-list__button" data-maxItems="button">8</button>
+
+              <ul class="max-items-list__content" data-maxItems="content">
+                <li class="max-items-list__items">8</li>
+                <li class="max-items-list__items">12</li>
+                <li class="max-items-list__items">24</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

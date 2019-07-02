@@ -191,27 +191,49 @@ $theme-name: 't-dark';
 
     // MAIN CONTENT STYLES
     //
-    // main content title color
+    // title color
     .title {
         @extend %color-dark-default-1;
     }
-    // main content current page color
+    // current page color
     .currentPage__page {
         @extend %color-dark-default-1;
     }
-    // main content btn-orderlist background color
-    .btn-orderList {
+    // order-list__button background color
+    .order-list__button {
         @extend %background-dark-default-1;
     }
-    // main content small search background color
+    // order-list content
+    .order-list__content {
+        @extend %border-dark-default-1;
+        @extend %background-dark-default-2;
+        .order-list__item {
+            @extend%color-dark-default-1;
+            &:hover {
+                @extend %color-light-default-4;
+            }
+        }
+    }
+    // small search background color
     .smallSearch {
         .search__field {
             @extend %background-dark-default-1;
         }
     }
-    // main content btn max items background color
-    .btn-maxItems {
+    // btn max items background color
+    .max-items-list__button {
         @extend %background-dark-default-1;
+    }
+    // max items content
+    .max-items-list__content {
+        @extend %background-dark-default-2;
+        @extend %border-dark-default-1;
+        .max-items-list__items {
+            @extend %color-light-default-2;
+            &:hover {
+                @extend %color-light-default-4;
+            }
+        }
     }
 
 

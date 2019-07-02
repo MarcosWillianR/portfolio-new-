@@ -145,13 +145,41 @@ $theme-name: 'green';
             background: darken(#576A3D, 10%);
         }
     }
-    // btn orderList
-    .btn-orderList:hover {
+    // btn order List
+    .order-list__button:hover {
         @extend %background-green;
     }
-    // btn maxItems
-    .btn-maxItems:hover {
+    .order-list__button.is-active {
         @extend %background-green;
+        @extend %color-light-default-4;
+        @extend %border-transparent;
+        &:after {
+            border-top-color: #FFF;
+        }
+    }
+    // order list content 
+    .order-list__content {
+        .order-list__item:hover {
+            @extend %background-green;
+        }
+    }
+    // btn maxItems
+    .max-items-list__button:hover {
+        @extend %background-green;
+    }
+    .max-items-list__button.is-active {
+        @extend %background-green;
+        @extend %border-transparent;
+        @extend %color-light-default-4;
+        &:after {
+            border-top-color: #FFF;
+        }
+    }
+    // max items content
+    .max-items-list__content {
+        .max-items-list__items:hover {
+            @extend %background-green;
+        }
     }
     // MAIN CONTENT DINAMIC STYLES
     //

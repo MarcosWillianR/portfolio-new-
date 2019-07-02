@@ -147,13 +147,41 @@ $theme-name: 'red';
             background: darken(#880A1F, 10%);
         }
     }
-    // btn orderlist
-    .btn-orderList:hover {
+    // btn order list
+    .order-list__button:hover {
         @extend %background-red;
     }
-    // btn maxItems
-    .btn-maxItems:hover {
+    .order-list__button.is-active {
         @extend %background-red;
+        @extend %color-light-default-4;
+        @extend %border-transparent;
+        &:after {
+            border-top-color: #FFF;
+        }
+    }
+    // order list content 
+    .order-list__content {
+        .order-list__item:hover {
+            @extend %background-red;
+        }
+    }
+    // btn maxItems
+    .max-items-list__button:hover {
+        @extend %background-red;
+    }
+    .max-items-list__button.is-active {
+        @extend %background-red;
+        @extend %border-transparent;
+        @extend %color-light-default-4;
+        &:after {
+            border-top-color: #FFF;
+        }
+    }
+    // max items content
+    .max-items-list__content {
+        .max-items-list__items:hover {
+            @extend %background-red;
+        }
     }
     // MAIN CONTENT DINAMIC STYLES
     //
