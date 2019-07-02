@@ -22,6 +22,38 @@ $theme-name: 'purple';
     .grid-list__icon:hover {
         background: url('../img/purple/header-icons/list.png') no-repeat;
     }
+    // grid content
+    .grid-list__content {
+        .grid-list__link:hover {
+            .grid-list__name {
+                @extend %color-purple-1;
+            }
+            .grid-list__img-dashboards {
+                background: url('../img/purple/icons-grid/dashboard.png');
+                background-size: contain;
+            }
+            .grid-list__img-ui {
+                background: url('../img/purple/icons-grid/ui.png');
+                background-size: contain;
+            }
+            .grid-list__img-charts {
+                background: url('../img/purple/icons-grid/charts.png');
+                background-size: contain;
+            }
+            .grid-list__img-chat {
+                background: url('../img/purple/icons-grid/chat.png');
+                background-size: contain;
+            }
+            .grid-list__img-survey {
+                background: url('../img/purple/icons-grid/survey.png');
+                background-size: contain;
+            }
+            .grid-list__img-to-do-List {
+                background: url('../img/purple/icons-grid/to-do-list.png');
+                background-size: contain;
+            }
+        }
+    }
     // icon bell
     .smallIcon__img-bell {
         .smallIcon__bell-alert {

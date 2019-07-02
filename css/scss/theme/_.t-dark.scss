@@ -53,6 +53,56 @@ $theme-name: 't-dark';
         .btn-buy__button:hover {
             @extend %color-dark-default-3;
         }
+        // grid list content
+        .grid-list__content {
+            @extend %background-dark-default-2;
+            @extend %border-dark-default-1;
+            .grid-list__link {
+                @extend %color-dark-default-1;
+            }
+            .grid-list__img-dashboards {
+                background: url('../img/theme-dark/icons-grid/dashboard.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-ui {
+                background: url('../img/theme-dark/icons-grid/ui.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-charts {
+                background: url('../img/theme-dark/icons-grid/charts.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-chat {
+                background: url('../img/theme-dark/icons-grid/chat.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-survey {
+                background: url('../img/theme-dark/icons-grid/survey.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-to-do-List {
+                background: url('../img/theme-dark/icons-grid/to-do-list.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+        }
         // image-button color change
         .imageButton__name {
             @extend %color-dark-default-1;

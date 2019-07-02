@@ -53,6 +53,56 @@ $theme-name: 't-light';
         .btn-buy__button:hover {
             @extend %color-light-default-4;
         }
+        // grid list content
+        .grid-list__content {
+            @extend %background-light-default-2;
+            @extend %border-light-default-1;
+            .grid-list__link {
+                color: rgba(48, 48, 48, 0.8);
+            }
+            .grid-list__img-dashboards {
+                background: url('../img/theme-light/icons-grid/dashboard.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-ui {
+                background: url('../img/theme-light/icons-grid/ui.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-charts {
+                background: url('../img/theme-light/icons-grid/charts.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-chat {
+                background: url('../img/theme-light/icons-grid/chat.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-survey {
+                background: url('../img/theme-light/icons-grid/survey.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+            .grid-list__img-to-do-List {
+                background: url('../img/theme-light/icons-grid/to-do-list.png') no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+        }
         // image-button color change
         .imageButton__name {
             @extend %color-light-default-1;
