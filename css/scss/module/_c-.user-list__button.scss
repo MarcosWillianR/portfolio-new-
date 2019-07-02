@@ -1,11 +1,11 @@
-$module-name: 'imageButton';
+$module-name: 'user-list__button';
 
 .#{$module-name} {
     @extend %border-0;
     @extend %background-transparent;
     @extend %cursor-pointer;
     @extend %default-outline;
-    .imageButton__name {
+    .user-list__name {
         @extend %default-margin;
         // Tipografia
         @include type-1(12.8);
@@ -13,7 +13,7 @@ $module-name: 'imageButton';
             display: none;
         }
     }
-    .imageButton__img {
+    .user-list__img {
         width: 40px;
         height: 40px;
         border-radius: 50%;

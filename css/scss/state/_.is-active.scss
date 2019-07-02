@@ -182,3 +182,11 @@
 .grid-list__content.is-active {
     display: flex;
 }
+// bell-list dropdown
+.bell-list__content.is-active {
+    display: block;
+}
+// user-content dropdown
+.user-list__content.is-active {
+    display: block;
+}

@@ -19,7 +19,7 @@ $module-name: 'header';
         height: 70px;
         padding: 15px;
     }
-    .navbar-icons-imageButton {
+    .navbar-icons-user-list__button {
         position: relative;
         @include device(small-to-xxsmall) {
             width: auto;

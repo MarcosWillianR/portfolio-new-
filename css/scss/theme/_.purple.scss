@@ -55,14 +55,22 @@ $theme-name: 'purple';
         }
     }
     // icon bell
-    .smallIcon__img-bell {
-        .smallIcon__bell-alert {
+    .bell-list__icon {
+        .bell-list__alert {
             @extend %border-purple;
             @extend %color-purple-1;
         }
         &:hover {
             background: url('../img/purple/header-icons/bell.png') no-repeat;
             background-size: contain;
+        }
+    }
+    // bell content
+    .bell-list__content {
+        .bell-list__item {
+            .bell-list__link:hover .bell-list__text {
+                @extend %color-purple-1;
+            }
         }
     }
     // icon full screen

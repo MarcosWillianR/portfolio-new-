@@ -103,9 +103,40 @@ $theme-name: 't-dark';
                 height: 28px;
             }
         }
-        // image-button color change
-        .imageButton__name {
+        // bell list content
+        .bell-list__content {
+            &::-webkit-scrollbar-thumb {
+                background: #424242;
+            }
+            @extend %background-dark-default-2;
+            @extend %border-dark-default-1;
+            .bell-list__item {
+                @extend %border-dark-bottom-default-1;
+                .bell-list__text {
+                    @extend %color-dark-default-1;
+                }
+                .bell-list__date {
+                    @extend %color-dark-default-2;
+                }
+            }
+        }
+        // user-list color change
+        .user-list__name {
             @extend %color-dark-default-1;
+        }
+        // user-list content
+        .user-list__content {
+            @extend %border-dark-default-1;
+            @extend %background-dark-default-2;
+            .user-list__link {
+                @extend %color-dark-default-1;
+                &:hover {
+                    @extend %background-dark-default-1;
+                }
+            }
+        }
+        .user-list__item:nth-child(5) {
+            border-top: 1px solid #313131;
         }
     }
 

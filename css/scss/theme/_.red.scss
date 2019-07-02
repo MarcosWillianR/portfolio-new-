@@ -54,9 +54,9 @@ $theme-name: 'red';
             }
         }
     }
-    // bell icon
-    .smallIcon__img-bell {
-        .smallIcon__bell-alert {
+    // icon bell
+    .bell-list__icon {
+        .bell-list__alert {
             @extend %border-red;
             @extend %color-red-2;
         }
@@ -65,6 +65,15 @@ $theme-name: 'red';
             background-size: contain;
         }
     }
+    // bell content
+    .bell-list__content {
+        .bell-list__item {
+            .bell-list__link:hover .bell-list__text {
+                @extend %color-red-2;
+            }
+        }
+    }
+    
     // fullscreen icon
     .smallIcon__img-fullscreen:hover {
         background: url('../img/red/header-icons/resize.png') no-repeat;

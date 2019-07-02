@@ -33,7 +33,7 @@
     <div class="logo">
       <a href="./index.html" class="logo__link">Home</a>
     </div>
-    <nav class="navbar-icons-imageButton l-flex">
+    <nav class="navbar-icons-user-list__button l-flex">
       <div class="btn-buy">
         <button class="btn-buy__button">buy</button>
       </div>
@@ -79,19 +79,64 @@
           </li>
         </ul>
       </div>
-      <div class="smallIcon">
-        <button class="smallIcon__img-bell iconButton">
-          <span class="smallIcon__bell-alert">3</span>
+      <div class="bell-list smallIcon">
+        <button class="bell-list__icon iconButton" data-bell="button">
+          <span class="bell-list__alert">3</span>
         </button>
+
+        <ul class="bell-list__content" data-bell="content">
+          <li class="bell-list__item">
+            <a href="#"><img class="bell-list__img"
+                src="https://gogo-react.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt=""></a>
+            <a href="#" class="bell-list__link">
+              <p class="bell-list__text">Joisse Kaycee just sent a new comment!</p>
+              <p class="bell-list__date">09.04.2018 - 12:45</p>
+            </a>
+          </li>
+          <li class="bell-list__item">
+            <a href="#"><img class="bell-list__img"
+                src="https://gogo-react.coloredstrategies.com/assets/img/notification-thumb.jpg" alt=""></a>
+            <a href="#" class="bell-list__link">
+              <p class="bell-list__text">1 item is out of stock!</p>
+              <p class="bell-list__date">09.04.2018 - 12:45</p>
+            </a>
+          </li>
+          <li class="bell-list__item">
+            <a href="#"><img class="bell-list__img"
+                src="https://gogo-react.coloredstrategies.com/assets/img/notification-thumb-2.jpg" alt=""></a>
+            <a href="#" class="bell-list__link">
+              <p class="bell-list__text">New order received! It is total $147,20.</p>
+              <p class="bell-list__date">09.04.2018 - 12:45</p>
+            </a>
+          </li>
+          <li class="bell-list__item">
+            <a href="#"><img class="bell-list__img"
+                src="https://gogo-react.coloredstrategies.com/assets/img/notification-thumb-3.jpg" alt=""></a>
+            <a href="#" class="bell-list__link">
+              <p class="bell-list__text">3 items just added to wish list by a user!</p>
+              <p class="bell-list__date">09.04.2018 - 12:45</p>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="smallIcon xs-d-none">
         <button class="smallIcon__img-fullscreen iconButton"></button>
       </div>
-      <button class="imageButton l-flex">
-        <span class="imageButton__name">Sarah Kortney</span>
-        <img class="imageButton__img" src="https://gogo-react.coloredstrategies.com/assets/img/profile-pic-l.jpg"
-          alt="">
-      </button>
+      <div class="user-list">
+        <button class="user-list__button l-flex" data-user="button">
+          <span class="user-list__name">Sarah Kortney</span>
+          <img class="user-list__img" src="https://gogo-react.coloredstrategies.com/assets/img/profile-pic-l.jpg"
+            alt="">
+        </button>
+
+        <ul class="user-list__content" data-user="content">
+          <li class="user-list__item"><a href="#" class="user-list__link">Account</a></li>
+          <li class="user-list__item"><a href="#" class="user-list__link">Features</a></li>
+          <li class="user-list__item"><a href="#" class="user-list__link">History</a></li>
+          <li class="user-list__item"><a href="#" class="user-list__link">Support</a></li>
+          <li class="user-list__item"><a href="#" class="user-list__link">Sign out</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -231,7 +276,7 @@
     </div>
 
     <div class="dinamicContent-box">
-      
+
     </div>
 
     <div class="main__footer">
