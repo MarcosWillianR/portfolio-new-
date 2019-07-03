@@ -3,19 +3,62 @@ $theme-name: 't-light';
 .#{$theme-name} {
     // body background change
     @extend %background-light-default-1;
+
+    //
+    .header, .langContent, .grid-list__content, .bell-list__content,
+    .user-list__content, .aside__left-Sidebar, .aside__right-Sidebar,
+    .order-list__content, .max-items-list__content, .dinamicContent__section,
+    .changeTheme__list {
+        @extend %background-light-default-2;
+    }
+    //
+
+    //
+    .search__field, .langButton__button, .langContent__btn:hover,
+    .user-list__link:hover, .left-Sidebar__link:hover, .order-list__button,
+    .max-items-list__button {
+        @extend %background-light-default-1;
+    }
+    //
+
+    //
+    .langButton__button, .langContent__btn, .order-list__item,
+    .max-items-list__items {
+        @extend %color-light-default-2;
+    }
+    //
+
+    //
+    .langContent, .grid-list__content, .bell-list__content,
+    .user-list__content, .order-list__content, .max-items-list__content {
+        @extend %border-light-default-1;
+    }
+    // 
+
+    //
+    .btn-buy__button:hover, .order-list__item:hover, .max-items-list__items:hover {
+        @extend %color-light-default-4;
+    }
+    //
+
+    //
+    .bell-list__text, .user-list__name, .user-list__link,
+    .left-Sidebar__link, .right-Sidebar__link, .title,
+    .currentPage__page, .dinamicContent__title {
+        @extend %color-light-default-1;
+    }
+    //
+
+    //
+    .bell-list__date, .dinamicContent__category, .dinamicContent__date {
+        @extend %color-light-default-3;
+    }
+    //
+
     // header background change
     .header {
-        @extend %background-light-default-2;
-        // search field background change
-        .search {
-            .search__field {
-                @extend %background-light-default-1;
-            }
-        }
         // lang-button style
         .langButton__button {
-            @extend %background-light-default-1;
-            @extend %color-light-default-2;
             &::after {
                 border-top: 5px solid #8F8F8F;
             }
@@ -24,17 +67,6 @@ $theme-name: 't-light';
                 color: #212529;
                 &::after {
                     border-top-color: #212529;
-                }
-            }
-        }
-        // lang content style
-        .langContent {
-            @extend %border-light-default-1;
-            @extend %background-light-default-2;
-            .langContent__btn {
-                @extend %color-light-default-2;
-                &:hover {
-                    @extend %background-light-default-1;
                 }
             }
         }
@@ -49,14 +81,8 @@ $theme-name: 't-light';
                 no-repeat;
             }
         }
-        // btn-buy color change
-        .btn-buy__button:hover {
-            @extend %color-light-default-4;
-        }
         // grid list content
         .grid-list__content {
-            @extend %background-light-default-2;
-            @extend %border-light-default-1;
             .grid-list__link {
                 color: rgba(48, 48, 48, 0.8);
             }
@@ -108,31 +134,8 @@ $theme-name: 't-light';
             &::-webkit-scrollbar-thumb {
                 background: #D7D7D7;
             }
-            @extend %background-light-default-2;
-            @extend %border-light-default-1;
             .bell-list__item {
                 @extend %border-light-bottom-default-1;
-                .bell-list__text {
-                    @extend %color-light-default-1;
-                }
-                .bell-list__date {
-                    @extend %color-light-default-3;
-                }
-            }
-        }
-        // user-list color change
-        .user-list__name {
-            @extend %color-light-default-1;
-        }
-        // user-list content
-        .user-list__content {
-            @extend %border-light-default-1;
-            @extend %background-light-default-2;
-            .user-list__link {
-                @extend %color-light-default-1;
-                &:hover {
-                    @extend %background-light-default-1;
-                }
             }
         }
         .user-list__item:nth-child(5) {
@@ -144,23 +147,9 @@ $theme-name: 't-light';
     //
     // aside left-sidebar style
     .aside__left-Sidebar {
-        @extend %background-light-default-2;
         @extend %border-light-right-default-1;
         .left-Sidebar__containerLink {
             @extend %border-light-bottom-default-1;
-        }
-        .left-Sidebar__link {
-            @extend %color-light-default-1;
-            &:hover {
-                @extend %background-light-default-1;
-            }
-        }
-    }
-    // aside right-sidebar style
-    .aside__right-Sidebar {
-        @extend %background-light-default-2;
-        .right-Sidebar__link {
-            @extend %color-light-default-1;
         }
     }
     // aside icones
@@ -189,70 +178,6 @@ $theme-name: 't-light';
 
 
 
-    // MAIN CONTENT STYLES
-    //
-    // title color
-    .title {
-        @extend %color-light-default-1;
-    }
-    // current page color
-    .currentPage__page {
-        @extend %color-light-default-1;
-    }
-    // order-list__button background color
-    .order-list__button {
-        @extend %background-light-default-1;
-    }
-    // order-list content
-    .order-list__content {
-        @extend %border-light-default-1;
-        @extend %background-light-default-2;
-        .order-list__item {
-            @extend %color-light-default-2;
-            &:hover {
-                @extend %color-light-default-4;
-            }
-        }
-    }
-    // small search background color
-    .smallSearch {
-        .search__field {
-            @extend %background-light-default-1;
-        }
-    }
-    // btn max items background color
-    .max-items-list__button {
-        @extend %background-light-default-1;
-    }
-    // max items content
-    .max-items-list__content {
-        @extend %background-light-default-2;
-        @extend %border-light-default-1;
-        .max-items-list__items {
-            @extend %color-light-default-2;
-            &:hover {
-                @extend %color-light-default-4;
-            }
-        }
-    }
-
-
-    // DINAMIC CONTENT STYLES
-    //
-    .dinamicContent__section {
-        @extend %background-light-default-2;
-        .dinamicContent__title {
-            @extend %color-light-default-1;
-        }
-        .dinamicContent__category {
-            @extend %color-light-default-3;
-        }
-        .dinamicContent__date {
-            @extend %color-light-default-3;
-        }
-    }
-
-
     // MAIN CONTENT FOOTER
     //
     .btn-disabled-1, .btn-disabled-2 {
@@ -272,9 +197,6 @@ $theme-name: 't-light';
     .changeTheme {
         .changeTheme__button {
             background-color: #FFF;
-        }
-        .changeTheme__list {
-            @extend %background-light-default-2;
         }
     }
 }

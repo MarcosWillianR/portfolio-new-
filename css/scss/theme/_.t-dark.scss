@@ -3,19 +3,68 @@ $theme-name: 't-dark';
 .#{$theme-name} {
     // body background change
     @extend %background-dark-default-1;
-    // header background change
-    .header {
+
+    //
+    .header, .langContent, .grid-list__content, .bell-list__content,
+    .user-list__content, .aside__left-Sidebar, .aside__right-Sidebar,
+    .order-list__content, .max-items-list__content, .dinamicContent__section,
+    .changeTheme__list {
         @extend %background-dark-default-2;
-        // search field background change
-        .search {
-            .search__field {
-                @extend %background-dark-default-1;
-            }
-        }
+    }
+    //
+
+    //
+    .search__field, .langButton__button, .langContent__btn:hover,
+    .user-list__link:hover, .left-Sidebar__link:hover, .order-list__button,
+    .max-items-list__button {
+        @extend %background-dark-default-1;
+    }
+    //
+
+    //
+    .bell-list__date, .langButton__button, .langContent__btn, .order-list__item,
+    .max-items-list__items {
+        @extend %color-dark-default-2;
+    }
+    //
+
+    //
+    .langContent, .grid-list__content, .bell-list__content,
+    .user-list__content, .order-list__content, .max-items-list__content {
+        @extend %border-dark-default-1;
+    }
+    // 
+
+    //
+    .btn-buy__button:hover {
+        @extend %color-dark-default-3;
+    }
+    //
+
+    //
+    .bell-list__text, .user-list__name, .user-list__link,
+    .left-Sidebar__link, .right-Sidebar__link, .title,
+    .currentPage__page, .dinamicContent__title, .langContent__btn,
+    .grid-list__link, .aside__right-Sidebar, .order-list__item {
+        @extend %color-dark-default-1;
+    }
+    //
+
+    //
+    .bell-list__text, .dinamicContent__category, .dinamicContent__date, .max-items-list__items {
+        @extend %color-light-default-2;
+    }
+    //
+
+    //
+    .order-list__item:hover, .max-items-list__items:hover {
+        @extend %color-light-default-4;
+    }
+    //
+
+    .header {
         // lang-button style
         .langButton__button {
-            @extend %background-dark-default-1;
-            @extend %color-dark-default-2;
             &::after {
                 border-top: 5px solid #757575;
             }
@@ -24,17 +73,6 @@ $theme-name: 't-dark';
                 color: #212529;
                 &::after {
                     border-top-color: #212529;
-                }
-            }
-        }
-        // lang content style
-        .langContent {
-            @extend %border-dark-default-1;
-            @extend %background-dark-default-2;
-            .langContent__btn{
-                @extend %color-dark-default-1;
-                &:hover {
-                    @extend %background-dark-default-1;
                 }
             }
         }
@@ -49,16 +87,10 @@ $theme-name: 't-dark';
                 no-repeat;
             }
         }
-        // btn-buy color change
-        .btn-buy__button:hover {
-            @extend %color-dark-default-3;
-        }
         // grid list content
         .grid-list__content {
-            @extend %background-dark-default-2;
-            @extend %border-dark-default-1;
             .grid-list__link {
-                @extend %color-dark-default-1;
+                
             }
             .grid-list__img-dashboards {
                 background: url('../img/theme-dark/icons-grid/dashboard.png') no-repeat;
@@ -108,31 +140,8 @@ $theme-name: 't-dark';
             &::-webkit-scrollbar-thumb {
                 background: #424242;
             }
-            @extend %background-dark-default-2;
-            @extend %border-dark-default-1;
             .bell-list__item {
                 @extend %border-dark-bottom-default-1;
-                .bell-list__text {
-                    @extend %color-dark-default-1;
-                }
-                .bell-list__date {
-                    @extend %color-dark-default-2;
-                }
-            }
-        }
-        // user-list color change
-        .user-list__name {
-            @extend %color-dark-default-1;
-        }
-        // user-list content
-        .user-list__content {
-            @extend %border-dark-default-1;
-            @extend %background-dark-default-2;
-            .user-list__link {
-                @extend %color-dark-default-1;
-                &:hover {
-                    @extend %background-dark-default-1;
-                }
             }
         }
         .user-list__item:nth-child(5) {
@@ -144,24 +153,9 @@ $theme-name: 't-dark';
     //
     // aside left-sidebar style
     .aside__left-Sidebar {
-        @extend %background-dark-default-2;
         @extend %border-dark-right-default-1;
         .left-Sidebar__containerLink {
             @extend %border-dark-bottom-default-1;
-        }
-        .left-Sidebar__link {
-            @extend %color-dark-default-1;
-            &:hover {
-                @extend %background-dark-default-1;
-            }
-        }
-    }
-    // aside right-sidebar style
-    .aside__right-Sidebar {
-        @extend %background-dark-default-2;
-        @extend %color-dark-default-1;
-        .right-Sidebar__link {
-            @extend %color-dark-default-1;
         }
     }
     // aside icones
@@ -187,72 +181,6 @@ $theme-name: 't-dark';
         background: url('../img/theme-dark/default-left-sidebar/docs.png') no-repeat;
     }
 
-
-
-    // MAIN CONTENT STYLES
-    //
-    // title color
-    .title {
-        @extend %color-dark-default-1;
-    }
-    // current page color
-    .currentPage__page {
-        @extend %color-dark-default-1;
-    }
-    // order-list__button background color
-    .order-list__button {
-        @extend %background-dark-default-1;
-    }
-    // order-list content
-    .order-list__content {
-        @extend %border-dark-default-1;
-        @extend %background-dark-default-2;
-        .order-list__item {
-            @extend%color-dark-default-1;
-            &:hover {
-                @extend %color-light-default-4;
-            }
-        }
-    }
-    // small search background color
-    .smallSearch {
-        .search__field {
-            @extend %background-dark-default-1;
-        }
-    }
-    // btn max items background color
-    .max-items-list__button {
-        @extend %background-dark-default-1;
-    }
-    // max items content
-    .max-items-list__content {
-        @extend %background-dark-default-2;
-        @extend %border-dark-default-1;
-        .max-items-list__items {
-            @extend %color-light-default-2;
-            &:hover {
-                @extend %color-light-default-4;
-            }
-        }
-    }
-
-
-    // DINAMIC CONTENT STYLES
-    //
-    .dinamicContent__section {
-        @extend %background-dark-default-2;
-        .dinamicContent__title {
-            @extend %color-dark-default-1;
-        }
-        .dinamicContent__category {
-            @extend %color-dark-default-2;
-        }
-        .dinamicContent__date {
-            @extend %color-dark-default-2;
-        }
-    }
-
-
     // MAIN CONTENT FOOTER
     //
     .btn-disabled-1, .btn-disabled-2 {
@@ -266,19 +194,12 @@ $theme-name: 't-dark';
     .btn-activated-2 {
         background-color: #1B191B;
     }
-    // main numPage color
-    .main__numPage {
-        @extend %color-dark-default-2;
-    }
 
     // CHANGE THEME CONTENT 
     //
     .changeTheme {
         .changeTheme__button {
             background-color: #232223;
-        }
-        .changeTheme__list {
-            @extend %background-dark-default-2;
         }
     }
 }
