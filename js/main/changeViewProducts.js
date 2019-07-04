@@ -52,4 +52,9 @@
     buttonView2.addEventListener(userEvent, handleClickView2);
     buttonView3.addEventListener(userEvent, handleClickView3);
   });
+
+  window.addEventListener('pageshow', () => {
+    buttonView2.classList.add('is-view2');
+    containerView.classList.add('is-view2');
+  });
 }
