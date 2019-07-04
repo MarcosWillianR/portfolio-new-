@@ -52,4 +52,20 @@ $xxsmall-device: 419px;
             @content;
         }
     }
+    // view 3 media queries
+    @else if $size == view-responsive-1 {
+        @media screen and (min-width: 1200px) {
+            @content;
+        }   
+    }
+    @else if $size == view-responsive-2 {
+        @media screen and (min-width: 992px) and (max-width: 1200px - 1) {
+            @content;
+        }
+    }
+    @else if $size == view-responsive-3 {
+        @media screen and (min-width: 576px) and (max-width: 992px - 1) {
+            @content;
+        }
+    }
 }

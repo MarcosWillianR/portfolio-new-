@@ -3,17 +3,17 @@ $element1-name: 'aside__left-Sidebar';
 $element2-name: 'aside__right-Sidebar';
 
 .#{$module-name} {
-        z-index: 1000;
-        margin-top: 120px;
-        @include device(medium-to-large) {
-            margin-top: 90px;
-        }
-        @include device(medium-to-small) {
-            margin-top: 80px;
-        }
-        @include device(small-to-xxsmall) {
-            margin-top: 70px;
-        }
+    z-index: 1000;
+    margin-top: 120px;
+    @include device(medium-to-large) {
+        margin-top: 90px;
+    }
+    @include device(medium-to-small) {
+        margin-top: 80px;
+    }
+    @include device(small-to-xxsmall) {
+        margin-top: 70px;
+    }
     .#{$element1-name} {
         position: relative;
             z-index: 800;

@@ -2,7 +2,6 @@ $module-name: 'main';
 
 .#{$module-name} {
     position: relative;
-        z-index: 500;
     padding: 40px 60px;
     box-sizing: border-box;
     margin-top: 120px;
@@ -26,11 +25,13 @@ $module-name: 'main';
     }
 
     &[data-leftSidebar="active"][data-rightSidebar="active"] {
+        z-index: 500;
         width: calc(100% - 120px);
         transform: translateX(120px);
     }
 
     &[data-leftSidebar="inactive"][data-rightSidebar="inactive"] {
+        z-index: 1100;
         width: 100%;
         transform: translateX(0);
     }
@@ -48,11 +49,12 @@ $module-name: 'main';
             transform: translateX(0);
         }
         &[data-leftSidebar="active"][data-rightSidebar="active"] {
+            z-index: 500;
             width: 100%;
             transform: translateX(0);
         }
         &[data-leftSidebar="inactive"][data-rightSidebar="inactive"] {
-            z-index: 1000;
+            z-index: 1100;
         }
     }
     

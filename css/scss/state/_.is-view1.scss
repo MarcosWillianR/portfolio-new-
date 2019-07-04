@@ -1,4 +1,4 @@
-.dinamicContent-box.is-view2 {
+.dinamicContent-box.is-view1 {
     .dinamicContent {
         width: 100%;
         height: 85px;
@@ -17,22 +17,17 @@
         display: flex;
         align-items: center;
         .dinamicContent__img {
-            width: 100%;
-            max-width: 114px;
-            height: 100%;
-            @include device(medium-to-xsmall) {
-                max-width: 180px;
-            }
+            display: none;
         }
         .dinamicContent__boxDesc {
-            width: calc(100% - 114px - 42px);
+            width: calc(100% - 42px);
             margin-left: 42px;
             justify-content: space-between;
             @include device(medium-to-xsmall) {
-                width: calc(100% - 180px - 42px);
+                width: calc(100% - 42px);
             }
             @include device(xsmall-to-xxsmall) {
-                width: calc(100% - 110px - 22px);
+                width: calc(100% - 22px);
                 margin-left: 22px;
             }
             .dinamicContent__boxDesc__text {

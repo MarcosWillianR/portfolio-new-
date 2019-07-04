@@ -2,7 +2,7 @@ $module-name: 'order-list';
 
 .#{$module-name} {
     position: relative;
-
+    z-index: 500;
     .order-list__content {
         min-width: 160px;
         position: absolute;

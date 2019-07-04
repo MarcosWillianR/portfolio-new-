@@ -2,7 +2,7 @@ $module-name: 'max-items-list';
 
 .#{$module-name} {
     position: relative;
-
+    z-index: 500;
     .max-items-list__content {
         min-width: 160px;
         position: absolute;

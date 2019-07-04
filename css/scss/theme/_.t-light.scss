@@ -36,7 +36,7 @@ $theme-name: 't-light';
     // 
 
     //
-    .btn-buy__button:hover, .order-list__item:hover, .max-items-list__items:hover {
+    .btn-buy__button:hover, .order-list__item:hover, .max-items-list__items:hover, .dinamicContent__badge {
         @extend %color-light-default-4;
     }
     //

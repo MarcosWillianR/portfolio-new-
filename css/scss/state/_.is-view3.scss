@@ -1,0 +1,72 @@
+.dinamicContent-box.is-view3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .dinamicContent {
+        @include device(view-responsive-1) {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        @include device(view-responsive-2) {
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+        @include device(view-responsive-3) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+    .dinamicContent__section {
+        width: 100%;
+        position: relative;
+        margin-bottom: 16px;
+        @extend %box-shadow-default;
+        .dinamicContent__img {
+            width: 100%;
+        }
+        .dinamicContent__boxDesc {
+            padding: 28px;
+            align-items: flex-start;
+            .dinamicContent__boxDesc__text {
+                align-items: flex-start;
+                flex-direction: column;
+                margin-bottom: 16px;
+            }
+            .dinamicContent__boxDesc__btn {
+                order: -1;
+            }
+            .dinamicContent__title {
+                margin-bottom: 16px;
+                // tipografia
+                @include type-1(16);
+            }
+            .dinamicContent__category {
+                display: none;
+            }
+            .dinamicContent__date {
+                @include type-1(12.16);
+            }
+            .dinamicContent__badge {
+                position: absolute;
+                    top: 20px;
+                    left: -10px;
+
+                // Tipografia
+                @include type-1(9.472);
+                text-transform: uppercase;
+                @extend %font-weight700;
+                .badge1 {
+                    padding: 4px 14px 4px 14px;
+                    @extend %default-border-radius;
+                }
+                .badge2 {
+                    padding: 4px 10px 4px 10px;
+                    @extend %default-border-radius;
+                }
+            }
+        }
+    }
+}

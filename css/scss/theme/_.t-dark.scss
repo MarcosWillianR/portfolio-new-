@@ -57,7 +57,7 @@ $theme-name: 't-dark';
     //
 
     //
-    .order-list__item:hover, .max-items-list__items:hover {
+    .order-list__item:hover, .max-items-list__items:hover, .dinamicContent__badge {
         @extend %color-light-default-4;
     }
     //
