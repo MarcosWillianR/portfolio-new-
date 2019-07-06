@@ -7,3 +7,8 @@
         transform: translate3d(0px,0,0);
     }
 }
+
+// add-new content modal 
+.add-new__content.is-show {
+    animation: show-right .6s forwards;
+}

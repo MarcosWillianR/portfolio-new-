@@ -1,0 +1,36 @@
+$module-name: 'add-new__container';
+
+.#{$module-name} {
+    position: fixed;
+        top: 0px;
+        z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    // alinhamento
+    display: none;
+    justify-content: flex-end;
+    .add-new__content {
+        animation: show-left .6s forwards;
+
+        width: 100%;
+        min-height: 100%;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        @media (max-height: 650px) {
+            overflow: auto;
+        }
+    }
+}
+
+@keyframes show-right {
+    from {
+        opacity: 0;
+        transform: translate3d(100px,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}

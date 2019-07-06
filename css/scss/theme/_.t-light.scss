@@ -180,6 +180,9 @@ $theme-name: 't-light';
 
     // MAIN CONTENT FOOTER
     //
+    .main__numPage {
+        @extend %color-light-default-1;
+    }
     .btn-disabled-1, .btn-disabled-2 {
         opacity: .2;
     }
@@ -197,6 +200,52 @@ $theme-name: 't-light';
     .changeTheme {
         .changeTheme__button {
             background-color: #FFF;
+        }
+    }
+
+
+    // add-new modal 
+    .add-new__header {
+        @extend %background-light-default-2;
+        border-bottom: 1px solid #d7d7d7;
+        .add-new__title {
+            @extend %color-light-default-1;
+        }
+        .add-new__btn-exit {
+            @extend %color-light-default-3;
+            &:hover {
+                @extend %color-light-default-1;
+            }
+        }
+    }
+    .add-new__form {
+        @extend %background-light-default-2;
+        @extend %color-light-default-1;
+        @extend %border-light-bottom-default-2;
+        .input-box {
+            @extend %border-light-default-2;
+        }
+        .add-new__category-box {
+            .add-new__category-input {
+                @extend %color-light-default-3;
+            }
+        }
+        .add-new__category-content {
+            .add-new__list {
+                @extend %color-light-default-1;
+                &:hover {
+                    @extend %color-light-default-4;
+                }
+            }
+        }
+        textarea[name="description"] {
+            @extend %border-light-default-2;
+        }
+    }
+    .add-new__footer {
+        @extend %background-light-default-2;
+        .add-new__btn-cancel:hover {
+            @extend %color-light-default-4;
         }
     }
 }

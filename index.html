@@ -239,7 +239,7 @@
       </div>
 
       <div class="main__addNew-and-selectAll l-flex">
-        <button class="btn-add-new">add new</button>
+        <button class="btn-add-new" data-addnew="button_open">add new</button>
         <div class="btn-group">
           <button class="btn-checkbox">
             <input type="checkbox" id="checkAll">
@@ -344,6 +344,48 @@
     </ul>
   </div>
 
+
+  <div class="add-new__container" data-addnew="container">
+    <div class="add-new__content" data-addnew="content">
+      <header class="add-new__header">
+          <h2 class="add-new__title">Add New Item</h2>
+          <button class="add-new__btn-exit" data-addnew="button_close">X</button>
+      </header>
+      <form class="add-new__form">
+        <label for="product_name" class="d-block">Product Name</label>
+        <input type="text" name="product_name" id="product_name" class="input-box">
+        <div class="add-new__category">
+          <h3 class="add-new__category-title d-block">Category</h3>
+          <div class="add-new__category-box input-box l-flex" data-category="button">
+            <div class="add-new__category-input">Select...</div>
+            <button class="add-new__btn-indicator"></button>
+          </div>
+          <ul class="add-new__category-content" data-category="content">
+            <li class="add-new__list">Cakes</li>
+            <li class="add-new__list">Cupcakes</li>
+            <li class="add-new__list">Desserts</li>
+          </ul>
+        </div>
+        <label for="description" class="d-block">Description</label>
+        <textarea name="description" id="description"></textarea>
+        <div class="add-new__status">
+          <h3 class="add-new__status-title d-block">Status</h3>
+          <div class="add-new__status-box">
+              <input type="radio" name="select_status" id="on_hold" />
+              <label for="on_hold" class="textUpper">On Hold</label>
+          </div>
+          <div class="add-new__status-box">
+              <input type="radio" name="select_status" id="processed" />
+              <label for="processed" class="textUpper">Processed</label>
+          </div>
+        </div>
+      </form>
+      <footer class="add-new__footer l-flex">
+        <button class="add-new__btn-cancel" data-addnew="button_close">Cancel</button>
+        <button class="add-new__btn-submit">Submit</button>
+      </footer>
+    </div>
+  </div>
   <script src="./js/main.js"></script>
 </body>
 

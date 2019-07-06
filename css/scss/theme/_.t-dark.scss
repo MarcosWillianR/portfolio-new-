@@ -183,6 +183,9 @@ $theme-name: 't-dark';
 
     // MAIN CONTENT FOOTER
     //
+    .main__numPage {
+        @extend %color-dark-default-1;
+    }
     .btn-disabled-1, .btn-disabled-2 {
         opacity: .4;
     }
@@ -200,6 +203,54 @@ $theme-name: 't-dark';
     .changeTheme {
         .changeTheme__button {
             background-color: #232223;
+        }
+    }
+
+
+    // add-new modal 
+    .add-new__header {
+        @extend %background-dark-default-2;
+        @extend %border-dark-bottom-default-2;
+        .add-new__title {
+            @extend %color-dark-default-1;
+        }
+        .add-new__btn-exit {
+            @extend %color-dark-default-1;
+            &:hover {
+                color: lighten(#969696, 10%);
+            }
+        }
+    }
+    .add-new__form {
+        @extend %background-dark-default-2;
+        @extend %border-dark-bottom-default-2;
+        @extend %color-dark-default-1;
+        .input-box {
+            @extend %color-dark-default-1;
+            @extend %border-dark-default-2;
+        }
+        .add-new__category-box {
+            .add-new__category-input {
+                @extend %color-dark-default-1;
+            }
+        }
+        .add-new__category-content {
+            .add-new__list {
+                @extend %color-dark-default-1;
+                &:hover {
+                    @extend %color-light-default-4;
+                }
+            }
+        }
+        textarea[name="description"] {
+            @extend %border-dark-default-2;
+            @extend %color-dark-default-1;
+        }
+    }
+    .add-new__footer {
+        @extend %background-dark-default-2;
+        .add-new__btn-cancel:hover {
+            @extend %color-dark-default-3;
         }
     }
 }

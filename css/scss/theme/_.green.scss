@@ -253,4 +253,49 @@ $theme-name: 'green';
             background-position: center center;
         }
     }
+
+
+
+    // add-new modal form 
+    .add-new__form {
+        input[type="text"]:focus,
+        textarea[name="description"]:focus {
+            @extend %border-green;
+        }
+        .add-new__category-box.is-active {
+            border-color: #576A3D;;
+        }
+        .add-new__category-box {
+            .add-new__btn-indicator:hover:before {
+                border-top-color: #576A3D;;
+            }
+        }
+        .add-new__category-content {
+            @extend %border-green;
+            .add-new__list:hover {
+                @extend %background-green;
+            }
+        }
+        .add-new__status {
+            input[type="radio"]:checked + label:before {
+                border-color: #576A3D;
+                box-shadow: inset 0px 0px 0px 5px #576A3D;
+            }
+        }
+    }
+    .add-new__footer {
+        .add-new__btn-cancel {
+            @extend %border-green2;
+            @extend %color-green-2;
+            &:hover {
+                @extend %background-green2;
+            }
+        }
+        .add-new__btn-submit {
+            background: #576A3D;
+            &:hover {
+                background: darken(#576A3D, 10%);
+            }
+        }
+    }
 }

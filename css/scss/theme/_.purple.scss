@@ -254,4 +254,48 @@ $theme-name: 'purple';
             background-position: center center;
         }
     }
+
+
+    // add-new modal form 
+    .add-new__form {
+        input[type="text"]:focus,
+        textarea[name="description"]:focus {
+            @extend %border-purple;
+        }
+        .add-new__category-box.is-active {
+            border-color: #922c88;
+        }
+        .add-new__category-box {
+            .add-new__btn-indicator:hover:before {
+                border-top-color: #922c88;
+            }
+        }
+        .add-new__category-content {
+            @extend %border-purple;
+            .add-new__list:hover {
+                @extend %background-purple;
+            }
+        }
+        .add-new__status {
+            input[type="radio"]:checked + label:before {
+                border-color: #922c88;
+                box-shadow: inset 0px 0px 0px 5px #922c88;
+            }
+        }
+    }
+    .add-new__footer {
+        .add-new__btn-cancel {
+            @extend %border-purple-2;
+            @extend %color-purple-2;
+            &:hover {
+                @extend %background-purple2;
+            }
+        }
+        .add-new__btn-submit {
+            background: #922c88;
+            &:hover {
+                background: darken(#922c88, 10%);
+            }
+        }
+    }
 }

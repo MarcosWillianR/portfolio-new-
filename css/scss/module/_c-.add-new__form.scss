@@ -1,0 +1,99 @@
+$module-name: 'add-new__form';
+
+.#{$module-name} {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    max-height: 720px;
+    padding: 28px;
+    box-sizing: border-box;
+    // tipografia
+    @include type-1(12.8);
+    .d-block {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    textarea[name="description"] {
+        @extend %transition-border-color;
+        @extend %outline-0;
+        @extend %background-transparent;
+        // tipografia
+        @include type-1(12.8);
+    }
+    .input-box {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 24px;
+        box-sizing: border-box;
+    }
+    .add-new__category-box {
+        justify-content: space-between;
+        margin-bottom: 0px;
+        @extend %transition-border-color;
+        .add-new__category-input {
+            cursor: default;
+        }
+        .add-new__btn-indicator {
+            @extend %background-transparent;
+            @extend %outline-0;
+            @extend %border-0;
+            &:before {
+                content: '';
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-top: 5px solid #909090;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                margin-top: 4px;
+            }
+        }
+    }
+    .add-new__category-content {
+        width: 100%;
+        box-sizing: border-box;
+        .add-new__list {
+            cursor: default;
+            // espaçamento
+            padding: 12px;
+            // tipografia
+            @include type-1(12.8);
+        }
+    }
+    label[for="description"] {
+        margin-top: 24px;
+    }
+    textarea[name="description"] {
+        width: 100%;
+        min-height: 60px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+    .add-new__status {
+        margin-top: 24px;
+        .textUpper {
+            @extend %text-uppercase;
+        }
+        .add-new__status-box {
+            margin: 5px 0px;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        input[type="radio"] + label:before {
+            border: 1px solid #909090;
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin: 0px 8px -4px 0px;
+            padding: 0px;
+            border-radius: 8px;
+        }
+        input[type="radio"]:checked + label:before {
+            content: '';
+        }
+    }
+}

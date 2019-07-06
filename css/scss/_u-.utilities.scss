@@ -28,6 +28,7 @@
 %transition-color { transition: color .3s; }
 %transition-transform { transition: transform .3s; }
 %transition-transform-and-width { transition: transform .3s, width .3s; }
+%transition-border-color { transition: border-color .3s; }
 
 
 // Tipografia utilities > 
@@ -42,6 +43,7 @@
 %color-purple-1 { color: #922c88; }
 %color-purple-2 { color: #4556ac; }
 %border-purple { border: 1px solid #922c88; }
+%border-purple-2 { border: 1px solid #4556ac; }
 %border-purple-color { border-color: #922c88; }
 
 // Theme red colors
@@ -51,6 +53,7 @@
 %color-red-1 { color: #E7284A; }
 %color-red-2 { color: #880A1F; }
 %border-red { border: 1px solid #880A1F; }
+%border-red2 { border: 1px solid #E7284A; }
 %border-red-color { border-color: #880A1F; }
 
 // Theme orange colors
@@ -59,6 +62,7 @@
 %color-orange-1 { color: #E2863B; }
 %color-orange-2 { color: #E7523E; }
 %border-orange { border: 1px solid #E2863B; }
+%border-orange2 { border: 1px solid #E7523E; }
 %border-orange-color { border-color: #E2863B; }
 
 // Theme green colors
@@ -67,6 +71,7 @@
 %color-green-1 { color: #576A3D; }
 %color-green-2 { color: #DD9C02; }
 %border-green { border: 1px solid #576A3D; }
+%border-green2 { border: 1px solid #DD9C02; }
 %border-green-color { border-color: #576A3D; }
 
 // Theme blue colors
@@ -75,6 +80,7 @@
 %color-blue-1 { color: #145388; }
 %color-blue-2 { color: #2A93D5 }
 %border-blue { border: 1px solid #145388; }
+%border-blue2 { border: 1px solid #2A93D5; }
 %border-blue-color { border-color: #145388; }
 
 /////////////////////////////////////////////////////
@@ -86,6 +92,8 @@
 %border-dark-right-default-1 { border-right: 1px solid #313131; }
 %border-dark-bottom-default-1 { border-bottom: 1px solid #313131; }
 %border-dark-default-1 { border: 1px solid #313131; }
+%border-dark-bottom-default-2 { border-bottom: 1px solid #424242; }
+%border-dark-default-2 { border: 1px solid #424242; }
 
 %color-dark-default-1 { color: #969696; }
 %color-dark-default-2 { color: #757575; }
@@ -99,6 +107,8 @@
 %border-light-right-default-1 { border-right: 1px solid #F3F3F3; }
 %border-light-bottom-default-1 { border-bottom: 1px solid #F3F3F3; }
 %border-light-default-1 { border: 1px solid #E0E0E0; }
+%border-light-bottom-default-2 { border-bottom: 1px solid #d7d7d7; }
+%border-light-default-2 { border: 1px solid #d7d7d7; }
 
 %color-light-default-1 { color: #303030; }
 %color-light-default-2 { color: #8F8F8F; }

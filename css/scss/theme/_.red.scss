@@ -255,4 +255,48 @@ $theme-name: 'red';
             background-position: center center;
         }
     }
+
+
+    // add-new modal form 
+    .add-new__form {
+        input[type="text"]:focus,
+        textarea[name="description"]:focus {
+            @extend %border-red;
+        }
+        .add-new__category-box.is-active {
+            border-color: #880A1F;
+        }
+        .add-new__category-box {
+            .add-new__btn-indicator:hover:before {
+                border-top-color: #880A1F;
+            }
+        }
+        .add-new__category-content {
+            @extend %border-red;
+            .add-new__list:hover {
+                @extend %background-red;
+            }
+        }
+        .add-new__status {
+            input[type="radio"]:checked + label:before {
+                border-color: #880A1F;
+                box-shadow: inset 0px 0px 0px 5px #880A1F;
+            }
+        }
+    }
+    .add-new__footer {
+        .add-new__btn-cancel {
+            @extend %border-red2;
+            @extend %color-red-2;
+            &:hover {
+                @extend %background-red2;
+            }
+        }
+        .add-new__btn-submit {
+            background: #880A1F;
+            &:hover {
+                background: darken(#880A1F, 10%);
+            }
+        }
+    }
 }
