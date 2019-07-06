@@ -6,32 +6,22 @@
 
   const events = ['touchstart', 'click'];
 
-  const handleClick = (event) => {
+  const handleToggleClick = (event) => {
     event.preventDefault();
 
-    container.classList.add('is-visible');
-    content.classList.add('is-show');
+    container.classList.toggle('is-visible');
+    content.classList.toggle('is-show');
 
-    document.body.classList.add('addModalOn');
-
-    outsideEvent(content, events, () => {
-      container.classList.remove('is-visible');
-      content.classList.remove('is-show');
-      document.body.classList.remove('addModalOn');
-    });
+    document.body.classList.toggle('addModalOn');
   };
 
-  const handleClickClose = (eventClose) => {
-    eventClose.preventDefault();
-
-    container.classList.remove('is-visible');
-    content.classList.remove('is-show');
-  };
+  const handleOutsideClick = event => (event.target === container ? handleToggleClick(event) : false);
 
   events.forEach((userEvent) => {
-    buttonOpen.addEventListener(userEvent, handleClick);
+    buttonOpen.addEventListener(userEvent, handleToggleClick);
     buttonClose.forEach((closeBtn) => {
-      closeBtn.addEventListener(userEvent, handleClickClose);
+      closeBtn.addEventListener(userEvent, handleToggleClick);
     });
+    container.addEventListener(userEvent, handleOutsideClick);
   });
 }
