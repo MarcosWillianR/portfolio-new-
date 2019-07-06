@@ -4,9 +4,9 @@ $module-name: 'user-list__button';
     @extend %border-0;
     @extend %background-transparent;
     @extend %cursor-pointer;
-    @extend %default-outline;
+    @extend %outline-0;
     .user-list__name {
-        @extend %default-margin;
+        @extend %margin-right-left-12px;
         // Tipografia
         @include type-1(12.8);
         @include device(medium-to-xxsmall) {

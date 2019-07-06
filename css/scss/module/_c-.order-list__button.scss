@@ -7,7 +7,7 @@ $module-name: 'order-list__button';
     padding: 4px 20px 4px 15px;
     @extend %cursor-pointer;
     @extend %default-small-margin;
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %transition-background-color;
     // Tipografia
     @include type-1(12.16);

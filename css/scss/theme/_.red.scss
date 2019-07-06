@@ -156,6 +156,9 @@ $theme-name: 'red';
             background: darken(#880A1F, 10%);
         }
     }
+    .btn-dropdown.is-active {
+        background: darken(#880A1F, 10%);
+    }
     // btn order list
     .order-list__button:hover {
         @extend %background-red;

@@ -116,7 +116,7 @@ $module-name: 'main';
 
         .main__filters__pages {
             .spanItems {
-                @extend %default-margin;
+                @extend %margin-right-left-12px;
                 // Tipografia
                 @include type-1(12.16);
                 @extend %color-light-default-2;
@@ -130,7 +130,7 @@ $module-name: 'main';
         .main__list {
             justify-content: center;
             .main__link {
-                @extend %default-margin;
+                @extend %margin-right-left-12px;
                 @include device(small-to-xsmall) {
                     margin: 0 6px;
                 }

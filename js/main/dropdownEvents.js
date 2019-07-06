@@ -25,3 +25,7 @@ maxItemsDropdown.init();
 // form add-new category dropdown
 const categoryDropdown = new Dropdown('[data-category="button"]', '[data-category="content"]', 'is-active', 'is-inactive');
 categoryDropdown.init();
+
+// btn-dropdown
+const btnDropdown = new Dropdown('[data-dropdown="button"]', '[data-dropdown="content"]', 'is-active', 'is-inactive');
+btnDropdown.init();

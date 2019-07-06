@@ -1,7 +1,7 @@
 $module-name: 'btn-select';
 
 .#{$module-name} {
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %default-border-radius;
     @extend %border-0;
     @extend %background-transparent;

@@ -6,7 +6,7 @@ $module-name: 'max-items-list__button';
     padding: 4px 20px 4px 15px;
     @extend %default-border-radius;
     @extend %cursor-pointer;
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %transition-background-color;
     // Tipografia
     @include type-1(12.16);

@@ -1,7 +1,7 @@
 $module-name: 'btn-checkbox';
 
 .#{$module-name} {
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %border-0;
     border-radius: 22px;
     padding: 14px 28px 14px 28px;

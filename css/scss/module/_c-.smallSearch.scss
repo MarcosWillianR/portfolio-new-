@@ -9,7 +9,7 @@ $module-name: 'smallSearch';
         box-sizing: border-box;
         @extend %default-border-radius;
         padding: 12px 20px 12px 15px;
-        @extend %default-outline;
+        @extend %outline-0;
         // Tipografia
         @include type-1(12.16);
         @extend %font-weight400;
@@ -25,6 +25,6 @@ $module-name: 'smallSearch';
         @extend %border-0;
         @extend %cursor-pointer;
         @extend %default-padding;
-        @extend %default-outline;
+        @extend %outline-0;
     }
 }

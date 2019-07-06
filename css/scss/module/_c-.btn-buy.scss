@@ -6,7 +6,7 @@ $module-name: 'btn-buy';
         border-radius: 16px;
         // extend
         @extend %cursor-pointer;
-        @extend %default-margin;
+        @extend %margin-right-left-12px;
         @extend %background-transparent;
         @extend %outline-0;
         @extend %transition-background-color;

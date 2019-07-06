@@ -3,7 +3,7 @@ $module-name: 'mediumIcon';
 .#{$module-name} {
     @extend %cursor-pointer;
     @extend %border-0;
-    @extend %default-outline;
+    @extend %outline-0;
     margin: 0px 4px;
 }
 

@@ -6,7 +6,7 @@ $module-name: 'menuButton';
         padding: 4px;
         margin-bottom: 10px;
         background: transparent;
-        @extend %default-outline;
+        @extend %outline-0;
         @include device(small-to-xxsmall) {
             text-align: left;
             width: 60px;

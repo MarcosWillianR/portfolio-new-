@@ -7,8 +7,8 @@ $module-name: 'langButton';
         border-radius: 22px;
         @extend %border-0;
         @extend %cursor-pointer;
-        @extend %default-margin;
-        @extend %default-outline;
+        @extend %margin-right-left-12px;
+        @extend %outline-0;
         // Tipografia 
         @include type-1(12.8);
         &::after {

@@ -180,6 +180,16 @@ $theme-name: 't-light';
 
     // MAIN CONTENT FOOTER
     //
+    .dropdown__content {
+        @extend %background-light-default-2;
+        @extend %border-light-default-1;
+        .dropdown__item {
+            @extend %color-light-default-1;
+            &:hover {
+                @extend %background-light-default-1;
+            }
+        }
+    }
     .main__numPage {
         @extend %color-light-default-1;
     }

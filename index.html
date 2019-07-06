@@ -240,12 +240,19 @@
 
       <div class="main__addNew-and-selectAll l-flex">
         <button class="btn-add-new" data-addnew="button_open">add new</button>
-        <div class="btn-group">
+        <div class="btn-group l-flex">
           <button class="btn-checkbox">
             <input type="checkbox" id="checkAll">
             <label for="checkAll"></label>
           </button>
-          <button class="btn-dropdown"></button>
+          <div class="dropdown">
+            <button class="btn-dropdown" data-dropdown="button"></button>
+
+            <ul class="dropdown__content" data-dropdown="content">
+              <li class="dropdown__item">Delete</li>
+              <li class="dropdown__item">Another action</li>
+            </ul>
+          </div>
         </div>
       </div>
 

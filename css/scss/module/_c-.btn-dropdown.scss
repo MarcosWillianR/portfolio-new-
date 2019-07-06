@@ -2,20 +2,21 @@ $module-name: 'btn-dropdown';
 
 .#{$module-name} {
     @extend %cursor-pointer;
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %border-0;
     @extend %transition-background-color;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     position: absolute;
-        left: 60px;
-        padding: 12px 0px;
-        padding-right: 9px;
+        top: 0px;
+        left: 50px;
+        padding: 12.5px 0px;
+        padding-right: 14px;
     &::before {
         content: '';
         display: inline-block;
         margin-top: 8px;
-        margin-left: 8px;
+        margin-left: 12px;
         width: 0px;
         height: 0px;
         border-top: 4px solid #FFF;

@@ -3,7 +3,7 @@ $module-name: 'largeIcons';
 .#{$module-name} {
     width: 32px;
     height: 32px;
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %cursor-pointer;
     @extend %border-0;
 }

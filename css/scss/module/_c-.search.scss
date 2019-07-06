@@ -8,7 +8,7 @@ $module-name: 'search';
         @extend %border-0;
         @extend %default-border-radius;
         @extend %default-padding;
-        @extend %default-outline;
+        @extend %outline-0;
         // Tipografia
         @include type-1(12.8);
         @extend %font-weight400;
@@ -30,7 +30,7 @@ $module-name: 'search';
         @extend %border-0;
         @extend %cursor-pointer;
         @extend %default-padding;
-        @extend %default-outline;
+        @extend %outline-0;
         @include device(medium-to-xxsmall) {
             right: 0px;
         }

@@ -33,7 +33,7 @@ $module-name: 'changeTheme';
         @extend %box-shadow-default;
         @extend %border-0;
         @extend %cursor-pointer;
-        @extend %default-outline;
+        @extend %outline-0;
         @extend %transition-transform;
     }
     .changeTheme__list {

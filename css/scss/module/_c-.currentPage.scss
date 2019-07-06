@@ -1,7 +1,7 @@
 $module-name: 'currentPage';
 
 .#{$module-name} {
-    @extend %default-margin;
+    @extend %margin-right-left-12px;
     // Tipografia
     @include type-1(12.8);
     .currentPage__page {

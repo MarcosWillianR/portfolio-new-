@@ -1,7 +1,7 @@
 $module-name: 'btn-add-new';
 
 .#{$module-name} {
-    @extend %default-outline;
+    @extend %outline-0;
     @extend %cursor-pointer;
     @extend %border-0;
     @extend %transition-background-color;
