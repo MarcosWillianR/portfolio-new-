@@ -211,6 +211,11 @@ $theme-name: 'red';
                 @extend %background-red;
             }
         }
+        .btn-select.is-selected {
+            input[type="checkbox"] + label::before {
+                @extend %background-red;
+            }
+        }
     }
     // MAIN CONTENT FOOTER STYLES
     //
@@ -247,6 +252,9 @@ $theme-name: 'red';
     
         .main__numPage:hover {
             @extend %border-red-color;
+        }
+        .main__link.is-active .main__numPage {
+            @extend %border-red;
         }
     }
 

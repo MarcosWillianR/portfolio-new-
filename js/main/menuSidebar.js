@@ -2,7 +2,6 @@
   const button = document.querySelector('[data-sidebar="button"]');
   const leftSidebarDiv = document.querySelector('[data-sidebar="sidebarLeft"]');
   const rightSidebarDiv = document.querySelector('[data-sidebar="sidebarRight"]');
-  const asideContainer = document.querySelector('[data-sidebar="container"]');
 
   const events = ['tuchstart', 'click'];
 
@@ -65,7 +64,6 @@
 
   events.forEach((userEvent) => {
     button.addEventListener(userEvent, handleClickEvent);
-
   });
 
   window.addEventListener('resize', debounce(handleDeviceWithEvent, 50));

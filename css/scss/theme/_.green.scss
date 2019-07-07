@@ -209,6 +209,11 @@ $theme-name: 'green';
                 @extend %background-green;
             }
         }
+        .btn-select.is-selected {
+            input[type="checkbox"] + label::before {
+                @extend %background-green;
+            }
+        }
     }
     // MAIN CONTENT FOOTER STYLES
     //
@@ -245,6 +250,9 @@ $theme-name: 'green';
     
         .main__numPage:hover {
             @extend %border-green-color;
+        }
+        .main__link.is-active .main__numPage {
+            @extend %border-green;
         }
     }
 

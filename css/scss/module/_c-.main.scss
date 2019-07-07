@@ -10,7 +10,7 @@ $module-name: 'main';
     // 410 = 120px +  230px   +   60px      =  410px      >> Large device
     // 380 = 110px +  220px   +   50px      =  380px      >> medium to large device
     // 340 =  90px +  210px   +   40px      =  340px      >> medium to small device
-    
+
     @include device(large) {
         margin: 165px 60px 40px 410px;
         &[data-leftSidebar="active"][data-rightSidebar="inactive"] {

@@ -1,0 +1,14 @@
+.btn-checkbox.is-selected {
+    input[type="checkbox"] + label::before {
+        content: "\2713";
+        color: #FFF;
+    }
+}
+
+.btn-select.is-selected {
+    input[type="checkbox"] + label::before {
+        content: "\2713";
+        color: #FFF;
+        @extend %border-transparent;
+    }
+}

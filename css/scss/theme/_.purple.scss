@@ -210,6 +210,11 @@ $theme-name: 'purple';
                 @extend %background-purple;
             }
         }
+        .btn-select.is-selected {
+            input[type="checkbox"] + label::before {
+                @extend %background-purple;
+            }
+        }
     }
     // MAIN CONTENT FOOTER STYLES
     //
@@ -246,6 +251,9 @@ $theme-name: 'purple';
     
         .main__numPage:hover {
             @extend %border-purple-color;
+        }
+        .main__link.is-active .main__numPage {
+            @extend %border-purple;
         }
     }
 

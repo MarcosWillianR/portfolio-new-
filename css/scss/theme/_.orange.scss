@@ -210,6 +210,11 @@ $theme-name: 'orange';
                 @extend %background-orange;
             }
         }
+        .btn-select.is-selected {
+            input[type="checkbox"] + label::before {
+                @extend %background-orange;
+            }
+        }
     }
     // MAIN CONTENT FOOTER STYLES
     //
@@ -246,6 +251,9 @@ $theme-name: 'orange';
     
         .main__numPage:hover {
             @extend %border-orange-color;
+        }
+        .main__link.is-active .main__numPage {
+            @extend %border-orange;
         }
     }
 

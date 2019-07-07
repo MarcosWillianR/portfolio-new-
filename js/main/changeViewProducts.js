@@ -4,19 +4,21 @@
   const buttonView3 = document.querySelector('[data-view="buttonView3"]');
   const containerView = document.querySelector('[data-view="container"]');
 
+  const arrayItems = [containerView, buttonView1, buttonView2, buttonView3];
   const events = ['touchstart', 'click'];
-
   const classList = ['is-view1', 'is-view2', 'is-view3'];
 
   const handleClickView1 = (event) => {
     event.preventDefault();
 
+    // remove todas as classes antes de adicionar a classe do target
     classList.forEach((className) => {
-      containerView.classList.remove(className);
-      buttonView1.classList.remove(className);
-      buttonView2.classList.remove(className);
-      buttonView3.classList.remove(className);
+      arrayItems.forEach((item) => {
+        item.classList.remove(className);
+      });
     });
+
+    // adiciona as classes
     buttonView1.classList.add('is-view1');
     containerView.classList.add('is-view1');
   };
@@ -25,11 +27,11 @@
     event.preventDefault();
 
     classList.forEach((className) => {
-      containerView.classList.remove(className);
-      buttonView1.classList.remove(className);
-      buttonView2.classList.remove(className);
-      buttonView3.classList.remove(className);
+      arrayItems.forEach((item) => {
+        item.classList.remove(className);
+      });
     });
+
     buttonView2.classList.add('is-view2');
     containerView.classList.add('is-view2');
   };
@@ -38,11 +40,11 @@
     event.preventDefault();
 
     classList.forEach((className) => {
-      containerView.classList.remove(className);
-      buttonView1.classList.remove(className);
-      buttonView2.classList.remove(className);
-      buttonView3.classList.remove(className);
+      arrayItems.forEach((item) => {
+        item.classList.remove(className);
+      });
     });
+
     buttonView3.classList.add('is-view3');
     containerView.classList.add('is-view3');
   };

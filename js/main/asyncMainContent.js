@@ -17,7 +17,7 @@
               </div>
             </div>
             <div class="dinamicContent__boxDesc__btn l-flex">
-              <button class="btn-select">
+              <button class="btn-select" data-selectedItem="check">
                 <input type="checkbox" id="${dados.checkItem}">
                 <label for="${dados.checkItem}"></label>
               </button>
@@ -38,6 +38,18 @@
       const divDados = criarHTML(dado);
 
       mainContent.appendChild(divDados);
+    });
+
+    const checkAll = document.querySelector('[data-selectedItem="checkAllItems"]');
+    const check = document.querySelectorAll('[data-selectedItem="check"]');
+
+    checkAll.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      checkAll.classList.toggle('is-selected');
+      check.forEach((checkbox) => {
+        checkbox.classList.toggle('is-selected');
+      });
     });
   }
   conteudoDinamico('./dinamicContent.json');
