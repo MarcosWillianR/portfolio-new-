@@ -158,6 +158,16 @@ $theme-name: 't-dark';
             @extend %border-dark-bottom-default-1;
         }
     }
+    .left-Sidebar__list {
+        &::-webkit-scrollbar-thumb {
+            background: #424242;
+        }
+    }
+    .right-Sidebar__list {
+        &::-webkit-scrollbar-thumb {
+            background: #424242;
+        }
+    }
     // aside icones
     .dashboard-icon {
         background: url('../img/theme-dark/default-left-sidebar/dashboard.png') no-repeat;

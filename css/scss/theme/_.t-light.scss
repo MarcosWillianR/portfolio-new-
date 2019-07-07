@@ -152,6 +152,16 @@ $theme-name: 't-light';
             @extend %border-light-bottom-default-1;
         }
     }
+    .left-Sidebar__list {
+        &::-webkit-scrollbar-thumb {
+            background: #D7D7D7;
+        }
+    }
+    .right-Sidebar__list {
+        &::-webkit-scrollbar-thumb {
+            background: #D7D7D7;
+        }
+    }
     // aside icones
     .dashboard-icon {
         background: url('../img/theme-light/default-left-sidebar/dashboard.png') no-repeat;
