@@ -8,6 +8,9 @@
 > O que eu fiz está aqui nesse link: 
 - https://marcoswillianr.github.io/portfolio-new-/
 
+> Estou criando um site do 0 agora, você pode ver como está ficando nesse link:
+- https://marcoswillianr.github.io/animacoes/
+
 # aqui vai uma breve história sobre mim:
 Não possuo experiência no mercado, porém tenho estudado a área do front-end há algum tempo.
 Meus pontos fortes estão no HTML5, CSS e Javasript.
