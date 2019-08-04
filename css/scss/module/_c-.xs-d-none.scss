@@ -1,7 +1,0 @@
-$module-name: 'xs-d-none';
-
-.#{$module-name} {
-    @include device(xsmall-to-xxsmall) {
-        display: none;
-    }
-}
