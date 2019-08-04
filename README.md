@@ -1,12 +1,7 @@
 # Olá, sou o Marcos e acredito que eu seja um Desenvolvedor Front-End Junior!
 
-> Criei esse projeto usando a base do frontend (HTML5,CSS3,JavaScript)
-
-> o template que usei se encontra nesse link: 
-- https://gogo-react.coloredstrategies.com/app/pages/thumb-list#/
-
-> O que eu fiz está aqui nesse link: 
-- https://marcoswillianr.github.io/portfolio-new-/
+> Projeto utilizando HTML5, CSS3 e JS (puro), ainda não está pronto, mas você pode ver como está ficando nesse link:
+- https://marcoswillianr.github.io/animacoes/
 
 # aqui vai uma breve história sobre mim:
 Não possuo experiência no mercado, porém tenho estudado a área do front-end há algum tempo.
