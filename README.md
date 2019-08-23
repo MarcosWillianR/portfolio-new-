@@ -1,5 +1,6 @@
 ### Atualizações:
 > - 04/08/2019 - Estou criando um projeto novo do 0 utilizando a base do Front. Exclui o primeiro projeto por não ter sido feito do 0 (design, fotos etc...). Estou planejando construir meu portfólio utilizando ReactJS e talvez demore alguns meses para ficar pronto.
+> - 22/08/2019 - Iniciei dia 19/08/2019 o Bootcamp da Rocketseat e por esse motivo fiquei sem tempo para atualizar meus projetos.
 
 # Olá, sou o Marcos e acredito que eu seja um Desenvolvedor Front-End Junior!
 
